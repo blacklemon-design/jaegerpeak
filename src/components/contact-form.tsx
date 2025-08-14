@@ -40,7 +40,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="space-y-6 bg-card p-6 rounded-lg border border-border"
+      className="rounded-lg"
     >
       <div className="space-y-4">
         <div>
@@ -50,7 +50,7 @@ export default function ContactForm() {
           <Input
             id="name"
             {...register("name", { required: true })}
-            placeholder="Max Mustermann"
+            placeholder="Dein Name"
             required
             className="bg-background"
           />
@@ -65,7 +65,7 @@ export default function ContactForm() {
               id="email"
               type="email"
               {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
-              placeholder="deine@email.com"
+              placeholder="Deine E-Mail"
               required
               className="bg-background"
             />
@@ -79,7 +79,7 @@ export default function ContactForm() {
           <Textarea
             id="message"
             {...register("message", { required: true })}
-            placeholder="Hast du eine Tattoo-Idee? Lass hören!"
+            placeholder="Deine Nachricht"
             rows={5}
             required
             className="bg-background"
@@ -89,7 +89,7 @@ export default function ContactForm() {
 
       <Button
         type="submit"
-        className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mt-8"
       >
         Absenden
       </Button>

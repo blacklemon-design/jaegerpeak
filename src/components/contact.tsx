@@ -36,7 +36,7 @@ export function Contact() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Ready to <span className="text-primary">Get Started?</span>
+            Mach den <span className="text-primary">ersten Schritt</span>!
           </h2>
         </div>
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
@@ -44,7 +44,7 @@ export function Contact() {
             <div className="mb-10">
               <h3 className="text-2xl font-semibold mb-6">Bereit für eine Veränderung?</h3>
               <p className="text-foreground text-lg max-w-2xl mx-auto">
-                Take the first step towards your fitness transformation. Contact me today for a free consultation.
+                Machen Sie den ersten Schritt zu Ihrer Fitness-Transformation. Kontaktieren Sie mich noch heute für eine kostenlose Beratung.
               </p>
             </div>
             <div className="flex items-center space-x-4">
