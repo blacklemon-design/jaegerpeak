@@ -1,9 +1,5 @@
 backend:
-  name: bitbucket
-  repo: blacklemondesign/jagerpeak
-  branch: main
-  auth_type: implicit
-  app_id: hFwh6ryvAxq4cmCGHw
+  name: git-gateway
 media_folder: public/img
 public_folder: img
 collections:
