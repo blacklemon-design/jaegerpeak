@@ -11,26 +11,6 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import ContactForm from "./contact-form"
 
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
-
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
