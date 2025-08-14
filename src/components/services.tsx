@@ -1,6 +1,12 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Dumbbell, Apple, Users, Video } from "lucide-react"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Apple, Dumbbell, Users, Video } from "lucide-react";
 
 export function Services() {
   const services = [
@@ -21,7 +27,8 @@ export function Services() {
       id: "athletic-performance-coaching",
       icon: Apple,
       title: "Athletic Performance Coaching",
-      subtitle: "Mehr Leistung im Sport, für dich als Einzelsportler oder auch als Team",
+      subtitle:
+        "Mehr Leistung im Sport, für dich als Einzelsportler oder auch als Team",
       price: "$120",
       duration: "pro Monat",
       idealFor: [
@@ -52,9 +59,10 @@ export function Services() {
       duration: "pro Tag",
       idealFor: [
         "Mitglied vom Kraftwerk Fitness bist",
-        "Wenn du selbstständig trainierst, aber einen strukturierten Plan brauchst",      ],
+        "Wenn du selbstständig trainierst, aber einen strukturierten Plan brauchst",
+      ],
     },
-  ]
+  ];
 
   return (
     <section id="services" className="py-20 bg-background">
@@ -64,30 +72,44 @@ export function Services() {
             Meine <span className="text-primary">Angebote</span>
           </h2>
           <p className="text-foreground text-lg max-w-2xl mx-auto">
-            Finde das Coaching, das am besten zu deinem Lifestyle und deinen Zielen passt.
+            Finde das Coaching, das am besten zu deinem Lifestyle und deinen
+            Zielen passt.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="bg-card-dark border-border hover:border-primary transition-colors">
+            <Card
+              key={index}
+              className="bg-card-dark border-border hover:border-primary transition-colors"
+            >
               <CardHeader className="text-center">
                 <service.icon className="h-12 w-12 text-primary mx-auto mb-4" />
                 <CardTitle className="text-white">{service.title}</CardTitle>
-                <CardDescription className="text-foreground">{service.subtitle}</CardDescription>
+                <CardDescription className="text-foreground">
+                  {service.subtitle}
+                </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-4 flex flex-col justify-between h-full">
                 <ul className="space-y-2">
                   {service.idealFor.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="text-foreground text-sm flex items-center">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                    <li
+                      key={featureIndex}
+                      className="text-foreground text-sm flex items-center"
+                    >
+                      <div className="w-2 h-2 bg-primary rounded-full mr-2">
+                      </div>
                       {feature}
                     </li>
                   ))}
                 </ul>
                 <div className="pt-4 border-t border-card">
-                  <div className="text-2xl font-bold text-primary mb-4">{service.price}</div>
-                  <Button className="w-full bg-primary hover:bg-primary-hover text-white">Get Started</Button>
+                  <div className="text-2xl font-bold text-primary mb-4">
+                    {service.price}
+                  </div>
+                  <Button className="w-full bg-primary hover:bg-primary-hover text-white">
+                    Get Started
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -95,5 +117,5 @@ export function Services() {
         </div>
       </div>
     </section>
-  )
+  );
 }
