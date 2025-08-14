@@ -40,7 +40,7 @@ export default function Banner({ title, eventDate }: HeroProps) {
   console.log(title);
 
   return (
-    <section className="mt-16 bg-yellow-300 text-black p-6 rounded-lg shadow-lg flex flex-col items-center gap-4">
+    <section className="bg-primary text-black px-10 py-2 rounded-b-lg flex flex-row items-center gap-10">
       <h1 className="text-3xl font-bold">{title}</h1>
       <p className="text-lg">Starts in: {timeLeft}</p>
     </section>

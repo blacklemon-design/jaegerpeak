@@ -15,9 +15,7 @@ export default async function Home() {
  
   return (
     <div className="min-h-screen bg-background text-white">
-      <Header />
-      <Banner title={data.title} eventDate={data.date} />
-
+      <Header bannerTitle={data.title} bannerDate={data.date} />
       <main>
         <Hero />
         <About />

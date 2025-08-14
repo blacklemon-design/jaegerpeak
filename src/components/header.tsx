@@ -4,17 +4,18 @@ import { useState } from "react"
 import Link from "next/link"
 import { Menu, X, Dumbbell } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Banner from "./banner"
 
-export function Header() {
+export function Header({bannerTitle, bannerDate}: {bannerTitle: string, bannerDate: string}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border-dark z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-2">
+          <Link className="flex items-center space-x-2" href="/">
             <img src="/logo_horizontal_white.svg" alt="logo" className="h-8" />
-          </div>
+          </Link>
           <div className="flex items-center space-x-4">
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-foreground hover:text-primary transition-colors">
@@ -87,6 +88,7 @@ export function Header() {
           </div>
         )}
       </div>
+      <Banner title={bannerTitle} eventDate={bannerDate}/>
     </header>
   )
 }
