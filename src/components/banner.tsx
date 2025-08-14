@@ -37,12 +37,7 @@ export default function Banner({ title, eventDate }: HeroProps) {
 
   // Only show if data exists
   if (!title || !eventDate) return null;
-  console.log(title);
-
-  if (Number(timeLeft) < 0) {
-    return <></>
-  }
-
+  
   return (
     <section className="bg-primary text-black px-10 py-2 rounded-b-lg flex flex-row items-center gap-10">
       <h1 className="text-3xl font-bold">{title}</h1>
