@@ -24,11 +24,12 @@ export function Hero() {
               */
               }
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Transform Your Body,{" "}
-                <span className="text-primary">Transform Your Life</span>
+                Fitness, 
+                <span className="text-primary"> Performance</span> {" "}
+                Functionality
               </h1>
               <p className="text-xl text-foreground max-w-2xl">
-                Personalisiertes Fitness-Coaching, das ECHTE Ergebnisse liefert.
+                Personalisiertes Fitness-Coaching, das ECHTE Ergebnisse liefert. Personalisiertes Fitness-Coaching, das ECHTE Ergebnisse liefert. Personalisiertes Fitness-Coaching, das ECHTE Ergebnisse liefert.
               </p>
             </div>
 

@@ -39,8 +39,8 @@ export default function Banner({ title, eventDate }: HeroProps) {
   if (!title || !eventDate) return null;
   
   return (
-    <section className="bg-primary text-black px-10 rounded-b-lg flex flex-row items-center gap-10">
-      <h1 className="text-3xl font-bold">{title}</h1>
+    <section className="bg-primary text-black px-10 py-1 rounded-b-lg flex flex-row items-center gap-10">
+      <h1 className="text-2xl font-bold">{title}</h1>
       <p className="text-1xl">Starts in: {timeLeft}</p>
     </section>
   );
