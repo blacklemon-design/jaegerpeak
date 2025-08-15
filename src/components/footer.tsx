@@ -8,11 +8,12 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Dumbbell className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold text-white">FitCoach Pro</span>
+              <Link className="flex items-center space-x-2" href="/">
+                <img src="/logo_horizontal_white.svg" alt="logo" className="h-8" />
+              </Link>
             </div>
             <p className="text-foreground">
-              Transform your body and mind with personalized fitness coaching that delivers real results.
+              Verwandeln Sie Ihren Körper und Geist mit einem personalisierten Fitness-Coaching, das echte Ergebnisse liefert.
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-foreground hover:text-primary transition-colors">
@@ -31,64 +32,64 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Services</h3>
+            <h3 className="text-white font-semibold mb-4">Angebote</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-foreground hover:text-primary transition-colors">
-                  Personal Training
+                  Body Shaping
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-foreground hover:text-primary transition-colors">
-                  Nutrition Coaching
+                  Athletic Performance Coaching
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-foreground hover:text-primary transition-colors">
-                  Group Training
+                  Functional Training
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-foreground hover:text-primary transition-colors">
-                  Online Coaching
+                  Trainings Einführung/-anpassung
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-white font-semibold mb-4">Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#about" className="text-foreground hover:text-primary transition-colors">
-                  About
+                  Über mich
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="text-foreground hover:text-primary transition-colors">
-                  Services
+                  Angebote
                 </Link>
               </li>
               <li>
                 <Link href="#testimonials" className="text-foreground hover:text-primary transition-colors">
-                  Testimonials
+                  Bewertungen
                 </Link>
               </li>
               <li>
                 <Link href="#contact" className="text-foreground hover:text-primary transition-colors">
-                  Contact
+                  Kontakt
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Contact Info</h3>
+            <h3 className="text-white font-semibold mb-4">Kontakt</h3>
             <ul className="space-y-2 text-foreground">
-              <li>123 Fitness Street</li>
-              <li>New York, NY 10001</li>
-              <li>(555) 123-4567</li>
-              <li>alex@fitcoachpro.com</li>
+              <li>9444 Dipoldsau</li>
+              <li>Schweiz</li>
+              <li>+41 555 1123321</li>
+              <li>info@jaegerpeak.ch</li>
             </ul>
           </div>
         </div>
@@ -97,9 +98,9 @@ export function Footer() {
           <div className="w-full flex justify-center">
             <div className="p-3 text-center text-zinc-500 flex">
               Entwickelt mit {" "}
-              <Heart className="text-primary h-4 w-4 fill-current ml-1 mr-1" />
+              <Heart className="text-blacklemon h-4 w-4 fill-current ml-1 mr-1" />
               von
-              <Link target="_blank" href="https://blacklemon.design" className="hover:text-primary ml-1 text-primary">
+              <Link target="_blank" href="https://blacklemon.design" className="hover:text-blacklemon ml-1 text-blacklemon">
                 <strong>BlackLemon</strong>
               </Link>
             </div>
