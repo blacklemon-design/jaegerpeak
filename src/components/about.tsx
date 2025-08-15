@@ -49,7 +49,7 @@ export function About() {
 
           <div className="relative">
             <img
-              src="/images/ramon-hero.png"
+              src="/images/über_mich.jpeg"
               alt="Alex Johnson - Fitness Coach"
               className="rounded-2xl w-full h-auto object-cover mx-auto max-h-160"
             />

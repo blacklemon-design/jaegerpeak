@@ -12,9 +12,9 @@ export function Header({bannerTitle, bannerDate}: {bannerTitle: string, bannerDa
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border-dark z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-18">
           <Link className="flex items-center space-x-2" href="/">
-            <img src="/logo_horizontal_white.svg" alt="logo" className="h-8" />
+            <img src="/logo_horizontal_white.svg" alt="logo" className="h-10" />
           </Link>
           <div className="flex items-center space-x-4">
           <nav className="hidden md:flex items-center space-x-8">
