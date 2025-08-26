@@ -7,10 +7,10 @@ export function PersonalStory() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Meine Geschichte
+              Wofür ich stehe
             </h2>
             <h2 className="text-2xl md:text-2xl font-bold leading-tight mt-10">
-              Vom Kampf meine eigenen Fitnessziele zu erreichen bis hin anderen zu Helfen <span className="text-primary">ihre Träume wahr werden zu lassen.</span>
+              Ich glaube an Training, das den Körper stärkt <span className="text-primary">- und den Menschen dahinter.</span>
             </h2>
           </div>
           <div className="space-y-8">

@@ -74,7 +74,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="message" className="block text-sm font-medium mb-1">
-            Wie können wir dir helfen?
+            Wie kann ich dir helfen?
           </label>
           <Textarea
             id="message"

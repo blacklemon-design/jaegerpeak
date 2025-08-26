@@ -24,12 +24,12 @@ export function Hero() {
               */
               }
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Fitness, 
+                Fitness,
                 <span className="text-primary"> Performance</span> {" "}
                 Functionality
               </h1>
               <p className="text-xl text-foreground max-w-2xl">
-                Personalisiertes Fitness-Coaching, das ECHTE Ergebnisse liefert. Personalisiertes Fitness-Coaching, das ECHTE Ergebnisse liefert. Personalisiertes Fitness-Coaching, das ECHTE Ergebnisse liefert.
+                Individuelles Coaching für deinen Körper, Sport und Alltag. Für alle, die Fortschritt planen - nicht hoffen.
               </p>
             </div>
 
@@ -38,22 +38,22 @@ export function Hero() {
                 size="lg"
                 className="bg-primary hover:bg-primary-hover text-white px-8 py-3"
               >
-                Starten sie jetzt ihre Transformation!
+                Kostenloses Erstgespräch buchen!
               </Button>
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">50+</div>
-                <div className="text-foreground">Körper Transformiert</div>
+                <div className="text-3xl font-bold text-primary">Individuelle Pläne</div>
+                <div className="text-foreground">statt Trainings-Vorlagen</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">Jahrelange</div>
-                <div className="text-foreground">Erfahrung</div>
+                <div className="text-3xl font-bold text-primary">Body Shaping, Performance</div>
+                <div className="text-foreground">& Funktion vereint</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">100%</div>
-                <div className="text-foreground">Erfolgsquote</div>
+                <div className="text-3xl font-bold text-primary">Persönlich </div>
+                <div className="text-foreground">im Rheintal</div>
               </div>
             </div>
           </div>
