@@ -7,19 +7,25 @@ export function Qualifications() {
       title: "Fitness Trainer mit SAFS Fachausweis ",
       organization: "Swiss Academy of Fitness and sports (SAFS)",
       year: "April 2025",
-      status: "Current",
+      status: "finished",
     },
     {
       title: "Functional Trainer",
       organization: "SAFS",
       year: "Juli 2025",
-      status: "Current",
+      status: "finished",
     },
     {
-      title: "Athletik Performance Trainer + Performance Trainer",
+      title: "Performance Trainer",
       organization: "SAFS",
-      year: "Oktober 2025",
-      status: "Current",
+      year: "August 2025",
+      status: "finished",
+    },
+    {
+      title: "Athletik Performance Trainer",
+      organization: "SAFS",
+      year: "",
+      status: "running",
     },
   ]
 
@@ -57,7 +63,12 @@ export function Qualifications() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-foreground">{cert.organization}</p>
-                    <p className="text-gray-400 text-sm mt-1">Abgeschlossen: {cert.year}</p>
+                    
+                    <p className="text-gray-400 text-sm mt-1">
+                      {cert.status === "running"
+                        ? "Noch laufend …"
+                        : `Abgeschlossen: ${cert.year}`}
+                    </p>
                   </CardContent>
                 </Card>
               ))}

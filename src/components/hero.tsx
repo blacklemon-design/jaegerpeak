@@ -44,16 +44,16 @@ export function Hero() {
 
             <div className="grid grid-cols-3 gap-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">Individuelle Pläne</div>
-                <div className="text-foreground">statt Trainings-Vorlagen</div>
+                <div className="text-3xl font-bold text-primary">Stärke</div>
+                <div className="text-foreground text-xl">aufbauen</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">Body Shaping, Performance</div>
-                <div className="text-foreground">& Funktion vereint</div>
+                <div className="text-3xl font-bold text-primary">Leistung</div>
+                <div className="text-foreground text-xl">steigern</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">Persönlich </div>
-                <div className="text-foreground">im Rheintal</div>
+                <div className="text-3xl font-bold text-primary">Gesund</div>
+                <div className="text-foreground ">bleiben</div>
               </div>
             </div>
           </div>

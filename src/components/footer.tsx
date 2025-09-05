@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Dumbbell, Facebook, Instagram, Twitter, Youtube, Heart } from "lucide-react"
+import { Dumbbell, Facebook, Instagram, Twitter, Youtube, Heart, Linkedin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -12,21 +12,9 @@ export function Footer() {
                 <img src="/logo_horizontal_white.svg" alt="logo" className="h-8" />
               </Link>
             </div>
-            <p className="text-foreground">
-              Verwandeln Sie Ihren Körper und Geist mit einem personalisierten Fitness-Coaching, das echte Ergebnisse liefert.
-            </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-foreground hover:text-primary transition-colors">
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-foreground hover:text-primary transition-colors">
-                <Youtube className="h-5 w-5" />
               </Link>
             </div>
           </div>
@@ -86,10 +74,10 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Kontakt</h3>
             <ul className="space-y-2 text-foreground">
-              <li>9444 Dipoldsau</li>
-              <li>Schweiz</li>
-              <li>+41 555 1123321</li>
               <li>info@jaegerpeak.ch</li>
+              <li>+41 763867705</li>
+              <li>Widnau</li>
+              <li>Schweiz</li>
             </ul>
           </div>
         </div>

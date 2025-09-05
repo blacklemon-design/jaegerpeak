@@ -1,14 +1,12 @@
 import { About } from "@/components/about";
-import Banner from "@/components/banner";
 import { Contact } from "@/components/contact";
+import Faq from "@/components/faq";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
+import { Partners } from "@/components/partners";
 import { Services } from "@/components/services";
-import { Sponsors } from "@/components/sponsors";
-import { Testimonials } from "@/components/testimonials";
 import { loadHomeContent } from "@/lib/utils";
-import Image from "next/image";
 export const dynamic = "force-static"; // forces static generation
 const data = loadHomeContent(); // runs at build time, before component is even called
 export default async function Home() {
@@ -20,7 +18,8 @@ export default async function Home() {
         <Hero />
         <About />
         <Services />
-        <Sponsors />
+        <Partners />
+        <Faq />
         <Contact />
       </main>
       <Footer />

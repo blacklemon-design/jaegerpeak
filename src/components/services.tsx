@@ -100,7 +100,7 @@ export function Services() {
                 <div className="pt-4 border-t border-card">
                   <Link href="/services" passHref>
                     <Button className="w-full bg-primary hover:bg-primary-hover text-white">
-                      Lerne Mehr
+                      Mehr erfahen!
                     </Button>
                   </Link>
                 </div>

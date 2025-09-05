@@ -1,5 +1,6 @@
-import { Award, Users, Target, Zap } from "lucide-react"
+import { Award, Users, Target, Zap, Link } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "./ui/button"
 
 export function About() {
   return (
@@ -44,6 +45,11 @@ export function About() {
                   <div className="text-md text-foreground">Training mit echtem Fortschrittspotenzial</div>
                 </CardContent>
               </Card>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button className="w-full h-10 bg-primary hover:bg-primary-hover text-white">
+                Mehr erfahren!
+              </Button>
             </div>
           </div>
 
