@@ -53,7 +53,7 @@ export function Hero() {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">Gesund</div>
-                <div className="text-foreground ">bleiben</div>
+                <div className="text-foreground text-xl">bleiben</div>
               </div>
             </div>
           </div>
