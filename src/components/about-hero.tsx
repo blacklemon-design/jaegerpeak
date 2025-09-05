@@ -22,7 +22,7 @@ export function AboutHero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className=" bg-primary hover:bg-primary text-white px-8 py-3">
-                Transformation starten!
+                Lass uns gemeinsam den ersten Schritt machen!
               </Button>
             </div>
           </div>

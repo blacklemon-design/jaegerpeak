@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Apple, Dumbbell, Users, Video } from "lucide-react";
+import Link from "next/link";
 
 export function Services() {
   const services = [
@@ -97,9 +98,11 @@ export function Services() {
                   ))}
                 </ul>
                 <div className="pt-4 border-t border-card">
-                  <Button className="w-full bg-primary hover:bg-primary-hover text-white">
-                    Lerne Mehr
-                  </Button>
+                  <Link href="/services" passHref>
+                    <Button className="w-full bg-primary hover:bg-primary-hover text-white">
+                      Lerne Mehr
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>

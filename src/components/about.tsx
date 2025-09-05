@@ -29,19 +29,19 @@ export function About() {
               <Card className="bg-card border-border m-2">
                 <CardContent className="p-2 text-center">
                   <Users className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <div className="text-md text-foreground">Für Einzelpersonen und Gruppen aller Art</div>
+                  <div className="text-md text-foreground">Individuell oder im Team – flexibel anpassbar</div>
                 </CardContent>
               </Card>
               <Card className="bg-card border-border m-2">
                 <CardContent className="p-2 text-center">
                   <Target className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <div className="text-md text-foreground">Deine Ziele stehen voll im Fokus</div>
+                  <div className="text-md text-foreground">Dein Ziel bestimmt den Plan</div>
                 </CardContent>
               </Card>
               <Card className="bg-card border-border m-2">
                 <CardContent className="p-2 text-center">
                   <Zap className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <div className="text-md text-foreground">Resultate sind garantiert</div>
+                  <div className="text-md text-foreground">Training mit echtem Fortschrittspotenzial</div>
                 </CardContent>
               </Card>
             </div>

@@ -11,12 +11,18 @@ export function ServiceDetails() {
       subtitle: "Muskeln aufbauen. Fett verlieren. Stark & ästhetisch aussehen",
       description:
         "Du willst sichtbare Muskeln, einen definierten Körper oder einfach wieder in Form kommen? Ich helfe dir, nachhaltig Fett zu verlieren und Muskelmasse aufzubauen – mit strukturiertem Krafttraining, gezieltem Ernährungs-Input und individueller Betreuung.",
-      price: "1000€",
-      duration: "pro Stunde",
+      price: "",
+      duration: "",
       idealFor: [
         "Deinen Körper sichtbar verändern willst",
         "Effizient trainieren statt planlos schwitzen willst",
         "Langfristig dranbleiben willst, ohne Jojo-Effekt",
+      ],
+      frequentGoals: [
+        "Sichtbarer Muskelaufbau (trotz stressigem Alltag)",
+        "Bauchfett verlieren, definierter & straffer werden",
+        "Motivation wiederfinden und langfristig behalten",
+        "Endlich konstant & nachhaltig dranbleiben",
       ],
     },
     {
@@ -26,12 +32,17 @@ export function ServiceDetails() {
       subtitle: "Mehr Leistung im Sport, für dich als Einzelsportler oder auch als Team",
       description:
         "Du trainierst für Tennis, Fussball, Leichtathletik oder einen anderen Sport und willst schneller, stärker und explosiver werden? Willst du nochmals alles aus dir rausholen für den nächsten Hyrox? Hindert dich dein Körper daran, in deinem Sport den nächsten Schritt zu machen? Ich analysiere deine Bewegungsmuster, stärke deine Schwächen und entwickle ein sportartspezifisches, nachhaltiges und verletzungsvorbeugendes Athletiktraining, das dich wirklich voranbringt.",
-      price: "$120",
-      duration: "pro Monat",
+      price: "",
+      duration: "",
       idealFor: [
         "Deine Schnelligkeit, Kraft oder Agilität gezielt verbessern willst",
         "Verletzungsfrei durch die Saison kommen willst",
         "Dein volles athletisches Potenzial ausschöpfen willst",
+      ],
+      frequentGoals: [
+        "Stabilität, Agilität, Schnelligkeit und Explosivität verbessern für den nächsten Wettkampf",
+        "Schnellkraft & Core-Stabilität und Ausdauer gezielt verbessern",
+        "Nach einer Verletzung zurück zur vollen Belastung",
       ],
     },
     {
@@ -41,12 +52,17 @@ export function ServiceDetails() {
       subtitle: "Schmerzfrei bewegen und den Alltag meistern",
       description:
         "Rückenschmerzen, verspannte Schultern oder ein instabiler Rumpf? Ich helfe dir, deine Haltung zu verbessern, Alltagsbewegungen neu zu erlernen und wieder Vertrauen in deinen Körper zu gewinnen – mit funktionellem Training, das auf deine Realität zugeschnitten ist.",
-      price: "$40",
-      duration: "pro Tag",
+      price: "",
+      duration: "",
       idealFor: [
         "Viel sitzt oder körperliche Beschwerden hast",
         "Ein Training willst, das dich nicht überfordert, sondern stärkt",
         "Langfristig gesünder und beweglicher leben willst",
+      ],
+      frequentGoals: [
+        "Rückenschmerzen beim Sitzen oder Bücken loswerden",
+        "Treppen steigen, ohne ausser Atem zu kommen",
+        "Bewegung in den sitzenden Berufsalltag bekommen",
       ],
     },
     {
@@ -55,11 +71,17 @@ export function ServiceDetails() {
       title: "Trainings Einführung/-anpassung",
       subtitle: "exklusiv für Kraftwerk Fitness Mitglieder",
       description: "Du trainierst im Kraftwerk Fitness und willst mehr aus deinem Training herausholen? Ich analysiere deine aktuelle Situation und erstelle dir in 60 Minuten einen individuellen Trainingsplan - inklusive Einführung, aber ohne laufendes Coaching.",
-      price: "$40",
-      duration: "pro Tag",
+      price: "CHF 150",
+      duration: "Einmalig für Analyse, Planerstellung und Einführung",
       idealFor: [
         "Mitglied vom Kraftwerk Fitness bist",
-        "Wenn du selbstständig trainierst, aber einen strukturierten Plan brauchst",      ],
+        "Wenn du selbstständig trainierst, aber einen strukturierten Plan brauchst",      
+      ],
+      frequentGoals: [
+        "Einen Trainingsplan, der genau auf mich und meine Ziele zugeschnitten ist",
+        "Mit der richtigen Technik trainieren, um schnellstmöglich Fortschritte ohne Verletzungen zu erreichen",
+        "Mit einem klaren Einstieg ins Fitness starten, ohne mich überfordert zu fühlen",
+      ],
     },
   ]
 
@@ -79,19 +101,31 @@ export function ServiceDetails() {
                   <CardTitle className="text-3xl text-white mb-2">{service.title}</CardTitle>
                   <CardDescription className="text-primary text-lg font-semibold">{service.subtitle}</CardDescription>
                   <p className="text-gray-300 mt-4 max-w-2xl mx-auto">{service.description}</p>
-                  <div className="flex items-center justify-center mt-6">
                     <span className="text-4xl font-bold text-primary">{service.price}</span>
-                    <span className="text-gray-400 ml-2">/{service.duration}</span>
-                  </div>
+                    <span className="text-gray-400 ml-2">{service.duration}</span>
                 </CardHeader>
 
                 <CardContent className="space-y-8">
                   <div className="flex justify-center">
-                    <div className="space-y-6">
+                    <div className="space-y-6 flex flex-row space-x-20">
                       <div>
                         <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
                           <Users className="h-5 w-5 text-primary mr-2" />
                           Ideal für dich wenn du...
+                        </h4>
+                        <ul className="space-y-2">
+                          {service.idealFor.map((ideal, idealIndex) => (
+                            <li key={idealIndex} className="text-gray-300 flex items-center">
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
+                              {ideal}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
+                          <Users className="h-5 w-5 text-primary mr-2" />
+                          Häufige Ziele meiner Kunden...
                         </h4>
                         <ul className="space-y-2">
                           {service.idealFor.map((ideal, idealIndex) => (
@@ -107,13 +141,7 @@ export function ServiceDetails() {
 
                   <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-card">
                     <Button className="flex-1 bg-primary hover:bg-primary text-white">
-                      Get Started with {service.title}
-                    </Button>
-                    <Button
-                      variant="outline"
-                      className="flex-1 border-card text-white hover:bg-card bg-transparent"
-                    >
-                      Learn More
+                      Lass uns starten!
                     </Button>
                   </div>
                 </CardContent>

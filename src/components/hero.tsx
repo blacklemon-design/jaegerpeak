@@ -38,7 +38,7 @@ export function Hero() {
                 size="lg"
                 className="bg-primary hover:bg-primary-hover text-white px-8 py-3"
               >
-                Kostenloses Erstgespräch buchen!
+                Starte jetzt deine Transformation!
               </Button>
             </div>
 
