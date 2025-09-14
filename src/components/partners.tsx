@@ -1,5 +1,6 @@
 import { Award, Target, Users, Zap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 export function Partners() {
     return (
@@ -11,21 +12,36 @@ export function Partners() {
                     </h2>
                 </div>
                 <div className="grid lg:grid-cols-3 gap-12 items-center">
-                    <img
-                    src="/images/partners/tc-widnau-grey.webp"
-                        alt="Athletic fitness coach in dynamic jumping pose"
-                        className="w-auto max-h-60 obeject-cover mx-auto"
+                    <Link
+                        href="https://www.nicojaeger.ch/"
+                        className="hover:scale-110 duration-300 ease-in-out"
+                    >
+                        <img
+                            src="/images/partners/jpt.webp"
+                            alt="Athletic fitness coach in dynamic jumping pose"
+                            className="w-auto max-h-60 obeject-cover mx-auto"
                         />
-                    <img
-                        src="/images/partners/jsp.png"
-                        alt="Athletic fitness coach in dynamic jumping pose"
-                        className="w-auto max-h-60 obeject-cover mx-auto"
-                    />
-                    <img
-                        src="/images/partners/kraftwerk_fitness.jpg"
-                        alt="Athletic fitness coach in dynamic jumping pose"
-                        className="w-auto max-h-60 obeject-cover mx-auto"
-                    />
+                    </Link>
+                    <Link
+                        href="https://jsp-photography.pixieset.com/"
+                        className="hover:scale-110 duration-300 ease-in-out"
+                    >
+                        <img
+                            src="/images/partners/jsp.png"
+                            alt="Athletic fitness coach in dynamic jumping pose"
+                            className="w-auto max-h-60 obeject-cover mx-auto"
+                        />
+                    </Link>
+                    <Link
+                        href="https://www.kraftwerk-fitness.ch/"
+                        className="hover:scale-110 duration-300 ease-in-out"
+                    >
+                        <img
+                            src="/images/partners/kraftwerk_fitness.jpg"
+                            alt="Athletic fitness coach in dynamic jumping pose"
+                            className="w-auto max-h-60 obeject-cover mx-auto"
+                        />
+                    </Link>
                 </div>
             </div>
         </section>
