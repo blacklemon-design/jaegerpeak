@@ -22,4 +22,6 @@ collections:
       fields:
         - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
         - {label: Name, name: name, widget: string, default: ""}
-
+      default:
+      - { quote: "test quote default", name: "name" }
+      - { quote: "test quote 2", name: "name2" }
