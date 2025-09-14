@@ -13,10 +13,7 @@ collections:
       fields:
         - { label: "Title", name: "title", widget: "string", required: false}
         - { label: "Date", name: "date", widget: "datetime", required: false}
-    - label: "Testimonials"
-      name: "testimonials"
-      collapsed: false
+    - label: "Tags"
+      name: "tags"
       widget: "list"
-      fields:
-        - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-        - {label: Author, name: author, widget: string }
+      default: ["news"]
