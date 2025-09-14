@@ -6,6 +6,7 @@ import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Partners } from "@/components/partners";
 import { Services } from "@/components/services";
+import { Testimonials } from "@/components/testimonials";
 import { loadHomeContent } from "@/lib/utils";
 export const dynamic = "force-static"; // forces static generation
 const data = loadHomeContent(); // runs at build time, before component is even called
@@ -18,6 +19,7 @@ export default async function Home() {
         <Hero />
         <About />
         <Services />
+        <Testimonials />
         <Partners />
         <Faq />
         <Contact />

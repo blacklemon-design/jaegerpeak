@@ -1,5 +1,5 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Star } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card";
+import { Star } from "lucide-react";
 
 export function Testimonials() {
   const testimonials = [
@@ -35,7 +35,7 @@ export function Testimonials() {
         "Alex's nutrition coaching completely changed how I fuel my body. I have more energy than I've had in years!",
       rating: 5,
     },
-  ]
+  ];
 
   return (
     <section id="testimonials" className="py-20 bg-background-secondary">
@@ -45,30 +45,20 @@ export function Testimonials() {
             What My <span className="text-primary">Clients Say</span>
           </h2>
           <p className="text-foreground text-lg max-w-2xl mx-auto">
-            Don't just take my word for it. Here's what real clients have achieved with my coaching programs.
+            Don't just take my word for it. Here's what real clients have
+            achieved with my coaching programs.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-card border-border">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-foreground italic">"{testimonial.content}"</p>
-                <div className="flex items-center space-x-3">
-                  <img
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full"
-                  />
-                  <div>
-                    <div className="font-semibold text-white">{testimonial.name}</div>
-                    <div className="text-sm text-foreground">{testimonial.role}</div>
-                  </div>
+              <CardContent className="p-6 space-y-4 flex-col flex justify-between h-full">
+                <p className="text-foreground italic">
+                  "{testimonial.content}"
+                </p>
+                <div className="font-semibold text-white">
+                  {testimonial.name}
                 </div>
               </CardContent>
             </Card>
@@ -76,5 +66,5 @@ export function Testimonials() {
         </div>
       </div>
     </section>
-  )
+  );
 }
