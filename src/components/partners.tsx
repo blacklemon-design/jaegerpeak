@@ -12,17 +12,17 @@ export function Partners() {
                 </div>
                 <div className="grid lg:grid-cols-3 gap-12 items-center">
                     <img
-                        src="/images/tc-widnau-grey.png"
+                    src="/images/partners/tc-widnau-grey.webp"
+                        alt="Athletic fitness coach in dynamic jumping pose"
+                        className="w-auto max-h-60 obeject-cover mx-auto"
+                        />
+                    <img
+                        src="/images/partners/jsp.png"
                         alt="Athletic fitness coach in dynamic jumping pose"
                         className="w-auto max-h-60 obeject-cover mx-auto"
                     />
                     <img
-                        src="/images/tc-widnau-grey.webp"
-                        alt="Athletic fitness coach in dynamic jumping pose"
-                        className="w-auto max-h-60 obeject-cover mx-auto"
-                    />
-                    <img
-                        src="/images/tc-widnau.png"
+                        src="/images/partners/kraftwerk_fitness.jpg"
                         alt="Athletic fitness coach in dynamic jumping pose"
                         className="w-auto max-h-60 obeject-cover mx-auto"
                     />
