@@ -17,6 +17,7 @@ collections:
       name: "testimonials"
       file: "src/content/testimonials.md"
       widget: "list"
+      allow_add: true
       summary: '{{fields.quote}} - {{fields.name}}'
       fields:
         - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
