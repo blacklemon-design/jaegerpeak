@@ -91,9 +91,11 @@ export function Services() {
                       key={featureIndex}
                       className="text-foreground text-sm flex items-center"
                     >
-                      <div className="w-2 h-2 bg-primary rounded-full mr-2">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-2 flex-none">
                       </div>
-                      {feature}
+                      <p>
+                        {feature}
+                        </p>
                     </li>
                   ))}
                 </ul>
