@@ -13,11 +13,9 @@ collections:
       fields:
         - { label: "Title", name: "title", widget: "string", required: false}
         - { label: "Date", name: "date", widget: "datetime", required: false}
-    - label: "Testimonials"
-      file: "src/content/testimonials.md"
-      name: "testimonials"
-      collapsed: false
-      widget: "list"
-      fields:
-        - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-        - {label: Author, name: author, widget: string }
+        - label: "Testimonials"
+          name: "testimonials"
+          widget: "list"
+          fields:
+            - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+            - {label: Author, name: author, widget: string }
