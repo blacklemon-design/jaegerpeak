@@ -3,8 +3,8 @@ import { Footer } from "@/components/footer"
 import { AboutHero } from "@/components/about-hero"
 import { PersonalStory } from "@/components/personal-story"
 import { Qualifications } from "@/components/qualifications"
-import { loadHomeContent } from "@/lib/utils"
-const data = loadHomeContent(); // runs at build time, before component is even called
+import { loadHomeBannerContent } from "@/lib/utils"
+const data = loadHomeBannerContent(); // runs at build time, before component is even called
 
 export default function AboutPage() {
   return (

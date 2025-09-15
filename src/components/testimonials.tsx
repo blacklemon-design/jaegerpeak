@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { loadTestimonialsContent, Testimonial } from "@/lib/utils";
-import { Star } from "lucide-react";
 const testimonials: Testimonial[] = loadTestimonialsContent(); // runs at build time, before component is even called
 
 export function Testimonials() {
