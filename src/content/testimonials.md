@@ -4,4 +4,6 @@ testimonials:
     author: Emanuel
   - quote: Everything is awesome! 2
     author: Kim
+  - quote: test quote
+    author: emanuel hiebeler
 ---
