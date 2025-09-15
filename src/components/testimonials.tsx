@@ -18,7 +18,7 @@ export function Testimonials() {
 
         <div className="flex flex-row gap-10 w-full justify-center">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-card border-border">
+            <Card key={index} className={`bg-card border-border basis-1/${testimonials.length}`}>
               <CardContent className="p-6 space-y-4 flex-col flex justify-between h-full">
                 <p className="text-foreground italic">
                   "{testimonial.quote}"
