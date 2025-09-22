@@ -17,7 +17,7 @@ export default function Banner({ title, eventDate }: HeroProps) {
     const updateCountdown = () => {
       const diff = new Date(eventDate).getTime() - new Date().getTime();
       if (diff <= 0) {
-        setTimeLeft("Event has started!");
+        setTimeLeft("0");
         return;
       }
 
@@ -36,7 +36,7 @@ export default function Banner({ title, eventDate }: HeroProps) {
   }, [eventDate]);
 
   // Only show if data exists
-  if (!title || !eventDate) return null;
+  if (!title || !eventDate || timeLeft === "0") return null;
   
   return (
     <section className="bg-primary text-black px-10 py-1 rounded-b-lg flex flex-row items-center gap-10">

@@ -1,42 +1,8 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Star } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card";
+import { loadTestimonialsContent, Testimonial } from "@/lib/utils";
+const testimonials: Testimonial[] = loadTestimonialsContent(); // runs at build time, before component is even called
 
 export function Testimonials() {
-  const testimonials = [
-    {
-      name: "Sarah Mitchell",
-      role: "Marketing Manager",
-      image: "/placeholder.svg?height=80&width=80",
-      content:
-        "Alex transformed not just my body, but my entire relationship with fitness. I've lost 30 pounds and gained so much confidence!",
-      rating: 5,
-    },
-    {
-      name: "Mike Rodriguez",
-      role: "Software Engineer",
-      image: "/placeholder.svg?height=80&width=80",
-      content:
-        "The online coaching program was perfect for my busy schedule. Alex's guidance helped me build muscle while working from home.",
-      rating: 5,
-    },
-    {
-      name: "Emily Chen",
-      role: "Teacher",
-      image: "/placeholder.svg?height=80&width=80",
-      content:
-        "I never thought I could enjoy working out until I started training with Alex. The personalized approach made all the difference.",
-      rating: 5,
-    },
-    {
-      name: "David Thompson",
-      role: "Business Owner",
-      image: "/placeholder.svg?height=80&width=80",
-      content:
-        "Alex's nutrition coaching completely changed how I fuel my body. I have more energy than I've had in years!",
-      rating: 5,
-    },
-  ]
-
   return (
     <section id="testimonials" className="py-20 bg-background-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,30 +11,20 @@ export function Testimonials() {
             What My <span className="text-primary">Clients Say</span>
           </h2>
           <p className="text-foreground text-lg max-w-2xl mx-auto">
-            Don't just take my word for it. Here's what real clients have achieved with my coaching programs.
+            Don't just take my word for it. Here's what real clients have
+            achieved with my coaching programs.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-row gap-10 w-full justify-center">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-card border-border">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-foreground italic">"{testimonial.content}"</p>
-                <div className="flex items-center space-x-3">
-                  <img
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full"
-                  />
-                  <div>
-                    <div className="font-semibold text-white">{testimonial.name}</div>
-                    <div className="text-sm text-foreground">{testimonial.role}</div>
-                  </div>
+            <Card key={index} className={`bg-card border-border flex-1`}>
+              <CardContent className="p-6 space-y-4 flex-col flex justify-between h-full">
+                <p className="text-foreground italic">
+                  "{testimonial.quote}"
+                </p>
+                <div className="font-semibold text-white">
+                  {testimonial.author}
                 </div>
               </CardContent>
             </Card>
@@ -76,5 +32,5 @@ export function Testimonials() {
         </div>
       </div>
     </section>
-  )
+  );
 }

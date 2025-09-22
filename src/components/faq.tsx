@@ -62,7 +62,9 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <section className="max-w-2xl mx-auto mt-12">
+    <section className="bg-background-secondary">
+      <div className="max-w-2xl mx-auto py-12">
+
       <h2 className="text-3xl font-bold text-center mb-8">
         Häufig gestellte<span className="text-primary"> Fragen</span>
       </h2>
@@ -75,6 +77,7 @@ export default function Faq() {
           </AccordionItem>
         ))}
       </Accordion>
+        </div>
     </section>
   )
 }

@@ -7,9 +7,19 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-    - label: "Content"
-      name: "content"
+    - label: "Banner"
+      name: "banner"
       file: "src/content/content.md"
       fields:
         - { label: "Title", name: "title", widget: "string", required: false}
         - { label: "Date", name: "date", widget: "datetime", required: false}
+    - label: "Testimonials"
+      name: "testimonials"
+      file: "src/content/testimonials.md"
+      fields:
+        - label: "Testimonials"
+          name: "testimonials"
+          widget: "list"
+          fields:
+            - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+            - {label: Author, name: author, widget: string }
