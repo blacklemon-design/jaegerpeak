@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="pt-16 min-h-screen flex items-center bg-gradient-to-br bg-background mt-14"
+      className="pt-16 min-h-screen flex items-center bg-gradient-to-br bg-background mt-14 lg:mt-0"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
