@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowDown } from "lucide-react"
+import Link from "next/link"
 
 export function ServicesHero() {
   return (
@@ -14,11 +15,12 @@ export function ServicesHero() {
               Egal ob du stärker, fitter oder beweglicher werden willst es ist für jeden etwas dabei.
             </p>
           </div>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary text-white px-8 py-3">
-              Starten wir mit einer Gratis Beratung!
-            </Button>
+            <Link href="/#contact" passHref>
+              <Button size="lg" className="bg-primary hover:bg-primary text-white px-8 py-3">
+                Starten wir mit einer Gratis Beratung!
+              </Button>
+            </Link>
             <Button
               size="lg"
               variant="outline"

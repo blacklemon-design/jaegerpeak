@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Hero() {
 
@@ -32,16 +33,16 @@ export function Hero() {
                 Individuelles Coaching für deinen Körper, Sport und Alltag. Für alle, die Fortschritt planen - nicht hoffen.
               </p>
             </div>
-
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary-hover text-white px-8 py-3"
-              >
-                Starte jetzt deine Transformation!
-              </Button>
+              <Link href="/#contact" passHref>
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary-hover text-white px-8 py-3"
+                >
+                  Starte jetzt deine Transformation!
+                </Button>
+              </Link>
             </div>
-
             <div className="grid grid-cols-3 gap-8 pt-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">Stärke</div>

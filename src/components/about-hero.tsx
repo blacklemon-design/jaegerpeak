@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { MapPin, Calendar, Award } from "lucide-react"
+import Link from "next/link"
 
 export function AboutHero() {
   return (
@@ -21,12 +22,13 @@ export function AboutHero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className=" bg-primary hover:bg-primary text-white px-8 py-3">
+              <Link href="/#contact" passHref>
+                <Button size="lg" className=" bg-primary hover:bg-primary text-white px-8 py-3">
                 Lass uns gemeinsam den ersten Schritt machen!
               </Button>
+              </Link>
             </div>
           </div>
-
           <div className="relative">
             <div className="relative z-10">
               <img

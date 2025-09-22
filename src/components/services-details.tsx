@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Dumbbell, Apple, Users, Video, Check, Target, Award } from "lucide-react"
+import Link from "next/link"
 
 export function ServiceDetails() {
   const services = [
@@ -75,7 +76,7 @@ export function ServiceDetails() {
       duration: "Einmalig für Analyse, Planerstellung und Einführung",
       idealFor: [
         "Mitglied vom Kraftwerk Fitness bist",
-        "Wenn du selbstständig trainierst, aber einen strukturierten Plan brauchst",      
+        "Wenn du selbstständig trainierst, aber einen strukturierten Plan brauchst",
       ],
       frequentGoals: [
         "Einen Trainingsplan, der genau auf mich und meine Ziele zugeschnitten ist",
@@ -90,7 +91,7 @@ export function ServiceDetails() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-16">
           {services.map((service, index) => (
-            <div key={service.id} className="relative">
+            <div key={service.id} className="relative" id={service.id}>
               <Card
                 className={`bg-card-dark border-card`}
               >
@@ -101,8 +102,8 @@ export function ServiceDetails() {
                   <CardTitle className="text-3xl text-white mb-2">{service.title}</CardTitle>
                   <CardDescription className="text-primary text-lg font-semibold">{service.subtitle}</CardDescription>
                   <p className="text-gray-300 mt-4 max-w-2xl mx-auto">{service.description}</p>
-                    <span className="text-4xl font-bold text-primary">{service.price}</span>
-                    <span className="text-gray-400 ml-2">{service.duration}</span>
+                  <span className="text-4xl font-bold text-primary">{service.price}</span>
+                  <span className="text-gray-400 ml-2">{service.duration}</span>
                 </CardHeader>
 
                 <CardContent className="space-y-8">
@@ -138,11 +139,12 @@ export function ServiceDetails() {
                       </div>
                     </div>
                   </div>
-
                   <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-card">
-                    <Button className="flex-1 bg-primary hover:bg-primary text-white">
-                      Lass uns starten!
-                    </Button>
+                    <Link href="/#contact" passHref className="w-full">
+                      <Button className="flex-1 bg-primary w-full hover:bg-primary text-white">
+                        Lass uns starten!
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
