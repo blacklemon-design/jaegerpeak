@@ -1,13 +1,28 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Dumbbell, Apple, Users, Video, Check, Target, Award } from "lucide-react"
-import Link from "next/link"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  Apple,
+  Award,
+  Check,
+  Dumbbell,
+  Target,
+  Users,
+  Video,
+} from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export function ServiceDetails() {
   const services = [
     {
       id: "body-shaping",
-      icon: Dumbbell,
+      iconPath: "/images/Icon_Bodyshaping.png",
       title: "Body Shaping",
       subtitle: "Muskeln aufbauen. Fett verlieren. Stark & ästhetisch aussehen",
       description:
@@ -28,9 +43,10 @@ export function ServiceDetails() {
     },
     {
       id: "athletic-performance-coaching",
-      icon: Apple,
+      iconPath: "/images/Icon_Athletik.png",
       title: "Athletic Performance Coaching",
-      subtitle: "Mehr Leistung im Sport, für dich als Einzelsportler oder auch als Team",
+      subtitle:
+        "Mehr Leistung im Sport, für dich als Einzelsportler oder auch als Team",
       description:
         "Du trainierst für Tennis, Fussball, Leichtathletik oder einen anderen Sport und willst schneller, stärker und explosiver werden? Willst du nochmals alles aus dir rausholen für den nächsten Hyrox? Hindert dich dein Körper daran, in deinem Sport den nächsten Schritt zu machen? Ich analysiere deine Bewegungsmuster, stärke deine Schwächen und entwickle ein sportartspezifisches, nachhaltiges und verletzungsvorbeugendes Athletiktraining, das dich wirklich voranbringt.",
       price: "",
@@ -48,7 +64,7 @@ export function ServiceDetails() {
     },
     {
       id: "functional-training",
-      icon: Users,
+      iconPath: "/images/Icon_Functional.png",
       title: "Functional Training",
       subtitle: "Schmerzfrei bewegen und den Alltag meistern",
       description:
@@ -71,7 +87,8 @@ export function ServiceDetails() {
       icon: Users,
       title: "Trainings Einführung/-anpassung",
       subtitle: "exklusiv für Kraftwerk Fitness Mitglieder",
-      description: "Du trainierst im Kraftwerk Fitness und willst mehr aus deinem Training herausholen? Ich analysiere deine aktuelle Situation und erstelle dir in 60 Minuten einen individuellen Trainingsplan - inklusive Einführung, aber ohne laufendes Coaching.",
+      description:
+        "Du trainierst im Kraftwerk Fitness und willst mehr aus deinem Training herausholen? Ich analysiere deine aktuelle Situation und erstelle dir in 60 Minuten einen individuellen Trainingsplan - inklusive Einführung, aber ohne laufendes Coaching.",
       price: "CHF 150",
       duration: "Einmalig für Analyse, Planerstellung. Einführung und Ernährungsinputs",
       idealFor: [
@@ -85,7 +102,7 @@ export function ServiceDetails() {
         "eine gesunde Einstellung zur Ernährung haben willst",        
       ],
     },
-  ]
+  ];
 
   return (
     <section className="pb-20 bg-background">
@@ -98,12 +115,29 @@ export function ServiceDetails() {
               >
                 <CardHeader className="text-center pb-8">
                   <div className="flex justify-center mb-4">
-                    <service.icon className="h-16 w-16 text-primary" />
+                    {service.icon
+                      ? <service.icon className="h-16 w-16 text-primary" />
+                      : (
+                        <Image
+                          height={64}
+                          width={64}
+                          src={service.iconPath}
+                          alt="athletic icon"
+                        />
+                      )}
                   </div>
-                  <CardTitle className="text-3xl text-white mb-2">{service.title}</CardTitle>
-                  <CardDescription className="text-primary text-lg font-semibold">{service.subtitle}</CardDescription>
-                  <p className="text-gray-300 mt-4 max-w-2xl mx-auto">{service.description}</p>
-                  <span className="text-4xl font-bold text-primary">{service.price}</span>
+                  <CardTitle className="text-3xl text-white mb-2">
+                    {service.title}
+                  </CardTitle>
+                  <CardDescription className="text-primary text-lg font-semibold">
+                    {service.subtitle}
+                  </CardDescription>
+                  <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
+                    {service.description}
+                  </p>
+                  <span className="text-4xl font-bold text-primary">
+                    {service.price}
+                  </span>
                   <span className="text-gray-400 ml-2">{service.duration}</span>
                 </CardHeader>
 
@@ -117,8 +151,12 @@ export function ServiceDetails() {
                         </h4>
                         <ul className="space-y-2">
                           {service.idealFor.map((ideal, idealIndex) => (
-                            <li key={idealIndex} className="text-gray-300 flex items-center">
-                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-none"></div>
+                            <li
+                              key={idealIndex}
+                              className="text-gray-300 flex items-center"
+                            >
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-none">
+                              </div>
                               {ideal}
                             </li>
                           ))}
@@ -130,9 +168,13 @@ export function ServiceDetails() {
                           Häufige Ziele meiner Kunden...
                         </h4>
                         <ul className="space-y-2">
-                          {service.frequentGoals.map((ideal, idealIndex) => (
-                            <li key={idealIndex} className="text-gray-300 flex items-center">
-                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-none"></div>
+                          {service.idealFor.map((ideal, idealIndex) => (
+                            <li
+                              key={idealIndex}
+                              className="text-gray-300 flex items-center"
+                            >
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-none">
+                              </div>
                               {ideal}
                             </li>
                           ))}
@@ -154,5 +196,5 @@ export function ServiceDetails() {
         </div>
       </div>
     </section>
-  )
+  );
 }
