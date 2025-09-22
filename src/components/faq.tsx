@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "Was kostet das Training?",
     answer:
-      "Echte und nachhaltige Veränderung entsteht nur durch konstantes Training über mehrere Monate. Deshalb biete ich Personal Coaching nur im Rahmen von mehrmonatigen Programmen an – individuell abgestimmt auf deine Ziele. Nur beim Athletiktraining gibt es auch Einzellektionen.",
+      "Jeder Mensch startet mit anderen Zielen und Voraussetzungen, darum sind meine Preise individuell. Gemeinsam legen wir fest, welches Programm für dich passt und wie intensiv wir zusammenarbeiten. So zahlst du nur für das, was du wirklich brauchst. Echte und nachhaltige Veränderung entsteht durch regelmässiges Training über mehrere Monate. Deshalb gibt es Personal Coaching nur im Rahmen mehrmonatiger Programme. Für Athletiktraining sind zusätzlich auch Einzellektionen möglich.",
   },
   {
     question: "Wo trainieren wir?",
@@ -46,7 +46,7 @@ const faqs = [
   {
     question: "Was ist, wenn ich krank bin?",
     answer:
-      "Du kannst Einheiten rechtzeitig verschieben – wie genau erklären wir beim Coaching-Vertrag. Ziel ist, dass dein Fortschritt planbar bleibt, aber auch flexibel, wenn mal etwas dazwischenkommt.",
+      "Du kannst Einheiten rechtzeitig verschieben – wie genau klären wir beim Coaching-Vertrag. Ziel ist, dass dein Fortschritt planbar bleibt, aber auch flexibel, wenn mal etwas dazwischenkommt.",
   },
   {
     question: "Kann ich auch online betreut werden?",

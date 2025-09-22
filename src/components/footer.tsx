@@ -13,7 +13,7 @@ export function Footer() {
               </Link>
             </div>
             <div className="flex space-x-4">
-              <Link href="#" className="text-foreground hover:text-primary transition-colors">
+              <Link href="https://www.instagram.com/jaegerpeak/" className="text-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </Link>
             </div>
@@ -75,9 +75,10 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Kontakt</h3>
             <ul className="space-y-2 text-foreground">
               <li><Link href={"mailto:info@jaegerpeak.ch"} className="hover:text-primary duration-300">info@jaegerpeak.ch</Link></li>
-              <li><Link href={"tel:+41 763867705"} className="hover:text-primary duration-300">+41 763867705</Link></li>
-              <li>Widnau</li>
-              <li>Schweiz</li>
+              <li>              <Link className="text-white hover:text-primary duration-300" href={"tel:+41763867705"}>+41 76 386 77 05</Link></li>
+              <Link className="text-white hover:text-primary duration-300" href={"https://maps.app.goo.gl/9ub5LKuiPHpjzZGY9"}>
+                Dipoldsau - Schweiz
+              </Link>
             </ul>
           </div>
         </div>

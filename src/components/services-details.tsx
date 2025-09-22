@@ -90,7 +90,7 @@ export function ServiceDetails() {
       description:
         "Du trainierst im Kraftwerk Fitness und willst mehr aus deinem Training herausholen? Ich analysiere deine aktuelle Situation und erstelle dir in 60 Minuten einen individuellen Trainingsplan - inklusive Einführung, aber ohne laufendes Coaching.",
       price: "CHF 150",
-      duration: "Einmalig für Analyse, Planerstellung und Einführung",
+      duration: "Einmalig für Analyse, Planerstellung. Einführung und Ernährungsinputs",
       idealFor: [
         "Mitglied vom Kraftwerk Fitness bist",
         "Wenn du selbstständig trainierst, aber einen strukturierten Plan brauchst",
@@ -99,6 +99,7 @@ export function ServiceDetails() {
         "Einen Trainingsplan, der genau auf mich und meine Ziele zugeschnitten ist",
         "Mit der richtigen Technik trainieren, um schnellstmöglich Fortschritte ohne Verletzungen zu erreichen",
         "Mit einem klaren Einstieg ins Fitness starten, ohne mich überfordert zu fühlen",
+        "eine gesunde Einstellung zur Ernährung haben willst",        
       ],
     },
   ];
