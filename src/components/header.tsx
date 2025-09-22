@@ -27,13 +27,13 @@ export function Header({bannerTitle, bannerDate}: {bannerTitle: string, bannerDa
             <Link href="/services" className="text-foreground hover:text-primary transition-colors">
               Angebote
             </Link>
-            <Link href="#testimonials" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors">
               Testimonials
             </Link>
           </nav>
 
           <div className="hidden md:flex ml-2">
-            <Button className="bg-primary hover:bg-primary-hover text-white">Kontakt</Button>
+            <Link className="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-md" href={"/#contact"}>Kontakt</Link>
           </div>
           </div>
           <div className="md:hidden">

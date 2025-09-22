@@ -23,22 +23,22 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Angebote</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-foreground hover:text-primary transition-colors">
+                <Link href="/services#body-shaping" className="text-foreground hover:text-primary transition-colors">
                   Body Shaping
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-foreground hover:text-primary transition-colors">
+                <Link href="/services#athletic-performance-coaching" className="text-foreground hover:text-primary transition-colors">
                   Athletic Performance Coaching
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-foreground hover:text-primary transition-colors">
+                <Link href="/services#functional-training" className="text-foreground hover:text-primary transition-colors">
                   Functional Training
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-foreground hover:text-primary transition-colors">
+                <Link href="/services#trainings-einführung" className="text-foreground hover:text-primary transition-colors">
                   Trainings Einführung/-anpassung
                 </Link>
               </li>
@@ -49,12 +49,12 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#about" className="text-foreground hover:text-primary transition-colors">
+                <Link href="/about" className="text-foreground hover:text-primary transition-colors">
                   Über mich
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-foreground hover:text-primary transition-colors">
+                <Link href="/services" className="text-foreground hover:text-primary transition-colors">
                   Angebote
                 </Link>
               </li>

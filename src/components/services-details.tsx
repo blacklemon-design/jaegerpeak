@@ -87,11 +87,11 @@ export function ServiceDetails() {
   ]
 
   return (
-    <section className="py-20 bg-background">
+    <section className="pb-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-16">
+        <div className="">
           {services.map((service, index) => (
-            <div key={service.id} className="relative" id={service.id}>
+            <div key={service.id} className="relative pt-16" id={service.id}>
               <Card
                 className={`bg-card-dark border-card`}
               >
