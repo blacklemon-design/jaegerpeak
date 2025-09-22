@@ -1,6 +1,7 @@
-import { Award, Users, Target, Zap, Link } from "lucide-react"
+import { Award, Users, Target, Zap } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "./ui/button"
+import Link from "next/link";
 
 export function About() {
   return (
@@ -46,13 +47,14 @@ export function About() {
                 </CardContent>
               </Card>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="w-full h-10 bg-primary hover:bg-primary-hover text-white">
-                Mehr erfahren!
-              </Button>
+            <div className="flex flex-col sm:flex-col gap-4">
+              <Link href="/about" passHref>
+                <Button className="w-full h-10 bg-primary hover:bg-primary-hover text-white">
+                  Mehr erfahen!
+                </Button>
+              </Link>
             </div>
           </div>
-
           <div className="relative">
             <img
               src="/images/über_mich.jpeg"
