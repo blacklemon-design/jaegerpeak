@@ -5,10 +5,11 @@ import Link from "next/link"
 import { Menu, X, Dumbbell } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Banner from "./banner"
+import { usePathname } from "next/navigation"
 
 export function Header({bannerTitle, bannerDate}: {bannerTitle: string, bannerDate: string}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
+  const pathname = usePathname();
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border-dark z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,13 +19,13 @@ export function Header({bannerTitle, bannerDate}: {bannerTitle: string, bannerDa
           </Link>
           <div className="flex items-center space-x-4">
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/" className={`text-foreground hover:text-primary transition-colors ${pathname === "/" ? "text-primary font-bold": ""}`}>
               Home
             </Link>
-            <Link href="/about" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/about" className={`text-foreground hover:text-primary transition-colors ${pathname === "/about" ? "text-primary font-bold": ""}`}>
               Über mich
             </Link>
-            <Link href="/services" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/services" className={`text-foreground hover:text-primary transition-colors ${pathname === "/services" ? "text-primary font-bold": ""}`}>
               Angebote
             </Link>
             <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors">

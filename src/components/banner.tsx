@@ -10,7 +10,6 @@ interface HeroProps {
 
 export default function Banner({ title, eventDate }: HeroProps) {
   const [timeLeft, setTimeLeft] = useState<string>("");
-    console.log(eventDate?.toString());
   useEffect(() => {
     if (!eventDate) return;
 
