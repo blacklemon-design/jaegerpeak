@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { MapPin, Calendar, Award } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image";
 
 export function AboutHero() {
   return (
@@ -31,11 +32,7 @@ export function AboutHero() {
           </div>
           <div className="relative">
             <div className="relative z-10">
-              <img
-                src="/images/about-pic.jpg"
-                alt="Alex Johnson - Personal Trainer"
-                className="rounded-2xl shadow-2xl"
-              />
+              <Image src={"/images/über_mich_2.jpeg"} alt={"Ramon Jäger - Personal Trainer"} width={500} height={500} className="rounded-2xl shadow-2xl"></Image>
             </div>
             <div className="absolute -top-4 -right-4 w-full h-full bg-primary/20 rounded-2xl -z-10"></div>
           </div>

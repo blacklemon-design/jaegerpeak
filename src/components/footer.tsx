@@ -13,7 +13,7 @@ export function Footer() {
               </Link>
             </div>
             <div className="flex space-x-4">
-              <Link href="#" className="text-foreground hover:text-primary transition-colors">
+              <Link href="https://www.instagram.com/jaegerpeak/" className="text-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </Link>
             </div>
