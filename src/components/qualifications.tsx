@@ -44,8 +44,7 @@ export function Qualifications() {
             Ausbildungen & <span className="text-primary">Qualifikationen</span>
           </h2>
           <p className="text-foreground text-lg max-w-2xl mx-auto">
-            I'm committed to staying current with the latest fitness and nutrition science to provide you with
-            evidence-based coaching.
+            Ich lege Wert darauf, stets auf dem neuesten Stand der Fitness- und Ernährungswissenschaft zu bleiben, um Ihnen ein faktenbasiertes Coaching zu bieten.
           </p>
         </div>
 
