@@ -74,8 +74,8 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Kontakt</h3>
             <ul className="space-y-2 text-foreground">
-              <li>info@jaegerpeak.ch</li>
-              <li>+41 763867705</li>
+              <li><Link href={"mailto:info@jaegerpeak.ch"} className="hover:text-primary duration-300">info@jaegerpeak.ch</Link></li>
+              <li><Link href={"tel:+41 763867705"} className="hover:text-primary duration-300">+41 763867705</Link></li>
               <li>Widnau</li>
               <li>Schweiz</li>
             </ul>

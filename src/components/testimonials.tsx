@@ -16,19 +16,21 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="flex flex-row gap-10 w-full justify-center">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className={`bg-card border-border flex-1`}>
-              <CardContent className="p-6 space-y-4 flex-col flex justify-between h-full">
-                <p className="text-foreground italic">
-                  "{testimonial.quote}"
-                </p>
-                <div className="font-semibold text-white">
-                  {testimonial.author}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="w-full">
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="bg-card border-border">
+                <CardContent className="p-6 space-y-4 flex flex-col justify-between h-full">
+                  <p className="text-foreground italic">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="font-semibold text-white">
+                    {testimonial.author}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
