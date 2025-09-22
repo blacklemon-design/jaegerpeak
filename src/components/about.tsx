@@ -50,7 +50,7 @@ export function About() {
             <div className="flex flex-col sm:flex-col gap-4">
               <Link href="/about" passHref>
                 <Button className="w-full h-10 bg-primary hover:bg-primary-hover text-white">
-                  Mehr erfahen!
+                  Mehr erfahren!
                 </Button>
               </Link>
             </div>
