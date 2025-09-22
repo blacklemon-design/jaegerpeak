@@ -117,7 +117,7 @@ export function ServiceDetails() {
                         <ul className="space-y-2">
                           {service.idealFor.map((ideal, idealIndex) => (
                             <li key={idealIndex} className="text-gray-300 flex items-center">
-                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-none"></div>
                               {ideal}
                             </li>
                           ))}
@@ -131,7 +131,7 @@ export function ServiceDetails() {
                         <ul className="space-y-2">
                           {service.idealFor.map((ideal, idealIndex) => (
                             <li key={idealIndex} className="text-gray-300 flex items-center">
-                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-none"></div>
                               {ideal}
                             </li>
                           ))}
