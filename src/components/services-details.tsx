@@ -73,7 +73,7 @@ export function ServiceDetails() {
       subtitle: "exklusiv für Kraftwerk Fitness Mitglieder",
       description: "Du trainierst im Kraftwerk Fitness und willst mehr aus deinem Training herausholen? Ich analysiere deine aktuelle Situation und erstelle dir in 60 Minuten einen individuellen Trainingsplan - inklusive Einführung, aber ohne laufendes Coaching.",
       price: "CHF 150",
-      duration: "Einmalig für Analyse, Planerstellung und Einführung",
+      duration: "Einmalig für Analyse, Planerstellung. Einführung und Ernährungsinputs",
       idealFor: [
         "Mitglied vom Kraftwerk Fitness bist",
         "Wenn du selbstständig trainierst, aber einen strukturierten Plan brauchst",
@@ -82,6 +82,7 @@ export function ServiceDetails() {
         "Einen Trainingsplan, der genau auf mich und meine Ziele zugeschnitten ist",
         "Mit der richtigen Technik trainieren, um schnellstmöglich Fortschritte ohne Verletzungen zu erreichen",
         "Mit einem klaren Einstieg ins Fitness starten, ohne mich überfordert zu fühlen",
+        "eine gesunde Einstellung zur Ernährung haben willst",        
       ],
     },
   ]
@@ -129,7 +130,7 @@ export function ServiceDetails() {
                           Häufige Ziele meiner Kunden...
                         </h4>
                         <ul className="space-y-2">
-                          {service.idealFor.map((ideal, idealIndex) => (
+                          {service.frequentGoals.map((ideal, idealIndex) => (
                             <li key={idealIndex} className="text-gray-300 flex items-center">
                               <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-none"></div>
                               {ideal}

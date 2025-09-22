@@ -29,7 +29,7 @@ export function PersonalStory() {
             </Card>
             <Card className="bg-card border-card">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-4">Meine <span className="text-primary">Mission</span></h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Meine <span className="text-primary">Philosophie</span></h3>
                 <p className="text-foreground leading-relaxed mb-4">
                   Gesundheit steht bei mir an erster Stelle. Denn was bringt die stärkste Leistung, wenn sie auf Kosten des Körpers geht? Deswegen arbeite ich nach dem Healthy Performance Konzept.
                   Mein Ansatz beginnt immer mit einem stabilen Fundament:
