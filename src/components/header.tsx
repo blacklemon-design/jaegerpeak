@@ -28,9 +28,9 @@ export function Header({bannerTitle, bannerDate}: {bannerTitle: string, bannerDa
             <Link href="/services" className={`text-foreground hover:text-primary transition-colors ${pathname === "/services" ? "text-primary font-bold": ""}`}>
               Angebote
             </Link>
-            <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors">
-              Testimonials
-            </Link>
+            {/** <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors">
+              Bewertungen
+            </Link>*/}
           </nav>
 
           <div className="hidden md:flex ml-2">
