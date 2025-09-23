@@ -46,11 +46,10 @@ export function AboutHero() {
             </div>
           </div>
           <div className="relative">
-            <Image
+            <img
               src="/images/über_mich_2.jpeg"
               alt="Ramon Jäger - Personal Trainer"
-              fill
-              className="object-contain"
+              className="object-contain rounded-2xl"
             />
           </div>
         </div>
