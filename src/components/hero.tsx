@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Hero() {
-
   return (
     <section
       id="home"
       className="pt-16 min-h-screen flex items-center bg-gradient-to-br bg-background mt-14 lg:mt-0"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+        <div className="grid grid-cols-2 gap-12">
+          <div className="space-y-8 w-full lg:col-span-1 col-span-2">
             <div className="space-y-4">
               {
                 /*}
@@ -24,13 +24,14 @@ export function Hero() {
               </div>
               */
               }
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Fitness,
-                <span className="text-primary"> Performance</span> {" "}
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight break-normal">
+                Fitness,{" "}
+                <span className="text-primary">Performance</span>{" "}
                 Functionality
               </h1>
               <p className="text-xl text-foreground max-w-2xl">
-                Individuelles Coaching für deinen Körper, Sport und Alltag. Für alle, die Fortschritt planen - nicht hoffen.
+                Individuelles Coaching für deinen Körper, Sport und Alltag. Für
+                alle, die Fortschritt planen - nicht hoffen.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -59,16 +60,23 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative z-10">
-              <img
+          <div className="relative lg:col-span-1 col-span-2 max-h-160 lg:h-full h-100 sm:h-120 md:h-140 w-2/3 md:w-1/2 lg:w-full mx-auto">
+            {
+              /* <img
                 src="/images/ramon-hero.png"
                 alt="Athletic fitness coach in dynamic jumping pose"
                 className="w-auto max-h-160 obeject-cover mx-auto"
-              />
-            </div>
-            <div className="absolute -top-4 -right-4 w-full h-full bg-primary/20 rounded-2xl -z-10">
-            </div>
+              /> */
+            }
+            <Image
+              src={"/images/ramon-hero_cut.webp"}
+              alt="Athletic fitness coach in dynamic jumping pose"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <div className="absolute -top-4 -right-4  h-full bg-primary/20 rounded-2xl -z-10 w-full">
           </div>
         </div>
       </div>
