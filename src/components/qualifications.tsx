@@ -43,10 +43,6 @@ export function Qualifications() {
           <h2 className="text-3xl md:text-4xl font-bold">
             Ausbildungen & <span className="text-primary">Qualifikationen</span>
           </h2>
-          <p className="text-foreground text-lg max-w-2xl mx-auto">
-            I'm committed to staying current with the latest fitness and nutrition science to provide you with
-            evidence-based coaching.
-          </p>
         </div>
 
         <div className="space-y-16">
