@@ -21,14 +21,16 @@ export function ServicesHero() {
                 Starten wir mit einer kostenloser Beratung!
               </Button>
             </Link>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-card text-white hover:bg-card-dark px-8 py-3 bg-transparent"
-            >
-              <ArrowDown className="h-5 w-5 mr-2" />
-              Finde das beste für dich
-            </Button>
+            <Link href="/services#body-shaping" passHref>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-card text-white hover:bg-card-dark px-8 py-3 bg-transparent"
+              >
+                <ArrowDown className="h-5 w-5 mr-2" />
+                Finde das Beste für dich
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
