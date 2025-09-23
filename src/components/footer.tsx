@@ -77,7 +77,7 @@ export function Footer() {
               <li><Link href={"mailto:info@jaegerpeak.ch"} className="hover:text-primary duration-300">info@jaegerpeak.ch</Link></li>
               <li>              <Link className="text-white hover:text-primary duration-300" href={"tel:+41763867705"}>+41 76 386 77 05</Link></li>
               <Link className="text-white hover:text-primary duration-300" href={"https://maps.app.goo.gl/9ub5LKuiPHpjzZGY9"}>
-                Dipoldsau - Schweiz
+                Diepoldsau - Schweiz
               </Link>
             </ul>
           </div>

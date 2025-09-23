@@ -31,7 +31,7 @@ export function Contact() {
             <div className="flex items-center space-x-4">
               <MapPin className="h-5 w-5 text-primary" />
               <Link className="text-white hover:text-primary duration-300" href={"https://maps.app.goo.gl/9ub5LKuiPHpjzZGY9"}>
-                Dipoldsau - Schweiz
+                Diepoldsau - Schweiz
               </Link>
             </div>
             <div className="flex items-center space-x-4">
