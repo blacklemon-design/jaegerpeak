@@ -12,13 +12,13 @@ export function ServicesHero() {
               Meine <span className="text-primary">Coaching Angebote</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Egal ob du stärker, fitter oder beweglicher werden willst es ist für jeden etwas dabei.
+              Egal ob du stärker, fitter oder beweglicher werden willst, es ist für jeden etwas dabei.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/#contact" passHref>
               <Button size="lg" className="bg-primary hover:bg-primary text-white px-8 py-3">
-                Starten wir mit einer Gratis Beratung!
+                Starten wir mit einer Kostenloser Beratung!
               </Button>
             </Link>
             <Button
