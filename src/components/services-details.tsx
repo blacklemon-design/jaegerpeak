@@ -168,14 +168,14 @@ export function ServiceDetails() {
                           Häufige Ziele meiner Kunden...
                         </h4>
                         <ul className="space-y-2">
-                          {service.idealFor.map((ideal, idealIndex) => (
+                        {service.frequentGoals.map((frequent, frequentIndex) => (
                             <li
-                              key={idealIndex}
+                              key={frequentIndex}
                               className="text-gray-300 flex items-center"
                             >
                               <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-none">
                               </div>
-                              {ideal}
+                              {frequent}
                             </li>
                           ))}
                         </ul>
