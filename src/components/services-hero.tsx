@@ -18,7 +18,7 @@ export function ServicesHero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/#contact" passHref>
               <Button size="lg" className="bg-primary hover:bg-primary text-white px-8 py-3">
-                Starten wir mit einer Kostenloser Beratung!
+                Starten wir mit einer kostenloser Beratung!
               </Button>
             </Link>
             <Button
