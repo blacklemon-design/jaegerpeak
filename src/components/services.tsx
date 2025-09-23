@@ -8,12 +8,13 @@ import {
 import { Button } from "@/components/ui/button";
 import { Apple, Dumbbell, Users, Video } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Services() {
   const services = [
     {
       id: "body-shaping",
-      icon: Dumbbell,
+      iconPath: "/images/Icon_Bodyshaping.png",
       title: "Body Shaping",
       subtitle: "Muskeln aufbauen. Fett verlieren. Stark & ästhetisch aussehen",
       idealFor: [
@@ -24,7 +25,7 @@ export function Services() {
     },
     {
       id: "athletic-performance-coaching",
-      icon: Apple,
+      iconPath: "/images/Icon_Athletik.png",
       title: "Athletic Performance Coaching",
       subtitle:
         "Mehr Leistung im Sport, für dich als Einzelsportler oder auch als Team",
@@ -36,7 +37,7 @@ export function Services() {
     },
     {
       id: "functional-training",
-      icon: Users,
+      iconPath: "/images/Icon_Functional.png",
       title: "Functional Training",
       subtitle: "Schmerzfrei bewegen und den Alltag meistern",
       idealFor: [
@@ -47,7 +48,7 @@ export function Services() {
     },
     {
       id: "trainings-einführung",
-      icon: Users,
+      iconPath: "/images/Icon_Trainingsanpassung.png",
       title: "Trainingseinführung/ -anpassung",
       subtitle: "exklusiv für Kraftwerk Fitness Mitglieder",
       idealFor: [
@@ -78,7 +79,14 @@ export function Services() {
               className="bg-card-dark border-border hover:border-primary transition-colors"
             >
               <CardHeader className="text-center">
-                <service.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                <div className="mb-4 mx-auto">
+                  <Image
+                    height={48}
+                    width={48}
+                    src={service.iconPath}
+                    alt="athletic icon"
+                  />
+                </div>
                 <CardTitle className="text-white">{service.title}</CardTitle>
                 <CardDescription className="text-foreground">
                   {service.subtitle}
@@ -95,7 +103,7 @@ export function Services() {
                       </div>
                       <p>
                         {feature}
-                        </p>
+                      </p>
                     </li>
                   ))}
                 </ul>

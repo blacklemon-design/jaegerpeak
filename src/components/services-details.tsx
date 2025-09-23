@@ -84,7 +84,7 @@ export function ServiceDetails() {
     },
     {
       id: "trainings-einführung",
-      icon: Users,
+      iconPath: "/images/Icon_Trainingsanpassung.png",
       title: "Trainings Einführung/-anpassung",
       subtitle: "exklusiv für Kraftwerk Fitness Mitglieder",
       description:
@@ -115,16 +115,12 @@ export function ServiceDetails() {
               >
                 <CardHeader className="text-center pb-8">
                   <div className="flex justify-center mb-4">
-                    {service.icon
-                      ? <service.icon className="h-16 w-16 text-primary" />
-                      : (
-                        <Image
+                    <Image
                           height={64}
                           width={64}
                           src={service.iconPath}
                           alt="athletic icon"
                         />
-                      )}
                   </div>
                   <CardTitle className="text-3xl text-white mb-2">
                     {service.title}
