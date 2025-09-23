@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "Wo trainieren wir?",
     answer:
-      "Das hängt von deinem Ziel ab. Je nach Training entweder im Kraftwerk Fitness in Heerbrugg, Auf der 400m-Bahn in Balgach oder Auf dem Tennisplatz (TC Widnau oder nach Absprache).",
+      "Das hängt von deinem Ziel ab. Je nach Training entweder im Kraftwerk Fitness in Heerbrugg, auf der 400m-Bahn in Balgach oder auf dem Tennisplatz (TC Widnau oder nach Absprache).",
   },
   {
     question: "Wie oft muss ich trainieren, damit sich was ändert?",
@@ -41,7 +41,7 @@ const faqs = [
   {
     question: "Trainierst du auch Frauen? Wie alt muss ich sein?",
     answer:
-      "Ja klar. Ich trainiere Frauen und Männer, je nach Ziel ob für gezielten Muskelaufbau, Straffung oder funktionelles Training zur Schmerzprävention. Beim Alter mache ich keine Einschränkungen. Grundsätzlich liegt meine Zielgruppe zwischen 12 und 60 Jahren. Im kostenlosen Beratungsgespräch klären wir gemeinsam ab, ob eine Zusammenarbeit sinnvoll und zielführend ist.",
+      "Ja klar. Ich trainiere Frauen und Männer, je nach Ziel; ob für gezielten Muskelaufbau, Straffung oder funktionelles Training zur Schmerzprävention. Beim Alter mache ich keine Einschränkungen. Grundsätzlich liegt meine Zielgruppe zwischen 12 und 60 Jahren. Im kostenlosen Beratungsgespräch klären wir gemeinsam ab, ob eine Zusammenarbeit sinnvoll und zielführend ist.",
   },
   {
     question: "Was ist, wenn ich krank bin?",
