@@ -76,8 +76,7 @@ export function Hero() {
               priority
             />
           </div>
-          <div className="absolute -top-4 -right-4  h-full bg-primary/20 rounded-2xl -z-10 w-full">
-          </div>
+ 
         </div>
       </div>
     </section>
