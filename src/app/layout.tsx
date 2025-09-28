@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jäger Peak - Fitness",
-  description: "Individuelles Coaching für deinen Körper, Sport und Alltag. Für alle, die Fortschritt planen - nicht hoffen.",
+  title: "JÄGER PEAK Coaching - Fitness, Athletik, Gesundheit",
+  description: "Dein zertifizierter Partner für Fitness, Athletik und Gesundheit. Personal Training und Coaching in Widnau und Umgebung.",
   alternates: {
     canonical: "https://jaegerpeak.ch"
   }
