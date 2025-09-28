@@ -16,6 +16,9 @@ export function Footer() {
               <Link href="https://www.instagram.com/jaegerpeak/" className="text-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </Link>
+              <Link href="https://www.linkedin.com/in/ramon-j%C3%A4ger-05661a23a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-foreground hover:text-primary transition-colors">
+                <Linkedin className="h-5 w-5" />
+              </Link>
             </div>
           </div>
 
@@ -39,7 +42,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/services#trainings-einführung" className="text-foreground hover:text-primary transition-colors">
-                  Trainings Einführung/-anpassung
+                  Trainingseinführung/ -anpassung
                 </Link>
               </li>
             </ul>
