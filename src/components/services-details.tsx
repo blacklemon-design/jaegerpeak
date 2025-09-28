@@ -93,16 +93,15 @@ export function ServiceDetails() {
       duration: "Einmalig für Analyse, Planerstellung, Einführung und Ernährungsinputs",
       idealFor: [
         "Mitglied vom Kraftwerk Fitness bist",
-        "selbstständig trainierst, aber einen strukturierten Plan brauchst",
-        "eine gesunde Einstellung zur Ernährung haben willst",
-        "Mühe mit Zu- oder Abnehmen hast",
+        "Selbstständig trainierst, aber einen strukturierten Plan brauchst",
+        "Eine gesunde Einstellung zur Ernährung haben willst",
+        "Mühe mit Zu- oder Abnehmen hast",
         
       ],
       frequentGoals: [
         "Einen Trainingsplan, der genau auf mich und meine Ziele zugeschnitten ist",
         "Mit der richtigen Technik trainieren, um schnellstmöglich Fortschritte ohne Verletzungen zu erreichen",
         "Mit einem klaren Einstieg ins Fitness starten, ohne mich überfordert zu fühlen",
-                
       ],
     },
   ];
