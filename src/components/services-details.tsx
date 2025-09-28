@@ -96,7 +96,7 @@ export function ServiceDetails() {
         "Selbstständig trainierst, aber einen strukturierten Plan brauchst",
         "Eine gesunde Einstellung zur Ernährung haben willst",
         "Mühe mit Zu- oder Abnehmen hast",
-        
+
       ],
       frequentGoals: [
         "Einen Trainingsplan, der genau auf mich und meine Ziele zugeschnitten ist",
@@ -118,11 +118,11 @@ export function ServiceDetails() {
                 <CardHeader className="text-center pb-8">
                   <div className="flex justify-center mb-4">
                     <Image
-                          height={64}
-                          width={64}
-                          src={service.iconPath}
-                          alt="athletic icon"
-                        />
+                      height={64}
+                      width={64}
+                      src={service.iconPath}
+                      alt="athletic icon"
+                    />
                   </div>
                   <CardTitle className="text-3xl text-white mb-2">
                     {service.title}
@@ -144,7 +144,14 @@ export function ServiceDetails() {
                     <div className="space-y-6 flex flex-row space-x-20">
                       <div>
                         <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                          <Users className="h-5 w-5 text-primary mr-2" />
+                          <div className="flex justify-center mr-2 items-center">
+                            <Image
+                              height={26}
+                              width={26}
+                              src={"/images/Icon_haufigeZiele.png"}
+                              alt="athletic icon"
+                            />
+                          </div>
                           Ideal für dich wenn du...
                         </h4>
                         <ul className="space-y-2">
@@ -162,11 +169,18 @@ export function ServiceDetails() {
                       </div>
                       <div>
                         <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                          <Users className="h-5 w-5 text-primary mr-2" />
+                          <div className="flex justify-center mr-2 items-center">
+                            <Image
+                              height={26}
+                              width={26}
+                              src={"/images/Icon_idealfuerdich.png"}
+                              alt="athletic icon"
+                            />
+                          </div>
                           Häufige Ziele meiner Kunden...
                         </h4>
                         <ul className="space-y-2">
-                        {service.frequentGoals.map((frequent, frequentIndex) => (
+                          {service.frequentGoals.map((frequent, frequentIndex) => (
                             <li
                               key={frequentIndex}
                               className="text-gray-300 flex items-center"
