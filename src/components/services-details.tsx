@@ -148,7 +148,7 @@ export function ServiceDetails() {
                             <Image
                               height={26}
                               width={26}
-                              src={"/images/Icon_haufigeZiele.png"}
+                              src={"/images/Icon_idealfuerdich.png"}
                               alt="athletic icon"
                             />
                           </div>
@@ -173,7 +173,7 @@ export function ServiceDetails() {
                             <Image
                               height={26}
                               width={26}
-                              src={"/images/Icon_idealfuerdich.png"}
+                              src={"/images/Icon_haufigeZiele.png"}
                               alt="athletic icon"
                             />
                           </div>
