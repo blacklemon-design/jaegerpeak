@@ -2,8 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Award, Calendar, MapPin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
+import { Locale } from "next-intl";
 
-export function AboutHero() {
+export async function AboutHero({ lang }: { lang: Locale }) {
+      const t = await getTranslations({ namespace: "About", locale: lang });
+
   return (
     <section className="pt-16 min-h-screen flex items-center bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,7 +15,7 @@ export function AboutHero() {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                LERNE <span className="text-primary">MICH KENNEN!</span>
+                {t("title1")}<span className="text-primary">{t("title2")}</span>
               </h1>
               <p className="text-xl text-foreground">
                 Experte für Athletik, Leistung & nachhaltige Fitness
