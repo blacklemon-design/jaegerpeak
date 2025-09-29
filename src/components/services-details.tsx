@@ -88,8 +88,8 @@ export function ServiceDetails() {
       title: "Trainingseinführung/ -anpassung",
       subtitle: "exklusiv für Kraftwerk Fitness Mitglieder",
       description:
-        "Du trainierst im Kraftwerk Fitness und willst mehr aus deinem Training herausholen? Ich analysiere deine aktuelle Situation und erstelle dir in 60 Minuten einen individuellen Trainingsplan - inklusive Einführung, aber ohne laufendes Coaching.",
-      price: "CHF 150",
+        "Du trainierst im Kraftwerk Fitness und willst mehr aus deinem Training herausholen? Ich analysiere deine aktuelle Situation und erstelle dir einen individuellen Trainingsplan für die nächsten 3 Monate - inklusive Einführung, aber ohne laufendes Coaching.",
+      price: "CHF 180",
       duration: "Einmalig für Analyse, Planerstellung, Einführung und Ernährungsinputs",
       idealFor: [
         "Mitglied vom Kraftwerk Fitness bist",
