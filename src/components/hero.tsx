@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
+import { Locale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 
-export function Hero() {
+export async function Hero({ lang }: { lang: Locale }) {
+    const t = await getTranslations({ namespace: "Hero", locale: lang });
+
   return (
     <section
       id="home"
@@ -12,6 +16,7 @@ export function Hero() {
         <div className="grid grid-cols-2 gap-12">
           <div className="space-y-8 w-full lg:col-span-1 col-span-2">
             <div className="space-y-4">
+              {t("title")}
               {
                 /*}
               <div className="flex items-center space-x-2">

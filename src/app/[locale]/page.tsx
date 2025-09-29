@@ -19,14 +19,12 @@ export default async function Home(props: {
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await props.params;
-    const t = await getTranslations({ namespace: "Hero", locale: lang });
 
   return (
     <div className="min-h-screen bg-background text-white">
       <Header bannerTitle={data.title} bannerDate={data.date} />
       <main>
-        <h1 className="text-4xl">{t("title")}</h1>
-        <Hero />
+        <Hero lang={lang}/>
         <LocaleSwitcher />
         <About />
         <Services />
