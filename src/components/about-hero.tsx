@@ -9,9 +9,9 @@ export async function AboutHero({ lang }: { lang: Locale }) {
       const t = await getTranslations({ namespace: "About", locale: lang });
 
   return (
-    <section className="pt-16 min-h-screen flex items-center bg-background">
+    <section className="pt-24 lg:pt-16 min-h-screen flex items-center bg-background pb-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -38,18 +38,20 @@ export async function AboutHero({ lang }: { lang: Locale }) {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="w-full">
               <Link href="/#contact" passHref>
                 <Button
                   size="lg"
-                  className=" bg-primary hover:bg-primary text-white px-8 py-3"
+                  className="w-full bg-primary hover:bg-primary text-white px-8 py-3 whitespace-normal text-center"
                 >
+                  <p className="">
                   Lass uns gemeinsam den ersten Schritt machen!
+                  </p>
                 </Button>
               </Link>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative w-full">
             <img
               src="/images/über_mich_2.jpeg"
               alt="Ramon Jäger - Personal Trainer"

@@ -17,8 +17,8 @@ export function Header({bannerTitle, bannerDate}: {bannerTitle: string, bannerDa
           <Link className="flex items-center space-x-2" href="/">
             <img src="/logo_horizontal_white.svg" alt="logo" className="h-10" />
           </Link>
-          <div className="flex items-center space-x-4">
-          <nav className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
+          <nav className="flex items-center space-x-8">
             <Link href="/" className={`text-foreground hover:text-primary transition-colors ${pathname === "/" ? "text-primary font-bold": ""}`}>
               Home
             </Link>
