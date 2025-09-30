@@ -141,8 +141,8 @@ export function ServiceDetails() {
 
                 <CardContent className="space-y-8">
                   <div className="flex justify-center">
-                    <div className="space-y-6 flex flex-row space-x-20">
-                      <div>
+                    <div className="space-y-6 flex flex-col md:flex-row space-x-20">
+                      <div className="w-full">
                         <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
                           <Users className="h-5 w-5 text-primary mr-2" />
                           Ideal für dich wenn du...
@@ -160,7 +160,7 @@ export function ServiceDetails() {
                           ))}
                         </ul>
                       </div>
-                      <div>
+                      <div className="w-full">
                         <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
                           <Users className="h-5 w-5 text-primary mr-2" />
                           Häufige Ziele meiner Kunden...

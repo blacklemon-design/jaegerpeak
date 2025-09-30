@@ -17,7 +17,7 @@ export function ServicesHero() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/#contact" passHref>
-              <Button size="lg" className="bg-primary hover:bg-primary text-white px-8 py-3">
+              <Button size="lg" className="bg-primary hover:bg-primary text-white px-8 py-3 w-full whitespace-normal text-center">
                 Starten wir mit einer kostenloser Beratung!
               </Button>
             </Link>
@@ -25,7 +25,7 @@ export function ServicesHero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-card text-white hover:bg-card-dark px-8 py-3 bg-transparent"
+                className="border-card text-white hover:bg-card-dark px-8 py-3 bg-transparent max-w-full whitespace-normal text-center"
               >
                 <ArrowDown className="h-5 w-5 mr-2" />
                 Finde das Beste für dich
