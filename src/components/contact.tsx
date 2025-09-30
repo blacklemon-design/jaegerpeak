@@ -21,7 +21,7 @@ export function Contact() {
           </h2>
         </div>
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          <div className="space-y-6 p-10">
+          <div className="space-y-6 sm:p-10">
             <div className="mb-10">
               <h3 className="text-2xl font-semibold mb-6">Mach den ersten Schritt!</h3>
               <p className="text-foreground text-lg max-w-2xl mx-auto">

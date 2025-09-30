@@ -21,7 +21,7 @@ export function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
               <Card className="bg-card border-border m-2">
                 <CardContent className="p-2 text-center">
                   <Award className="h-8 w-8 text-primary mx-auto mb-2" />
