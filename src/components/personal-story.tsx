@@ -1,6 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card"
+import { Locale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export function PersonalStory() {
+export async function PersonalStory({ lang }: { lang: Locale }) {
+      const t = await getTranslations({ namespace: "About", locale: lang });
+
   return (
     <section className="py-20 bg-background-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

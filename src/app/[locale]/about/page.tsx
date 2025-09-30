@@ -17,12 +17,8 @@ export default async function AboutPage(props: {
       <Header bannerTitle={data.title} bannerDate={data.date} />
       <main>
         <AboutHero lang={lang}/>
-        <PersonalStory />
+        <PersonalStory lang={lang}/>
         <Qualifications />
-        {/*<TrainingPhilosophy />
-        <PersonalJourney />
-        <WhyICoach />
-        <PersonalLife />*/}
       </main>
       <Footer />
     </div>
