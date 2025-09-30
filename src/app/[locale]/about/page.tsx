@@ -20,7 +20,7 @@ export default async function AboutPage(props: {
         <PersonalStory lang={lang}/>
         <Qualifications />
       </main>
-      <Footer />
+      <Footer lang={lang}/>
     </div>
   )
 }
