@@ -1,7 +1,11 @@
 import Link from "next/link"
 import { Dumbbell, Facebook, Instagram, Twitter, Youtube, Heart, Linkedin } from "lucide-react"
+import LocaleSwitcher from "./LocaleSwitcher"
+import { getTranslations } from "next-intl/server";
+import { Locale } from "next-intl";
 
-export function Footer() {
+export async function Footer({ lang }: { lang: Locale }) {
+      const t = await getTranslations({ namespace: "About", locale: lang });
   return (
     <footer className="bg-background-secondary border-t border-border-dark">
       <div className="container mx-auto pb-0 px-4 sm:px-6 lg:px-8 py-12">
@@ -20,6 +24,7 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </Link>
             </div>
+            <LocaleSwitcher lang={lang} />
           </div>
 
           <div>

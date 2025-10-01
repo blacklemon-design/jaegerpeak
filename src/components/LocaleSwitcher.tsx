@@ -1,9 +1,11 @@
 "use client";
 
+import { Locale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { useRouter, usePathname } from "../i18n/navigation";
 import Flag from "react-world-flags";
 
-const LocaleSwitcher = () => {
+const LocaleSwitcher = ({ lang }: { lang: Locale }) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -15,7 +17,7 @@ const LocaleSwitcher = () => {
   return (
     <div className="flex space-x-4 items-center">
       <button type="button" onClick={() => handleLocaleChange("de")}>
-        <Flag code="DE" style={{ height: 24 }} className="rounded-xs" />
+        <Flag code="DE" style={{ height: 24 }} className={`rounded-xs ${lang === "" ? "opacity-0": "opacity-50"}`} />
       </button>
       <button type="button" onClick={() => handleLocaleChange("en")}>
         <Flag code="GB" style={{ height: 24 }} className="rounded-xs" />

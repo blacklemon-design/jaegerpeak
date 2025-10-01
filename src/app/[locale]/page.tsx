@@ -25,7 +25,7 @@ export default async function Home(props: {
       <Header bannerTitle={data.title} bannerDate={data.date} />
       <main>
         <Hero lang={lang}/>
-        <LocaleSwitcher />
+        <LocaleSwitcher lang={lang}/>
         <About lang={lang}/>
         <Services lang={lang}/>
         {/** <Testimonials />*/}
@@ -33,7 +33,7 @@ export default async function Home(props: {
         <Faq lang={lang}/>
         <Contact lang={lang}/>
       </main>
-      <Footer />
+      <Footer lang={lang}/>
     </div>
   );
 }
