@@ -1,7 +1,5 @@
 "use client";
 
-import type React from "react";
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,7 +20,19 @@ enum EmailStatus {
   Error,
 }
 
-export default function ContactForm() {
+type Labels = {
+  name: string;
+  nameplaceholder: string;
+  email: string;
+  emailplaceholder: string;
+  message: string;
+  messageplaceholder: string;
+  send: string;
+  success: string;
+  error: string;
+};
+
+export default function ContactForm({ labels }: { labels: Labels }) {
   const { register, handleSubmit } = useForm<FormData>();
   const [emailStatus, setEmailStatus] = useState<EmailStatus>(EmailStatus.Idle);
 
@@ -30,56 +40,47 @@ export default function ContactForm() {
     console.log("Form submitted:", data);
     setEmailStatus(EmailStatus.Pending);
     const success = await sendEmail(data);
-    if (success) {
-      setEmailStatus(EmailStatus.Success);
-    } else {
-      setEmailStatus(EmailStatus.Error);
-    }
+    setEmailStatus(success ? EmailStatus.Success : EmailStatus.Error);
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className="rounded-lg"
-    >
+    <form onSubmit={handleSubmit(onSubmit)} className="rounded-lg">
       <div className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-1">
-            Name
+            {labels.name}
           </label>
           <Input
             id="name"
             {...register("name", { required: true })}
-            placeholder="Dein Name"
+            placeholder={labels.nameplaceholder}
             required
             className="bg-background"
           />
         </div>
 
         <div>
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-1">
-              Email
-            </label>
-            <Input
-              id="email"
-              type="email"
-              {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
-              placeholder="Deine E-Mail"
-              required
-              className="bg-background"
-            />
-          </div>
+          <label htmlFor="email" className="block text-sm font-medium mb-1">
+            {labels.email}
+          </label>
+          <Input
+            id="email"
+            type="email"
+            {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
+            placeholder={labels.emailplaceholder}
+            required
+            className="bg-background"
+          />
         </div>
 
         <div>
           <label htmlFor="message" className="block text-sm font-medium mb-1">
-            Wie kann ich dir helfen?
+            {labels.message}
           </label>
           <Textarea
             id="message"
             {...register("message", { required: true })}
-            placeholder="Deine Nachricht"
+            placeholder={labels.messageplaceholder}
             rows={5}
             required
             className="bg-background"
@@ -91,20 +92,18 @@ export default function ContactForm() {
         type="submit"
         className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mt-8"
       >
-        Absenden
+        {labels.send}
       </Button>
-      {emailStatus == EmailStatus.Pending ? (
-        <div className="flex flex-row justify-center">
-        <div className="h-5 w-5 animate-spin rounded-full border-2 border-primary border-t-transparent" />
 
+      {emailStatus === EmailStatus.Pending ? (
+        <div className="flex flex-row justify-center mt-2">
+          <div className="h-5 w-5 animate-spin rounded-full border-2 border-primary border-t-transparent" />
         </div>
-      ) : emailStatus == EmailStatus.Success ? (
-        <p className="text-green-500">Email wurde erfolgreich gesendet</p>
-      ) : emailStatus == EmailStatus.Error ? (
-        <p className="text-red-500">Es ist ein Fehler aufgetreten</p>
-      ) : (
-        <></>
-      )}
+      ) : emailStatus === EmailStatus.Success ? (
+        <p className="text-green-500 mt-2">{labels.success}</p>
+      ) : emailStatus === EmailStatus.Error ? (
+        <p className="text-red-500 mt-2">{labels.error}</p>
+      ) : null}
     </form>
   );
 }

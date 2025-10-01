@@ -35,8 +35,7 @@ export async function Hero({ lang }: { lang: Locale }) {
                 Functionality
               </h1>
               <p className="text-xl text-foreground max-w-2xl">
-                Individuelles Coaching für deinen Körper, Sport und Alltag. Für
-                alle, die Fortschritt planen - nicht hoffen.
+                {t("htext")}
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -45,22 +44,22 @@ export async function Hero({ lang }: { lang: Locale }) {
                   size="lg"
                   className="bg-primary hover:bg-primary-hover text-white px-8 py-3"
                 >
-                  Starte jetzt deine Transformation!
+                  {t("hbutton")}
                 </Button>
               </Link>
             </div>
             <div className="grid-cols-3 gap-8 pt-8 hidden md:grid">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">Stärke</div>
-                <div className="text-foreground text-xl">aufbauen</div>
+                <div className="text-3xl font-bold text-primary">{t("hpoint1_1")}</div>
+                <div className="text-foreground text-xl">{t("hpoint1_2")}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">Leistung</div>
-                <div className="text-foreground text-xl">steigern</div>
+                <div className="text-3xl font-bold text-primary">{t("hpoint2_1")}</div>
+                <div className="text-foreground text-xl">{t("hpoint2_2")}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">Gesund</div>
-                <div className="text-foreground text-xl">bleiben</div>
+                <div className="text-3xl font-bold text-primary">{t("hpoint3_1")}</div>
+                <div className="text-foreground text-xl">{t("hpoint3_2")}</div>
               </div>
             </div>
           </div>

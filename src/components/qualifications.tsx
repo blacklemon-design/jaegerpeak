@@ -1,30 +1,33 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Award, BookOpen, Users, Target } from "lucide-react"
+import { Locale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export function Qualifications() {
+export async function Qualifications({ lang }: { lang: Locale }) {
+      const t = await getTranslations({ namespace: "About", locale: lang });
   const certifications = [
     {
-      title: "Fitness Trainer mit SAFS Fachausweis ",
+      title: t("c1_title"),
       organization: "Swiss Academy of Fitness and sports (SAFS)",
-      year: "April 2025",
+      year: t("c1_year"),
       status: "finished",
     },
     {
-      title: "Functional Trainer",
+      title: t("c2_title"),
       organization: "SAFS",
-      year: "Juli 2025",
+      year: t("c2_year"),
       status: "finished",
     },
     {
-      title: "Performance Trainer",
+      title: t("c3_title"),
       organization: "SAFS",
-      year: "August 2025",
+      year: t("c3_year"),
       status: "finished",
     },
     {
-      title: "Athletik Performance Trainer",
+      title: t("c4_title"),
       organization: "SAFS",
-      year: "",
+      year: t("c4_year"),
       status: "running",
     },
   ]
@@ -41,14 +44,14 @@ export function Qualifications() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Ausbildungen & <span className="text-primary">Qualifikationen</span>
+            {t("qheader1")} <span className="text-primary">{t("qheader2")}</span>
           </h2>
         </div>
 
         <div className="space-y-16">
           {/* Certifications */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-8 text-center">Meine Zertifizierungen</h3>
+            <h3 className="text-2xl font-bold text-white mb-8 text-center">{t("qsubtitle")}</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {certifications.map((cert, index) => (
                 <Card key={index} className="bg-card-dark border-border">
@@ -62,8 +65,8 @@ export function Qualifications() {
                     
                     <p className="text-gray-400 text-sm mt-1">
                       {cert.status === "running"
-                        ? "Noch laufend …"
-                        : `Abgeschlossen: ${cert.year}`}
+                        ? t("status2")
+                        : t("status1") + `: ${cert.year}`}
                     </p>
                   </CardContent>
                 </Card>

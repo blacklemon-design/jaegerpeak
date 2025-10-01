@@ -15,26 +15,13 @@ export async function AboutHero({ lang }: { lang: Locale }) {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                {t("title1")}<span className="text-primary">{t("title2")}</span>
+                {t("htitle1")}<span className="text-primary">{t("htitle2")}</span>
               </h1>
               <p className="text-xl text-foreground">
-                Experte für Athletik, Leistung & nachhaltige Fitness
+                {t("hsubtitle")}
               </p>
               <p className="text-lg text-foreground leading-relaxed">
-                Mein Name ist Ramon Jäger, ich bin Jahrgang 2000 und seit meiner
-                Kindheit sportlich aktiv. Bereits mit vier Jahren begann ich
-                beim FC Widnau Fussball zu spielen und entdeckte dabei meine
-                Begeisterung für Spielsportarten. Mit zwölf wechselte ich zum
-                Tennis, weil ich merkte: Ich blühe in einer Sportart auf, in der
-                allein meine eigene Leistung über Sieg oder Niederlage
-                entscheidet. Mit 19 Jahren begann ich parallel zu meinem
-                Maschinenbaustudium mit Krafttraining im Fitnessstudio. Die
-                sichtbaren Fortschritte über die folgenden sechs Jahre erfüllten
-                mich mit Stolz und weckten den Wunsch, mein Wissen
-                weiterzugeben. Diesen Weg verfolge ich heute professionell. Im
-                April 2025 schloss ich die Ausbildung zum Fitnesstrainer mit
-                SAFS-Fachausweis ab und bildete mich danach zum Spezialisten
-                Athletik Performance Trainer weiter.
+                {t("htext")}
               </p>
             </div>
 
@@ -45,7 +32,7 @@ export async function AboutHero({ lang }: { lang: Locale }) {
                   className="w-full bg-primary hover:bg-primary text-white px-8 py-3 whitespace-normal text-center"
                 >
                   <p className="">
-                  Lass uns gemeinsam den ersten Schritt machen!
+                    {t("hbutton")}
                   </p>
                 </Button>
               </Link>
