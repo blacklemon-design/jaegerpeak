@@ -25,7 +25,6 @@ export default async function Home(props: {
       <Header bannerTitle={data.title} bannerDate={data.date} />
       <main>
         <Hero lang={lang}/>
-        <LocaleSwitcher lang={lang}/>
         <About lang={lang}/>
         <Services lang={lang}/>
         {/** <Testimonials />*/}

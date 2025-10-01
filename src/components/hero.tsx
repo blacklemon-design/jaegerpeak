@@ -16,19 +16,6 @@ export async function Hero({ lang }: { lang: Locale }) {
         <div className="grid grid-cols-2 gap-0 md:gap-12">
           <div className="space-y-8 w-full lg:col-span-1 col-span-2">
             <div className="space-y-4">
-              {t("title")}
-              {
-                /*}
-              <div className="flex items-center space-x-2">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <span className="text-foreground">Rated 5.0 by 200+ clients</span>
-              </div>
-              */
-              }
               <h1 className="text-4xl md:text-6xl font-bold leading-tight break-normal">
                 Fitness,{" "}
                 <span className="text-primary">Performance</span>{" "}
