@@ -21,7 +21,7 @@ import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 
 export async function ServiceDetails({ lang }: { lang: Locale }) {
-      const t = await getTranslations({ namespace: "Services", locale: lang });
+  const t = await getTranslations({ namespace: "Services", locale: lang });
   const services = [
     {
       id: "body-shaping",
@@ -71,7 +71,7 @@ export async function ServiceDetails({ lang }: { lang: Locale }) {
       title: t("service3_title"),
       subtitle: t("service3_subtitle"),
       description:
-         t("service3_description"),
+        t("service3_description"),
       price: "",
       duration: t("service3_duration"),
       idealFor: [
@@ -92,14 +92,14 @@ export async function ServiceDetails({ lang }: { lang: Locale }) {
       subtitle: t("service4_subtitle"),
       description:
         t("service4_description"),
-      price: "CHF 150",
+      price: "CHF 180",
       duration: t("service4_duration"),
       idealFor: [
         t("service4_idealFor1"),
         t("service4_idealFor2"),
         t("service4_idealFor3"),
         t("service4_idealFor4"),
-        
+
       ],
       frequentGoals: [
         t("service4_frequentGoals1"),
@@ -121,11 +121,11 @@ export async function ServiceDetails({ lang }: { lang: Locale }) {
                 <CardHeader className="text-center pb-8">
                   <div className="flex justify-center mb-4">
                     <Image
-                          height={64}
-                          width={64}
-                          src={service.iconPath}
-                          alt="athletic icon"
-                        />
+                      height={64}
+                      width={64}
+                      src={service.iconPath}
+                      alt="athletic icon"
+                    />
                   </div>
                   <CardTitle className="text-3xl text-white mb-2">
                     {service.title}
@@ -147,7 +147,13 @@ export async function ServiceDetails({ lang }: { lang: Locale }) {
                     <div className="space-y-6 flex flex-col md:flex-row space-x-20">
                       <div className="w-full">
                         <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                          <Users className="h-5 w-5 text-primary mr-2" />
+                          <Image
+                            className="mr-2"
+                            height={24}
+                            width={24}
+                            src={"/images/Icon_Idealfuerdich.png"}
+                            alt="athletic icon"
+                          />
                           {t("sidealFor")}
                         </h4>
                         <ul className="space-y-2">
@@ -165,11 +171,17 @@ export async function ServiceDetails({ lang }: { lang: Locale }) {
                       </div>
                       <div className="w-full">
                         <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                          <Users className="h-5 w-5 text-primary mr-2" />
+                          <Image
+                            className="mr-2"
+                            height={24}
+                            width={24}
+                            src={"/images/Icon_HaeufigeZiele.png"}
+                            alt="athletic icon"
+                          />
                           {t("sfrequentGoals")}
                         </h4>
                         <ul className="space-y-2">
-                        {service.frequentGoals.map((frequent, frequentIndex) => (
+                          {service.frequentGoals.map((frequent, frequentIndex) => (
                             <li
                               key={frequentIndex}
                               className="text-gray-300 flex items-center"
