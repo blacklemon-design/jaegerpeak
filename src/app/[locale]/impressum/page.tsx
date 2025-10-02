@@ -11,12 +11,14 @@ export default async function ImpressumPage(props: {
   const { lang } = await props.params;
 
   return (
-    <div className="min-h-screen bg-background text-white">
-      <Header bannerTitle={data.title} bannerDate={data.date} lang={lang}/>
-      <main>
-        <Impressum lang={lang}/>
+    <div className="flex flex-col min-h-screen bg-background text-white">
+      <Header bannerTitle={data.title} bannerDate={data.date} lang={lang} />
+      
+      <main className="flex-1">
+        <Impressum lang={lang} />
       </main>
-      <Footer lang={lang}/>
+      
+      <Footer lang={lang} />
     </div>
   )
 }

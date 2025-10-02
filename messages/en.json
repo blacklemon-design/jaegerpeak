@@ -175,20 +175,19 @@
     "contact": "Contact"
     },
   "Footer": {
-    "offers": "Angebote",
+    "offers": "Services",
     "body-shaping": "Body Shaping",
     "athletic-performance-coaching": "Athletic Performance Coaching",
     "functional-training": "Functional Training",
-    "training-introduction": "Trainingseinführung/ -anpassung",
+    "training-introduction": "Training introduction/adjustment",
     "links": "Links",
     "home": "Home",
-    "about": "Über mich",
-    "services": "Angebote",
-    "contact": "Kontakt",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
     "impressum": "Impressum",
-    "contact": "Kontakt",
-    "place": "Diepoldsau - Schweiz",
-    "developedby": "Entwickelt mit ",
-    "by": " von "
+    "place": "Diepoldsau - Switzerland",
+    "developedby": "Developed with ",
+    "by": " by "
   }
 }
