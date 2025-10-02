@@ -2,7 +2,7 @@ import { About } from "@/components/about";
 import  Contact  from "@/components/contact";
 import {Faq} from "@/components/faq";
 import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
+import Header from "@/components/header";
 import { Hero } from "@/components/hero";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { Partners } from "@/components/partners";
@@ -22,7 +22,7 @@ export default async function Home(props: {
 
   return (
     <div className="min-h-screen bg-background text-white">
-      <Header bannerTitle={data.title} bannerDate={data.date} />
+      <Header bannerTitle={data.title} bannerDate={data.date} lang={lang}/>
       <main>
         <Hero lang={lang}/>
         <About lang={lang}/>

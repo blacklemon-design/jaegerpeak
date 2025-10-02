@@ -1,4 +1,4 @@
-import { Header } from "@/components/header"
+import Header from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AboutHero } from "@/components/about-hero"
 import { PersonalStory } from "@/components/personal-story"
@@ -14,7 +14,7 @@ export default async function AboutPage(props: {
 
   return (
     <div className="min-h-screen bg-background text-white">
-      <Header bannerTitle={data.title} bannerDate={data.date} />
+      <Header bannerTitle={data.title} bannerDate={data.date} lang={lang}/>
       <main>
         <AboutHero lang={lang}/>
         <PersonalStory lang={lang}/>

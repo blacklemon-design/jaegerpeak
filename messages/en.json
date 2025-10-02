@@ -163,5 +163,11 @@
   "Meta": {
     "title": "JÄGER PEAK Coaching - Fitness, Athletics, Health",
     "description": "Your certified partner for fitness, athletics and health. Personal training and coaching in Widnau and surrounding area."
-  }
+  },
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+    }
 }

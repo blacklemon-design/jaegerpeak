@@ -1,4 +1,4 @@
-import { Header } from "@/components/header"
+import Header from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ServicesHero } from "@/components/services-hero"
 import { ServiceDetails } from "@/components/services-details"
@@ -12,7 +12,7 @@ export default async function ServicesPage(props: {
   const { lang } = await props.params;
   return (
     <div className="min-h-screen bg-background text-white">
-      <Header bannerTitle={data.title} bannerDate={data.date} />
+      <Header bannerTitle={data.title} bannerDate={data.date} lang={lang}/>
       <main>
         <ServicesHero lang={lang}/>
         <ServiceDetails lang={lang}/>
@@ -20,7 +20,7 @@ export default async function ServicesPage(props: {
         <ServicesFAQ />
         <ServicesContact />*/}
       </main>
-      <Footer />
+      <Footer lang={lang}/>
     </div>
   )
 }
