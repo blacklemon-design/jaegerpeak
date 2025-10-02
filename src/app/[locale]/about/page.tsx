@@ -18,9 +18,9 @@ export default async function AboutPage(props: {
       <main>
         <AboutHero lang={lang}/>
         <PersonalStory lang={lang}/>
-        <Qualifications />
+        <Qualifications lang={lang}/>
       </main>
-      <Footer />
+      <Footer lang={lang}/>
     </div>
   )
 }

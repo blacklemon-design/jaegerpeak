@@ -9,18 +9,21 @@ import { Button } from "@/components/ui/button";
 import { Apple, Dumbbell, Users, Video } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
+import { Locale } from "next-intl";
 
-export function Services() {
+export async function Services({ lang }: { lang: Locale }) {
+  const t = await getTranslations({ namespace: "Hero", locale: lang });
   const services = [
     {
       id: "body-shaping",
       iconPath: "/images/Icon_Bodyshaping.png",
       title: "Body Shaping",
-      subtitle: "Muskeln aufbauen. Fett verlieren. Stark & ästhetisch aussehen",
+      subtitle: t("sbody-shaping_sub"),
       idealFor: [
-        "Sichtbare Körperveränderung",
-        "Effizient & zielgerichtet trainieren",
-        "Dranbleiben ohne Jojo-Effekt",
+        t("sbody-shaping_idealFor1"),
+        t("sbody-shaping_idealFor2"),
+        t("sbody-shaping_idealFor3"),
       ],
     },
     {
@@ -28,33 +31,33 @@ export function Services() {
       iconPath: "/images/Icon_Athletik.png",
       title: "Athletic Performance Coaching",
       subtitle:
-        "Mehr Leistung im Sport, für dich als Einzelsportler oder auch als Team",
+        t("sathletic_sub"),
       idealFor: [
-        "Schnelligkeit, Kraft & Agilität verbessern",
-        "Verletzungen vorbeugen",
-        "Athletisches Potenzial ausschöpfen",
+        t("sathletic_idealFor1"),
+        t("sathletic_idealFor2"),
+        t("sathletic_idealFor3"),
       ],
     },
     {
       id: "functional-training",
       iconPath: "/images/Icon_Functional.png",
       title: "Functional Training",
-      subtitle: "Schmerzfrei bewegen und den Alltag meistern",
+      subtitle: t("sfunctional_sub"),
       idealFor: [
-        "Beschwerden durch Sitzen oder Dysbalancen bekämpfen",
-        "Gelenkschonendes, stärkendes Training",
-        "Gesunder & beweglicher Lebensstil nach dem Healthy Performance Konzept",
+        t("sfunctional_idealFor1"),
+        t("sfunctional_idealFor2"),
+        t("sfunctional_idealFor3"),
       ],
     },
     {
       id: "trainings-einführung",
       iconPath: "/images/Icon_Trainingsanpassung.png",
       title: "Trainingseinführung/ -anpassung",
-      subtitle: "exklusiv für Kraftwerk Fitness Mitglieder",
+      subtitle: t("straining_sub"),
       idealFor: [
-        "Klarer Trainingsplan für selbstständiges Training",
-        "Struktur statt Überforderung im Gym",
-        "Kompakter Einstieg mit persönlicher Einführung",
+        t("straining_idealFor1"),
+        t("straining_idealFor2"),
+        t("straining_idealFor3"),
       ],
     },
   ];
@@ -64,11 +67,10 @@ export function Services() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Meine <span className="text-primary">Angebote</span>
+            {t("sheader1")} <span className="text-primary">{t("sheader2")}</span>
           </h2>
           <p className="text-foreground text-lg max-w-2xl mx-auto">
-            Finde das Coaching, das am besten zu deinem Lifestyle und deinen
-            Zielen passt.
+            {t("stext")}
           </p>
         </div>
 
@@ -110,7 +112,7 @@ export function Services() {
                 <div className="pt-4 border-t border-card">
                   <Link href={`/services#${service.id}`} passHref>
                     <Button className="w-full bg-primary hover:bg-primary-hover text-white">
-                      Mehr erfahren!
+                      {t("sbutton")}
                     </Button>
                   </Link>
                 </div>

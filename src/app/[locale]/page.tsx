@@ -1,6 +1,6 @@
 import { About } from "@/components/about";
-import { Contact } from "@/components/contact";
-import Faq from "@/components/faq";
+import  Contact  from "@/components/contact";
+import {Faq} from "@/components/faq";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
@@ -25,15 +25,14 @@ export default async function Home(props: {
       <Header bannerTitle={data.title} bannerDate={data.date} />
       <main>
         <Hero lang={lang}/>
-        <LocaleSwitcher />
-        <About />
-        <Services />
+        <About lang={lang}/>
+        <Services lang={lang}/>
         {/** <Testimonials />*/}
         <Partners />
-        <Faq />
-        <Contact />
+        <Faq lang={lang}/>
+        <Contact lang={lang}/>
       </main>
-      <Footer />
+      <Footer lang={lang}/>
     </div>
   );
 }
