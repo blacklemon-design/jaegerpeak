@@ -2,50 +2,43 @@ import { Button } from "@/components/ui/button";
 import { Award, Calendar, MapPin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
+import { Locale } from "next-intl";
 
-export function AboutHero() {
+export async function AboutHero({ lang }: { lang: Locale }) {
+      const t = await getTranslations({ namespace: "About", locale: lang });
+
   return (
-    <section className="pt-16 min-h-screen flex items-center bg-background">
+    <section className="pt-24 lg:pt-16 min-h-screen flex items-center bg-background pb-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                LERNE <span className="text-primary">MICH KENNEN!</span>
+                {t("htitle1")}<span className="text-primary">{t("htitle2")}</span>
               </h1>
               <p className="text-xl text-foreground">
-                Experte für Athletik, Leistung & nachhaltige Fitness
+                {t("hsubtitle")}
               </p>
               <p className="text-lg text-foreground leading-relaxed">
-                Mein Name ist Ramon Jäger, ich bin Jahrgang 2000 und seit meiner
-                Kindheit sportlich aktiv. Bereits mit vier Jahren begann ich
-                beim FC Widnau Fussball zu spielen und entdeckte dabei meine
-                Begeisterung für Spielsportarten. Mit zwölf wechselte ich zum
-                Tennis, weil ich merkte: Ich blühe in einer Sportart auf, in der
-                allein meine eigene Leistung über Sieg oder Niederlage
-                entscheidet. Mit 19 Jahren begann ich parallel zu meinem
-                Maschinenbaustudium mit Krafttraining im Fitnessstudio. Die
-                sichtbaren Fortschritte über die folgenden sechs Jahre erfüllten
-                mich mit Stolz und weckten den Wunsch, mein Wissen
-                weiterzugeben. Diesen Weg verfolge ich heute professionell. Im
-                April 2025 schloss ich die Ausbildung zum Fitnesstrainer mit
-                SAFS-Fachausweis ab und bildete mich danach zum Spezialisten
-                Athletik Performance Trainer weiter.
+                {t("htext")}
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="w-full">
               <Link href="/#contact" passHref>
                 <Button
                   size="lg"
-                  className=" bg-primary hover:bg-primary text-white px-8 py-3"
+                  className="w-full bg-primary hover:bg-primary text-white px-8 py-3 whitespace-normal text-center"
                 >
-                  Lass uns gemeinsam den ersten Schritt machen!
+                  <p className="">
+                    {t("hbutton")}
+                  </p>
                 </Button>
               </Link>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative w-full">
             <img
               src="/images/über_mich_2.jpeg"
               alt="Ramon Jäger - Personal Trainer"

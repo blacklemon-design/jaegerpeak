@@ -11,7 +11,7 @@ export function Partners() {
                         Partner
                     </h2>
                 </div>
-                <div className="grid lg:grid-cols-3 gap-12 items-center">
+                <div className="grid md:grid-cols-3 gap-12 items-center">
                     <Link
                         href="https://www.nicojaeger.ch/"
                         className="hover:scale-110 duration-300 ease-in-out"
@@ -19,7 +19,7 @@ export function Partners() {
                         <img
                             src="/images/partners/jpt.webp"
                             alt="Athletic fitness coach in dynamic jumping pose"
-                            className="w-auto max-h-60 obeject-cover mx-auto"
+                            className="w-40 md:w-auto max-h-60 obeject-cover mx-auto"
                         />
                     </Link>
                     <Link
@@ -29,7 +29,7 @@ export function Partners() {
                         <img
                             src="/images/partners/jsp.png"
                             alt="Athletic fitness coach in dynamic jumping pose"
-                            className="w-auto max-h-60 obeject-cover mx-auto"
+                            className="w-40 md:w-auto max-h-60 obeject-cover mx-auto"
                         />
                     </Link>
                     <Link
@@ -39,7 +39,7 @@ export function Partners() {
                         <img
                             src="/images/partners/kraftwerk_fitness.jpg"
                             alt="Athletic fitness coach in dynamic jumping pose"
-                            className="w-auto max-h-60 obeject-cover mx-auto"
+                            className="w-40 md:w-auto max-h-60 obeject-cover mx-auto"
                         />
                     </Link>
                 </div>

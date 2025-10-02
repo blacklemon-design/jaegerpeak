@@ -1,25 +1,26 @@
-import { Header } from "@/components/header"
+import Header from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AboutHero } from "@/components/about-hero"
 import { PersonalStory } from "@/components/personal-story"
 import { Qualifications } from "@/components/qualifications"
 import { loadHomeBannerContent } from "@/lib/utils"
+import { Locale } from "next-intl"
 const data = loadHomeBannerContent(); // runs at build time, before component is even called
 
-export default function AboutPage() {
+export default async function AboutPage(props: {
+  params: Promise<{ lang: Locale }>;
+}) {
+  const { lang } = await props.params;
+
   return (
     <div className="min-h-screen bg-background text-white">
-      <Header bannerTitle={data.title} bannerDate={data.date} />
+      <Header bannerTitle={data.title} bannerDate={data.date} lang={lang}/>
       <main>
-        <AboutHero />
-        <PersonalStory />
-        <Qualifications />
-        {/*<TrainingPhilosophy />
-        <PersonalJourney />
-        <WhyICoach />
-        <PersonalLife />*/}
+        <AboutHero lang={lang}/>
+        <PersonalStory lang={lang}/>
+        <Qualifications lang={lang}/>
       </main>
-      <Footer />
+      <Footer lang={lang}/>
     </div>
   )
 }

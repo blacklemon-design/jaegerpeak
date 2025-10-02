@@ -1,7 +1,11 @@
 import Link from "next/link"
 import { Dumbbell, Facebook, Instagram, Twitter, Youtube, Heart, Linkedin } from "lucide-react"
+import LocaleSwitcher from "./LocaleSwitcher"
+import { getTranslations } from "next-intl/server";
+import { Locale } from "next-intl";
 
-export function Footer() {
+export async function Footer({ lang }: { lang: Locale }) {
+  const t = await getTranslations({ namespace: "Footer", locale: lang });
   return (
     <footer className="bg-background-secondary border-t border-border-dark">
       <div className="container mx-auto pb-0 px-4 sm:px-6 lg:px-8 py-12">
@@ -20,67 +24,75 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </Link>
             </div>
+            <LocaleSwitcher lang={lang} />
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Angebote</h3>
+            <h3 className="text-white font-semibold mb-4">{t("services")}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/services#body-shaping" className="text-foreground hover:text-primary transition-colors">
-                  Body Shaping
+                  {t("body-shaping")}
                 </Link>
               </li>
               <li>
                 <Link href="/services#athletic-performance-coaching" className="text-foreground hover:text-primary transition-colors">
-                  Athletic Performance Coaching
+                  {t("athletic-performance-coaching")}
                 </Link>
               </li>
               <li>
                 <Link href="/services#functional-training" className="text-foreground hover:text-primary transition-colors">
-                  Functional Training
+                  {t("functional-training")}
                 </Link>
               </li>
               <li>
                 <Link href="/services#trainings-einführung" className="text-foreground hover:text-primary transition-colors">
-                  Trainingseinführung/ -anpassung
+                  {t("training-introduction")}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Links</h3>
+            <h3 className="text-white font-semibold mb-4">{t("links")}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/about" className="text-foreground hover:text-primary transition-colors">
-                  Über mich
+                  {t("about")}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-foreground hover:text-primary transition-colors">
-                  Angebote
+                  {t("services")}
                 </Link>
               </li>
+              {/**}
               <li>
                 <Link href="#testimonials" className="text-foreground hover:text-primary transition-colors">
                   Bewertungen
                 </Link>
               </li>
+              */}
               <li>
                 <Link href="#contact" className="text-foreground hover:text-primary transition-colors">
-                  Kontakt
+                  {t("contact")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/impressum" className="text-foreground hover:text-primary transition-colors">
+                  {t("impressum")}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Kontakt</h3>
+            <h3 className="text-white font-semibold mb-4">{t("contact")}</h3>
             <ul className="space-y-2 text-foreground">
               <li><Link href={"mailto:info@jaegerpeak.ch"} className="hover:text-primary duration-300">info@jaegerpeak.ch</Link></li>
               <li>              <Link className="text-white hover:text-primary duration-300" href={"tel:+41763867705"}>+41 76 386 77 05</Link></li>
               <Link className="text-white hover:text-primary duration-300" href={"https://maps.app.goo.gl/9ub5LKuiPHpjzZGY9"}>
-                Diepoldsau - Schweiz
+                {t("place")}
               </Link>
             </ul>
           </div>
@@ -89,9 +101,9 @@ export function Footer() {
         <div className="mt-8 border-t border-border text-center text-sm text-muted-foreground py-2">
           <div className="w-full flex justify-center">
             <div className="p-3 text-center text-zinc-500 flex">
-              Entwickelt mit {" "}
+              {t("developedby")} {" "}
               <Heart className="text-blacklemon h-4 w-4 fill-current ml-1 mr-1" />
-              von
+              {t("by")}
               <Link target="_blank" href="https://blacklemon.design" className="hover:text-blacklemon ml-1 text-blacklemon">
                 <strong>BlackLemon</strong>
               </Link>

@@ -17,91 +17,94 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
+import { Locale } from "next-intl";
 
-export function ServiceDetails() {
+export async function ServiceDetails({ lang }: { lang: Locale }) {
+  const t = await getTranslations({ namespace: "Services", locale: lang });
   const services = [
     {
       id: "body-shaping",
       iconPath: "/images/Icon_Bodyshaping.png",
-      title: "Body Shaping",
-      subtitle: "Muskeln aufbauen. Fett verlieren. Stark & ästhetisch aussehen",
+      title: t("service1_title"),
+      subtitle: t("service1_subtitle"),
       description:
-        "Du willst sichtbare Muskeln, einen definierten Körper oder einfach wieder in Form kommen? Ich helfe dir, nachhaltig Fett zu verlieren und Muskelmasse aufzubauen – mit strukturiertem Krafttraining, gezieltem Ernährungs-Input und individueller Betreuung.",
+        t("service1_description"),
       price: "",
-      duration: "",
+      duration: t("service1_duration"),
       idealFor: [
-        "Deinen Körper sichtbar verändern willst",
-        "Effizient trainieren statt planlos schwitzen willst",
-        "Langfristig dranbleiben willst, ohne Jojo-Effekt",
+        t("service1_idealFor1"),
+        t("service1_idealFor2"),
+        t("service1_idealFor3"),
       ],
       frequentGoals: [
-        "Sichtbarer Muskelaufbau (trotz stressigem Alltag)",
-        "Bauchfett verlieren, definierter & straffer werden",
-        "Motivation wiederfinden und langfristig behalten",
-        "Endlich konstant & nachhaltig dranbleiben",
+        t("service1_frequentGoals1"),
+        t("service1_frequentGoals2"),
+        t("service1_frequentGoals3"),
+        t("service1_frequentGoals4"),
       ],
     },
     {
       id: "athletic-performance-coaching",
       iconPath: "/images/Icon_Athletik.png",
-      title: "Athletic Performance Coaching",
+      title: t("service2_title"),
       subtitle:
-        "Mehr Leistung im Sport, für dich als Einzelsportler oder auch als Team",
+        t("service2_subtitle"),
       description:
-        "Du trainierst für Tennis, Fussball, Leichtathletik oder einen anderen Sport und willst schneller, stärker und explosiver werden? Willst du nochmals alles aus dir rausholen für den nächsten Hyrox? Hindert dich dein Körper daran, in deinem Sport den nächsten Schritt zu machen? Ich analysiere deine Bewegungsmuster, stärke deine Schwächen und entwickle ein sportartspezifisches, nachhaltiges und verletzungsvorbeugendes Athletiktraining, das dich wirklich voranbringt.",
+        t("service2_description"),
       price: "",
-      duration: "",
+      duration: t("service2_duration"),
       idealFor: [
-        "Deine Schnelligkeit, Kraft oder Agilität gezielt verbessern willst",
-        "Verletzungsfrei durch die Saison kommen willst",
-        "Dein volles athletisches Potenzial ausschöpfen willst",
+        t("service2_idealFor1"),
+        t("service2_idealFor2"),
+        t("service2_idealFor3"),
       ],
       frequentGoals: [
-        "Stabilität, Agilität, Schnelligkeit und Explosivität verbessern für den nächsten Wettkampf",
-        "Schnellkraft & Core-Stabilität und Ausdauer gezielt verbessern",
-        "Nach einer Verletzung zurück zur vollen Belastung",
+        t("service2_frequentGoals1"),
+        t("service2_frequentGoals2"),
+        t("service2_frequentGoals3"),
       ],
     },
     {
       id: "functional-training",
       iconPath: "/images/Icon_Functional.png",
-      title: "Functional Training",
-      subtitle: "Schmerzfrei bewegen und den Alltag meistern",
+      title: t("service3_title"),
+      subtitle: t("service3_subtitle"),
       description:
-        "Rückenschmerzen, verspannte Schultern oder ein instabiler Rumpf? Ich helfe dir, deine Haltung zu verbessern, Alltagsbewegungen neu zu erlernen und wieder Vertrauen in deinen Körper zu gewinnen – mit funktionellem Training, das auf deine Realität zugeschnitten ist.",
+        t("service3_description"),
       price: "",
-      duration: "",
+      duration: t("service3_duration"),
       idealFor: [
-        "Viel sitzt oder körperliche Beschwerden hast",
-        "Ein Training willst, das dich nicht überfordert, sondern stärkt",
-        "Langfristig gesünder und beweglicher leben willst",
+        t("service3_idealFor1"),
+        t("service3_idealFor2"),
+        t("service3_idealFor3"),
       ],
       frequentGoals: [
-        "Rückenschmerzen beim Sitzen oder Bücken loswerden",
-        "Treppen steigen, ohne ausser Atem zu kommen",
-        "Bewegung in den sitzenden Berufsalltag bekommen",
+        t("service3_frequentGoals1"),
+        t("service3_frequentGoals2"),
+        t("service3_frequentGoals3"),
       ],
     },
     {
       id: "trainings-einführung",
       iconPath: "/images/Icon_Trainingsanpassung.png",
-      title: "Trainingseinführung/ -anpassung",
-      subtitle: "exklusiv für Kraftwerk Fitness Mitglieder",
+      title: t("service4_title"),
+      subtitle: t("service4_subtitle"),
       description:
-        "Du trainierst im Kraftwerk Fitness und willst mehr aus deinem Training herausholen? Ich analysiere deine aktuelle Situation und erstelle dir einen individuellen Trainingsplan für die nächsten 3 Monate - inklusive Einführung, aber ohne laufendes Coaching.",
+        t("service4_description"),
       price: "CHF 180",
-      duration: "Einmalig für Analyse, Planerstellung, Einführung und Ernährungsinputs",
+      duration: t("service4_duration"),
       idealFor: [
-        "Mitglied vom Kraftwerk Fitness bist",
-        "Selbstständig trainierst, aber einen strukturierten Plan brauchst",
-        "Eine gesunde Einstellung zur Ernährung haben willst",
-        "Mühe mit Zu- oder Abnehmen hast",
+        t("service4_idealFor1"),
+        t("service4_idealFor2"),
+        t("service4_idealFor3"),
+        t("service4_idealFor4"),
 
       ],
       frequentGoals: [
-        "Einen Trainingsplan, der genau auf mich und meine Ziele zugeschnitten ist",
-        "Mit der richtigen Technik trainieren, um schnellstmöglich Fortschritte ohne Verletzungen zu erreichen",
-        "Mit einem klaren Einstieg ins Fitness starten, ohne mich überfordert zu fühlen",
+        t("service4_frequentGoals1"),
+        t("service4_frequentGoals2"),
+        t("service4_frequentGoals3"),
       ],
     },
   ];
@@ -141,18 +144,17 @@ export function ServiceDetails() {
 
                 <CardContent className="space-y-8">
                   <div className="flex justify-center">
-                    <div className="space-y-6 flex flex-row space-x-20">
-                      <div>
+                    <div className="space-y-6 flex flex-col md:flex-row space-x-20">
+                      <div className="w-full">
                         <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                          <div className="flex justify-center mr-2 items-center">
-                            <Image
-                              height={26}
-                              width={26}
-                              src={"/images/Icon_idealfuerdich.png"}
-                              alt="athletic icon"
-                            />
-                          </div>
-                          Ideal für dich wenn du...
+                          <Image
+                            className="mr-2"
+                            height={24}
+                            width={24}
+                            src={"/images/Icon_idealfuerdich.png"}
+                            alt="athletic icon"
+                          />
+                          {t("sidealFor")}
                         </h4>
                         <ul className="space-y-2">
                           {service.idealFor.map((ideal, idealIndex) => (
@@ -167,17 +169,16 @@ export function ServiceDetails() {
                           ))}
                         </ul>
                       </div>
-                      <div>
+                      <div className="w-full">
                         <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                          <div className="flex justify-center mr-2 items-center">
-                            <Image
-                              height={26}
-                              width={26}
-                              src={"/images/Icon_haufigeZiele.png"}
-                              alt="athletic icon"
-                            />
-                          </div>
-                          Häufige Ziele meiner Kunden...
+                          <Image
+                            className="mr-2"
+                            height={24}
+                            width={24}
+                            src={"/images/Icon_haufigeZiele.png"}
+                            alt="athletic icon"
+                          />
+                          {t("sfrequentGoals")}
                         </h4>
                         <ul className="space-y-2">
                           {service.frequentGoals.map((frequent, frequentIndex) => (
@@ -197,7 +198,7 @@ export function ServiceDetails() {
                   <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-card">
                     <Link href="/#contact" passHref className="w-full">
                       <Button className="flex-1 bg-primary w-full hover:bg-primary text-white">
-                        Lass uns starten!
+                        {t("sbutton")}
                       </Button>
                     </Link>
                   </div>
