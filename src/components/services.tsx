@@ -18,7 +18,7 @@ export async function Services({ lang }: { lang: Locale }) {
     {
       id: "body-shaping",
       iconPath: "/images/Icon_Bodyshaping.png",
-      title: "Body Shaping",
+      title: t("sbody-shpaing-title"),
       subtitle: t("sbody-shaping_sub"),
       idealFor: [
         t("sbody-shaping_idealFor1"),
@@ -29,7 +29,7 @@ export async function Services({ lang }: { lang: Locale }) {
     {
       id: "athletic-performance-coaching",
       iconPath: "/images/Icon_Athletik.png",
-      title: "Athletic Performance Coaching",
+      title: t("sathletic_title"),
       subtitle:
         t("sathletic_sub"),
       idealFor: [
@@ -41,7 +41,7 @@ export async function Services({ lang }: { lang: Locale }) {
     {
       id: "functional-training",
       iconPath: "/images/Icon_Functional.png",
-      title: "Functional Training",
+      title: t("sfunctional_title"),
       subtitle: t("sfunctional_sub"),
       idealFor: [
         t("sfunctional_idealFor1"),
@@ -52,7 +52,7 @@ export async function Services({ lang }: { lang: Locale }) {
     {
       id: "trainings-einführung",
       iconPath: "/images/Icon_Trainingsanpassung.png",
-      title: "Trainingseinführung/ -anpassung",
+      title: t("straining_title"),
       subtitle: t("straining_sub"),
       idealFor: [
         t("straining_idealFor1"),
