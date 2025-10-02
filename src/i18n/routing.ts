@@ -9,5 +9,8 @@ export const routing = defineRouting({
   localePrefix: "as-needed",
   pathnames: {
     "/": "/",
+    "/about": "/about",
+    "/services": "/services",
+    "impressum": "/impressum"
   },
 });
