@@ -55,45 +55,45 @@ export default function HeaderClient({ bannerTitle, bannerDate, labels }: { bann
 
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-background-secondary rounded-lg mt-2">
+            <div className="px-3 pt-2 pb-3 space-y-1 bg-background-secondary rounded-lg mt-2">
               <Link
                 href="/"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
+                {labels.home}
               </Link>
               <Link
                 href="/about"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                {labels.about}
               </Link>
               <Link
                 href="/services"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Services
+                {labels.services}
               </Link>
-              <Link
+              {/** <Link
                 href="#testimonials"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Testimonials
-              </Link>
+              </Link> **/}
               <Link
                 href="#contact"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                className="block w-full bg-primary hover:bg-primary-hover text-white rounded-md text-center py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                {labels.contact}
               </Link>
-              <div className="px-3 py-2">
+              {/**<div className="px-3 py-2">
                 <Button className="w-full bg-primary hover:bg-primary-hover text-white">Book Session</Button>
-              </div>
+              </div> **/}
             </div>
           </div>
         )}
