@@ -1,13 +1,14 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
+import {Link as IntlLink} from "../i18n/navigation"
 import { Menu, X, Dumbbell } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Banner from "./banner"
 import { usePathname } from "next/navigation"
 import { getTranslations } from "next-intl/server"
 import { Locale } from "next-intl"
+import Link from "next/link"
 
 type Labels = {
   home: string;
@@ -23,23 +24,23 @@ export default function HeaderClient({ bannerTitle, bannerDate, labels }: { bann
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border-dark z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
-          <Link className="flex items-center space-x-2" href="/">
+          <IntlLink className="flex items-center space-x-2" href="/">
             <img src="/logo_horizontal_white.svg" alt="logo" className="h-10" />
-          </Link>
+          </IntlLink>
           <div className="hidden md:flex items-center space-x-4">
           <nav className="flex items-center space-x-8">
-            <Link href="/" className={`text-foreground hover:text-primary transition-colors ${pathname === "/" ? "text-primary font-bold": ""}`}>
+            <IntlLink href="/" className={`text-foreground hover:text-primary transition-colors ${pathname === "/" ? "text-primary font-bold": ""}`}>
               {labels.home}
-            </Link>
-            <Link href="/about" className={`text-foreground hover:text-primary transition-colors ${pathname === "/about" ? "text-primary font-bold": ""}`}>
+            </IntlLink>
+            <IntlLink href="/about" className={`text-foreground hover:text-primary transition-colors ${pathname === "/about" ? "text-primary font-bold": ""}`}>
               {labels.about}
-            </Link>
-            <Link href="/services" className={`text-foreground hover:text-primary transition-colors ${pathname === "/services" ? "text-primary font-bold": ""}`}>
+            </IntlLink>
+            <IntlLink href="/services" className={`text-foreground hover:text-primary transition-colors ${pathname === "/services" ? "text-primary font-bold": ""}`}>
               {labels.services}
-            </Link>
-            {/** <Link href="/#testimonials" className="text-foreground hover:text-primary transition-colors">
+            </IntlLink>
+            {/** <IntlLink href="/#testimonials" className="text-foreground hover:text-primary transition-colors">
               Bewertungen
-            </Link>*/}
+            </IntlLink>*/}
           </nav>
 
           <div className="hidden md:flex ml-2">
@@ -56,36 +57,36 @@ export default function HeaderClient({ bannerTitle, bannerDate, labels }: { bann
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-3 pt-2 pb-3 space-y-1 bg-background-secondary rounded-lg mt-2">
-              <Link
+              <IntlLink
                 href="/"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {labels.home}
-              </Link>
-              <Link
+              </IntlLink>
+              <IntlLink
                 href="/about"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {labels.about}
-              </Link>
-              <Link
+              </IntlLink>
+              <IntlLink
                 href="/services"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {labels.services}
-              </Link>
-              {/** <Link
+              </IntlLink>
+              {/** <IntlLink
                 href="#testimonials"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Testimonials
-              </Link> **/}
+              </IntlLink> **/}
               <Link
-                href="#contact"
+                href="/#contact"
                 className="block w-full bg-primary hover:bg-primary-hover text-white rounded-md text-center py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
