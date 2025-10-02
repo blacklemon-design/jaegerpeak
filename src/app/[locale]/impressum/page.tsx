@@ -11,7 +11,7 @@ export default async function ImpressumPage(props: {
   const { lang } = await props.params;
 
   return (
-    <div className="min-h-screen bg-background text-white">
+    <div className="min-h-screen bg-background text-white flex flex-col justify-between">
       <Header bannerTitle={data.title} bannerDate={data.date} lang={lang}/>
       <main>
         <Impressum lang={lang}/>
