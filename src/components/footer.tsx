@@ -5,7 +5,7 @@ import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 
 export async function Footer({ lang }: { lang: Locale }) {
-      const t = await getTranslations({ namespace: "About", locale: lang });
+  const t = await getTranslations({ namespace: "About", locale: lang });
   return (
     <footer className="bg-background-secondary border-t border-border-dark">
       <div className="container mx-auto pb-0 px-4 sm:px-6 lg:px-8 py-12">
@@ -66,14 +66,21 @@ export async function Footer({ lang }: { lang: Locale }) {
                   Angebote
                 </Link>
               </li>
+              {/**}
               <li>
                 <Link href="#testimonials" className="text-foreground hover:text-primary transition-colors">
                   Bewertungen
                 </Link>
               </li>
+              */}
               <li>
                 <Link href="#contact" className="text-foreground hover:text-primary transition-colors">
                   Kontakt
+                </Link>
+              </li>
+              <li>
+                <Link href="/impressum" className="text-foreground hover:text-primary transition-colors">
+                  Impressum
                 </Link>
               </li>
             </ul>
