@@ -13,17 +13,16 @@ const LocaleSwitcher = ({ lang }: { lang: Locale }) => {
   const params = useParams<{ locale: string }>()
   
   const handleLocaleChange = (newLocale: string) => {
-    // `pathname` is localized, e.g., /en/about or /de/kontakt
     router.replace(pathname, { locale: newLocale, scroll: false });
   };
 
   return (
     <div className="flex space-x-4 items-center">
       <button type="button" onClick={() => handleLocaleChange("de")}>
-        <Flag code="DE" style={{ height: 24 }} className={`rounded-xs ${params.locale === "de" ? "opacity-100": "opacity-50"}`} />
+        <p style={{ height: 24 }} className={`rounded-xs ${params.locale === "de" ? "opacity-100": "opacity-50"}`}>Deutsch</p>
       </button>
       <button type="button" onClick={() => handleLocaleChange("en")}>
-        <Flag code="GB" style={{ height: 24 }} className={`rounded-xs ${params.locale === "en" ? "opacity-100": "opacity-50"}`} />
+        <p style={{ height: 24 }} className={`rounded-xs ${params.locale === "en" ? "opacity-100": "opacity-50"}`}>English</p>
       </button>
     </div>
   );

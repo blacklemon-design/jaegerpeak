@@ -19,7 +19,7 @@ export async function About({ lang }: { lang: Locale }) {
               <p className="text-foreground text-lg">
                 {t("atext1")}
               </p>
-              <p className="text-foreground">
+              <p className="text-foreground text-lg">
                 {t("atext2")}
               </p>
             </div>
