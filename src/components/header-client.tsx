@@ -55,7 +55,7 @@ export default function HeaderClient({ bannerTitle, bannerDate, labels }: { bann
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden mb-2">
             <div className="px-3 pt-2 pb-3 space-y-1 bg-background-secondary rounded-lg mt-2">
               <IntlLink
                 href="/"

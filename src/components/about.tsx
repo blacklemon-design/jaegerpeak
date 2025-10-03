@@ -42,7 +42,7 @@ export async function About({ lang }: { lang: Locale }) {
                   <div className="text-md text-foreground">{t("afield3")}</div>
                 </CardContent>
               </Card>
-              <Card className="bg-card border-border m-2 hyphens-auto}" lang={"de"}>
+              <Card className="bg-card border-border m-2 hyphens-auto" lang={"de"}>
                 <CardContent className="p-2 text-center">
                   <Zap className="h-8 w-8 text-primary mx-auto mb-2" />
                   <div className="text-md text-foreground ">{t("afield4")}</div>

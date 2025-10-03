@@ -127,7 +127,7 @@ export async function ServiceDetails({ lang }: { lang: Locale }) {
                       alt="athletic icon"
                     />
                   </div>
-                  <CardTitle className="text-3xl text-white mb-2">
+                  <CardTitle className="text-3xl text-white mb-2 hyphens-auto" lang={"de"}>
                     {service.title}
                   </CardTitle>
                   <CardDescription className="text-primary text-lg font-semibold">
