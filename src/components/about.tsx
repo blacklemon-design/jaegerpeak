@@ -6,16 +6,27 @@ import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 
 export async function About({ lang }: { lang: Locale }) {
-    const t = await getTranslations({ namespace: "Hero", locale: lang });
+  const t = await getTranslations({ namespace: "Hero", locale: lang });
   return (
     <section id="about" className="py-20 bg-background-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+        {/* Überschrift - nur auf mobilen Geräten */}
+        <div className="text-center md:hidden mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            {t("aheader1")}<span className="text-primary"> {t("aheader2")}</span>
+          </h2>
+        </div>
+
+
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className="space-y-4">
+            <div className="space-y-4 hidden md:block">
               <h2 className="text-3xl md:text-4xl font-bold">
                 {t("aheader1")}<span className="text-primary"> {t("aheader2")}</span>
               </h2>
+            </div>
+            <div className="space-y-4">
               <p className="text-foreground text-lg">
                 {t("atext1")}
               </p>
@@ -23,6 +34,15 @@ export async function About({ lang }: { lang: Locale }) {
                 {t("atext2")}
               </p>
             </div>
+            <div className="relative max-w-md mx-auto md:hidden mb-8">
+              <img
+                src="/images/über_mich.jpeg"
+                alt="Alex Johnson - Fitness Coach"
+                className="rounded-2xl w-full h-auto object-cover mx-auto max-h-160"
+              />
+              <div className="absolute -bottom-4 -left-4 w-full h-full bg-primary/20 rounded-2xl -z-10"></div>
+            </div>
+
             <div className="grid grid-cols-2 gap-4 mt-8">
               <Card className="bg-card border-border m-2">
                 <CardContent className="p-2 text-center">
@@ -57,7 +77,8 @@ export async function About({ lang }: { lang: Locale }) {
               </Link>
             </div>
           </div>
-          <div className="relative">
+          {/* Desktop Bild */}
+          <div className="relative hidden md:block">
             <img
               src="/images/über_mich.jpeg"
               alt="Alex Johnson - Fitness Coach"
