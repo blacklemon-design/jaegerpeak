@@ -23,8 +23,7 @@ export async function About({ lang }: { lang: Locale }) {
                 {t("atext2")}
               </p>
             </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-2 gap-4 mt-8">
               <Card className="bg-card border-border m-2">
                 <CardContent className="p-2 text-center">
                   <Award className="h-8 w-8 text-primary mx-auto mb-2" />
@@ -43,10 +42,10 @@ export async function About({ lang }: { lang: Locale }) {
                   <div className="text-md text-foreground">{t("afield3")}</div>
                 </CardContent>
               </Card>
-              <Card className="bg-card border-border m-2">
+              <Card className="bg-card border-border m-2 hyphens-auto}" lang={"de"}>
                 <CardContent className="p-2 text-center">
                   <Zap className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <div className="text-md text-foreground">{t("afield4")}</div>
+                  <div className="text-md text-foreground ">{t("afield4")}</div>
                 </CardContent>
               </Card>
             </div>
