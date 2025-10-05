@@ -4,11 +4,14 @@ export async function sendEmail(data: FormData): Promise<Boolean> {
   const apiEndpoint = '/api/email';
 
   try {
-    await fetch(apiEndpoint, {
+    const response = await fetch(apiEndpoint, {
       method: 'POST',
       body: JSON.stringify(data),
-    })
-    return true;
+    });
+    if (response.status == 200) {
+      return true;
+    }
+    return false;
   } catch {
     return false;
   }

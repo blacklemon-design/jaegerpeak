@@ -42,6 +42,7 @@ export async function POST(request: NextRequest) {
     await sendMailPromise();
     return NextResponse.json({ message: 'Email sent' });
   } catch (err) {
+    console.table(err);
     return NextResponse.json({ error: err }, { status: 500 });
   }
 }
