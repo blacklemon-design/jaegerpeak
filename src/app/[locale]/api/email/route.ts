@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
   const transport = nodemailer.createTransport({
     host: process.env.MY_EMAIL_HOST,
     port: 587,
-    secure: true,
+    secure: false,
     auth: {
       user: process.env.MY_EMAIL,
       pass: process.env.MY_PASSWORD,
