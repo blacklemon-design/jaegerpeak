@@ -2,19 +2,21 @@ import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 import HeaderClient from "./header-client";
 
-export default async function Header({ bannerTitle, bannerDate, lang }: { bannerTitle: string; bannerDate: string; lang: Locale }) {
-  const t = await getTranslations({ namespace: "Header", locale: lang });
+export default async function Header({ bannerTitleDe, bannerTitleEn, bannerDate, lang }: { bannerTitleDe: string; bannerTitleEn: string; bannerDate: string; lang: Locale }) {
+  const t = await getTranslations({ locale: lang });
 
   const labels = {
-    home: t("home"),
-    about: t("about"),
-    services: t("services"),
-    contact: t("contact"),
+    home: t("Header.home"),
+    about: t("Header.about"),
+    services: t("Header.services"),
+    contact: t("Header.contact"),
+    starts_in: t("Banner.starts_in")
   };
 
   return (
     <HeaderClient
-      bannerTitle={bannerTitle}
+      bannerTitleDe={bannerTitleDe}
+      bannerTitleEn={bannerTitleEn}
       bannerDate={bannerDate}
       labels={labels}
     />

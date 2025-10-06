@@ -22,7 +22,7 @@ export default async function Home(props: {
 
   return (
     <div className="min-h-screen bg-background text-white">
-      <Header bannerTitle={data.title} bannerDate={data.date} lang={lang}/>
+      <Header bannerTitleDe={data.title_de} bannerTitleEn={data.title_en} bannerDate={data.date} lang={lang}/>
       <main>
         <Hero lang={lang} bannerDate={data.date}/>
         <About lang={lang}/>

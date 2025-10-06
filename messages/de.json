@@ -194,5 +194,8 @@
     "place": "Diepoldsau - Schweiz",
     "developedby": "Entwickelt mit ",
     "by": " von "
+  },
+  "Banner": {
+    "starts_in": "Startet in"
   }
 }

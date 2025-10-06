@@ -11,7 +11,8 @@ collections:
       name: "banner"
       file: "src/content/content.md"
       fields:
-        - { label: "Title", name: "title", widget: "string", required: false}
+        - { label: "Title_Deutsch", name: "title_de", widget: "string", required: false}
+        - { label: "Title_English", name: "title_en", widget: "string", required: false}
         - { label: "Date", name: "date", widget: "datetime", required: false}
     - label: "Testimonials"
       name: "testimonials"
