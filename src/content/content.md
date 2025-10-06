@@ -1,7 +1,7 @@
 ---
-title_de: "Startrabatt jetzt sichern: Die ersten 15 Trainingsanpassungen für nur
-  150.- statt 180.-"
-title_en: "Secure your launch discount now: The first 15 training adjustments
-  for only 150 instead of 180."
-date: ""
+title_de: "Startrabatt: Limitiert auf 15 Anmeldungen - 150.- statt 180.- für
+  deine individuelle Trainingseinführung/ -anpassung"
+title_en: "Launch offer: Only 15 spot available - CHF 150 instead of CHF 180 for
+  your personalized trainingintroduction/adaption"
+date: 2026-01-01T00:00:00.000+01:00
 ---
