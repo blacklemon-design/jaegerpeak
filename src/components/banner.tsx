@@ -9,7 +9,7 @@ interface HeroProps {
 }
 
 export default function Banner({ title, eventDate }: HeroProps) {
-  const [timeLeft, setTimeLeft] = useState<string>("");
+  const [timeLeft, setTimeLeft] = useState<string>("12d 12h 20m 20s");
   useEffect(() => {
     if (!eventDate) return;
 
@@ -33,13 +33,12 @@ export default function Banner({ title, eventDate }: HeroProps) {
 
     return () => clearInterval(timer);
   }, [eventDate]);
-
   // Only show if data exists
   if (!title || !eventDate || timeLeft === "0" || timeLeft === "") return null;
   
   return (
-    <section className="bg-primary text-black px-10 py-1 rounded-b-lg flex flex-row items-center gap-10">
-      <h1 className="text-2xl font-bold">{title}</h1>
+    <section className="bg-primary text-black px-10 py-1 rounded-b-lg flex flex-col md:flex-row md:items-center md:gap-10">
+      <h1 className="text-md md:text-2xl font-bold">{title}</h1>
       <p className="text-1xl">Starts in: {timeLeft}</p>
     </section>
   );

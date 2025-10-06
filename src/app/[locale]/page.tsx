@@ -24,7 +24,7 @@ export default async function Home(props: {
     <div className="min-h-screen bg-background text-white">
       <Header bannerTitle={data.title} bannerDate={data.date} lang={lang}/>
       <main>
-        <Hero lang={lang}/>
+        <Hero lang={lang} bannerDate={data.date}/>
         <About lang={lang}/>
         <Services lang={lang}/>
         {/** <Testimonials />*/}
