@@ -30,13 +30,13 @@ export default function HeaderClient({ bannerTitleDe, bannerTitleEn, bannerDate,
           </IntlLink>
           <div className="hidden md:flex items-center space-x-4">
           <nav className="flex items-center space-x-8">
-            <IntlLink href="/" className={`text-foreground hover:text-primary transition-colors ${pathname === "/" ? "text-primary font-bold": ""}`}>
+            <IntlLink href="/" className={`text-foreground hover:text-primary transition-colors ${pathname === "/" || pathname == "/en" ? "text-primary font-bold": ""}`}>
               {labels.home}
             </IntlLink>
-            <IntlLink href="/about" className={`text-foreground hover:text-primary transition-colors ${pathname === "/about" ? "text-primary font-bold": ""}`}>
+            <IntlLink href="/about" className={`text-foreground hover:text-primary transition-colors ${pathname === "/about" || pathname === "/en/about" ? "text-primary font-bold": ""}`}>
               {labels.about}
             </IntlLink>
-            <IntlLink href="/services" className={`text-foreground hover:text-primary transition-colors ${pathname === "/services" ? "text-primary font-bold": ""}`}>
+            <IntlLink href="/services" className={`text-foreground hover:text-primary transition-colors ${pathname === "/services" || pathname === "en/services" ? "text-primary font-bold": ""}`}>
               {labels.services}
             </IntlLink>
             {/** <IntlLink href="/#testimonials" className="text-foreground hover:text-primary transition-colors">
