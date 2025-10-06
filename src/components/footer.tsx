@@ -1,6 +1,15 @@
-import Link from "next/link"
-import { Dumbbell, Facebook, Instagram, Twitter, Youtube, Heart, Linkedin } from "lucide-react"
-import LocaleSwitcher from "./LocaleSwitcher"
+import { Link as IntlLink } from "../i18n/navigation";
+import Link from "next/link";
+import {
+  Dumbbell,
+  Facebook,
+  Heart,
+  Instagram,
+  Linkedin,
+  Twitter,
+  Youtube,
+} from "lucide-react";
+import LocaleSwitcher from "./LocaleSwitcher";
 import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 
@@ -12,15 +21,25 @@ export async function Footer({ lang }: { lang: Locale }) {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Link className="flex items-center space-x-2" href="/">
-                <img src="/logo_horizontal_white.svg" alt="logo" className="h-8" />
-              </Link>
+              <IntlLink className="flex items-center space-x-2" href="/">
+                <img
+                  src="/logo_horizontal_white.svg"
+                  alt="logo"
+                  className="h-8"
+                />
+              </IntlLink>
             </div>
             <div className="flex space-x-4">
-              <Link href="https://www.instagram.com/jaegerpeak/" className="text-foreground hover:text-primary transition-colors">
+              <Link
+                href="https://www.instagram.com/jaegerpeak/"
+                className="text-foreground hover:text-primary transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </Link>
-              <Link href="https://www.linkedin.com/in/ramon-j%C3%A4ger-05661a23a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-foreground hover:text-primary transition-colors">
+              <Link
+                href="https://www.linkedin.com/in/ramon-j%C3%A4ger-05661a23a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                className="text-foreground hover:text-primary transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
               </Link>
             </div>
@@ -31,22 +50,34 @@ export async function Footer({ lang }: { lang: Locale }) {
             <h3 className="text-white font-semibold mb-4">{t("services")}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services#body-shaping" className="text-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services#body-shaping"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
                   {t("body-shaping")}
                 </Link>
               </li>
               <li>
-                <Link href="/services#athletic-performance-coaching" className="text-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services#athletic-performance-coaching"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
                   {t("athletic-performance-coaching")}
                 </Link>
               </li>
               <li>
-                <Link href="/services#functional-training" className="text-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services#functional-training"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
                   {t("functional-training")}
                 </Link>
               </li>
               <li>
-                <Link href="/services#trainings-einführung" className="text-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services#trainings-einführung"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
                   {t("training-introduction")}
                 </Link>
               </li>
@@ -57,31 +88,45 @@ export async function Footer({ lang }: { lang: Locale }) {
             <h3 className="text-white font-semibold mb-4">{t("links")}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-foreground hover:text-primary transition-colors">
+                <IntlLink
+                  href="/about"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
                   {t("about")}
-                </Link>
+                </IntlLink>
               </li>
               <li>
-                <Link href="/services" className="text-foreground hover:text-primary transition-colors">
+                <IntlLink
+                  href="/services"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
                   {t("services")}
-                </Link>
+                </IntlLink>
               </li>
-              {/**}
+              {
+                /**}
               <li>
                 <Link href="#testimonials" className="text-foreground hover:text-primary transition-colors">
                   Bewertungen
                 </Link>
               </li>
-              */}
+              */
+              }
               <li>
-                <Link href="#contact" className="text-foreground hover:text-primary transition-colors">
+                <a
+                  href="/#contact"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
                   {t("contact")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/impressum" className="text-foreground hover:text-primary transition-colors">
+                <IntlLink
+                  href="/impressum"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
                   {t("impressum")}
-                </Link>
+                </IntlLink>
               </li>
             </ul>
           </div>
@@ -89,9 +134,26 @@ export async function Footer({ lang }: { lang: Locale }) {
           <div>
             <h3 className="text-white font-semibold mb-4">{t("contact")}</h3>
             <ul className="space-y-2 text-foreground">
-              <li><Link href={"mailto:info@jaegerpeak.ch"} className="hover:text-primary duration-300">info@jaegerpeak.ch</Link></li>
-              <li>              <Link className="text-white hover:text-primary duration-300" href={"tel:+41763867705"}>+41 76 386 77 05</Link></li>
-              <Link className="text-white hover:text-primary duration-300" href={"https://maps.app.goo.gl/9ub5LKuiPHpjzZGY9"}>
+              <li>
+                <Link
+                  href={"mailto:info@jaegerpeak.ch"}
+                  className="hover:text-primary duration-300"
+                >
+                  info@jaegerpeak.ch
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-white hover:text-primary duration-300"
+                  href={"tel:+41763867705"}
+                >
+                  +41 76 386 77 05
+                </Link>
+              </li>
+              <Link
+                className="text-white hover:text-primary duration-300"
+                href={"https://maps.app.goo.gl/9ub5LKuiPHpjzZGY9"}
+              >
                 {t("place")}
               </Link>
             </ul>
@@ -101,10 +163,14 @@ export async function Footer({ lang }: { lang: Locale }) {
         <div className="mt-8 border-t border-border text-center text-sm text-muted-foreground py-2">
           <div className="w-full flex justify-center">
             <div className="p-3 text-center text-zinc-500 flex">
-              {t("developedby")} {" "}
+              {t("developedby")}{"  "}
               <Heart className="text-blacklemon h-4 w-4 fill-current ml-1 mr-1" />
               {t("by")}
-              <Link target="_blank" href="https://blacklemon.design" className="hover:text-blacklemon ml-1 text-blacklemon">
+              <Link
+                target="_blank"
+                href="https://blacklemon.design"
+                className="hover:text-blacklemon ml-1 text-blacklemon"
+              >
                 <strong>BlackLemon</strong>
               </Link>
             </div>
@@ -112,5 +178,5 @@ export async function Footer({ lang }: { lang: Locale }) {
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -5,18 +5,26 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 
-export async function AboutHero({ lang }: { lang: Locale }) {
-      const t = await getTranslations({ namespace: "About", locale: lang });
+export async function AboutHero(
+  { lang, bannerDate }: { lang: Locale; bannerDate: string },
+) {
+  const t = await getTranslations({ namespace: "About", locale: lang });
+  const bannerDateAsDate = new Date(bannerDate);
 
   return (
-    <section className="pt-24 lg:pt-16 min-h-screen flex items-center bg-background pb-20">
+    <section
+      className={`lg:pt-16 min-h-screen flex items-center bg-background pb-20  ${
+        bannerDateAsDate < new Date(Date.now()) ? "pt-24" : "pt-52 lg:pt-24"
+      }`}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile Layout */}
         <div className="space-y-8 lg:hidden">
           {/* Überschrift */}
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              {t("htitle1")}<span className="text-primary">{t("htitle2")}</span>
+              {t("htitle1")}
+              <span className="text-primary">{t("htitle2")}</span>
             </h1>
           </div>
 
@@ -25,7 +33,7 @@ export async function AboutHero({ lang }: { lang: Locale }) {
               {t("hsubtitle")}
             </p>
           </div>
-          
+
           {/* Bild - nur auf mobilen Geräten */}
           <div className="relative w-full max-w-md mx-auto">
             <img
@@ -34,7 +42,6 @@ export async function AboutHero({ lang }: { lang: Locale }) {
               className="object-contain rounded-2xl"
             />
           </div>
-          
 
           {/* Text-Inhalt */}
           <div className="space-y-6">
@@ -42,8 +49,6 @@ export async function AboutHero({ lang }: { lang: Locale }) {
               {t("htext")}
             </p>
           </div>
-
-          
 
           {/* Button */}
           <div className="w-full">
@@ -65,7 +70,8 @@ export async function AboutHero({ lang }: { lang: Locale }) {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                {t("htitle1")}<span className="text-primary">{t("htitle2")}</span>
+                {t("htitle1")}
+                <span className="text-primary">{t("htitle2")}</span>
               </h1>
               <p className="text-xl text-foreground">
                 {t("hsubtitle")}

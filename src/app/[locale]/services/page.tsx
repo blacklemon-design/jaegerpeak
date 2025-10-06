@@ -14,7 +14,7 @@ export default async function ServicesPage(props: {
     <div className="min-h-screen bg-background text-white">
       <Header bannerTitleDe={data.title_de} bannerTitleEn={data.title_en} bannerDate={data.date} lang={lang}/>
       <main>
-        <ServicesHero lang={lang}/>
+        <ServicesHero lang={lang} bannerDate={data.date}/>
         <ServiceDetails lang={lang}/>
         {/*<ServiceComparison />
         <ServicesFAQ />
