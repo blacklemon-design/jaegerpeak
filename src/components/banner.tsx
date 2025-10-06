@@ -16,7 +16,7 @@ export default function Banner(
 ) {
   const locale = useLocale();
 
-  const [timeLeft, setTimeLeft] = useState("—");
+  const [timeLeft, setTimeLeft] = useState("");
 
   useEffect(() => {
     if (!eventDate) return;
