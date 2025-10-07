@@ -191,6 +191,7 @@
     "by": " by "
   },
   "Banner": {
-    "starts_in": "Starts in"
+    "starts_in": "Starts in",
+    "ends_in": "Ends in"
   }
 }

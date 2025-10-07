@@ -8,11 +8,13 @@ interface HeroProps {
   titleDe?: string;
   titleEn?: string;
   eventDate?: string;
+  isStartDate: boolean;
   starts_in: string;
+  ends_in: string;
 }
 
 export default function Banner(
-  { titleDe, titleEn, eventDate, starts_in }: HeroProps,
+  { titleDe, titleEn, eventDate, isStartDate, starts_in, ends_in }: HeroProps,
 ) {
   const locale = useLocale();
 
@@ -56,7 +58,7 @@ export default function Banner(
       <h1 className="text-md md:text-2xl font-bold">
         {locale == "de" ? titleDe : titleEn}
       </h1>
-      <p className="text-md">{starts_in}: {timeLeft}</p>
+      <p className="text-md">{isStartDate ? starts_in: ends_in}: {timeLeft}</p>
     </section>
   );
 }

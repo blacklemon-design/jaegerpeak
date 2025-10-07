@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 import HeaderClient from "./header-client";
 
-export default async function Header({ bannerTitleDe, bannerTitleEn, bannerDate, lang }: { bannerTitleDe: string; bannerTitleEn: string; bannerDate: string; lang: Locale }) {
+export default async function Header({ bannerTitleDe, bannerTitleEn, bannerDate, isBannerStartDate, lang }: { bannerTitleDe: string; bannerTitleEn: string; bannerDate: string; isBannerStartDate: boolean; lang: Locale }) {
   const t = await getTranslations({ locale: lang });
 
   const labels = {
@@ -10,7 +10,8 @@ export default async function Header({ bannerTitleDe, bannerTitleEn, bannerDate,
     about: t("Header.about"),
     services: t("Header.services"),
     contact: t("Header.contact"),
-    starts_in: t("Banner.starts_in")
+    starts_in: t("Banner.starts_in"),
+    ends_in: t("Banner.ends_in")
   };
 
   return (
@@ -18,6 +19,7 @@ export default async function Header({ bannerTitleDe, bannerTitleEn, bannerDate,
       bannerTitleDe={bannerTitleDe}
       bannerTitleEn={bannerTitleEn}
       bannerDate={bannerDate}
+      isBannerStartDate={isBannerStartDate}
       labels={labels}
     />
   );

@@ -16,9 +16,10 @@ type Labels = {
   services: string;
   contact: string;
   starts_in: string;
+  ends_in: string;
 };
 
-export default function HeaderClient({ bannerTitleDe, bannerTitleEn, bannerDate, labels }: { bannerTitleDe: string; bannerTitleEn: string; bannerDate: string; labels: Labels }){
+export default function HeaderClient({ bannerTitleDe, bannerTitleEn, bannerDate, isBannerStartDate, labels }: { bannerTitleDe: string; bannerTitleEn: string; bannerDate: string; isBannerStartDate: boolean; labels: Labels }){
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname();
   return (
@@ -100,7 +101,7 @@ export default function HeaderClient({ bannerTitleDe, bannerTitleEn, bannerDate,
           </div>
         )}
       </div>
-      <Banner titleEn={bannerTitleEn} titleDe={bannerTitleDe} eventDate={bannerDate} starts_in={labels.starts_in}/>
+      <Banner titleEn={bannerTitleEn} titleDe={bannerTitleDe} eventDate={bannerDate} isStartDate={isBannerStartDate} starts_in={labels.starts_in} ends_in={labels.ends_in} />
     </header>
   )
 }

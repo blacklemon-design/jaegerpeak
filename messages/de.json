@@ -196,6 +196,7 @@
     "by": " von "
   },
   "Banner": {
-    "starts_in": "Startet in"
+    "starts_in": "Startet in",
+    "ends_in": "Endet in"
   }
 }
