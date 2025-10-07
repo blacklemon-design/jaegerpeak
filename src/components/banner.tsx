@@ -41,7 +41,6 @@ export default function Banner(
       if (days) parts.push(`${days}d`);
       if (hours || days) parts.push(`${hours}h`);
       if (minutes || hours || days) parts.push(`${minutes}m`);
-      parts.push(`${seconds}s`);
 
       setTimeLeft(parts.join(" "));
     };
