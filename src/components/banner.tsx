@@ -54,8 +54,8 @@ export default function Banner(
   if (!titleDe || !titleEn || !eventDate || timeLeft === "0" || timeLeft === "0s" || timeLeft === "") return null;
 
   return (
-    <section className="bg-primary text-black px-10 py-1 rounded-b-lg flex flex-col md:flex-row md:items-center md:gap-10">
-      <h1 className="text-md md:text-2xl font-bold">
+    <section className="bg-primary text-black px-10 py-2 rounded-b-lg flex flex-col md:flex-row md:items-center md:gap-10">
+      <h1 className="text-md md:text-xl font-bold">
         {locale == "de" ? titleDe : titleEn}
       </h1>
       <p className="text-md">{isStartDate ? starts_in: ends_in}: {timeLeft}</p>
