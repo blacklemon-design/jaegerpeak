@@ -37,7 +37,7 @@ export async function Footer({ lang }: { lang: Locale }) {
                 <Instagram className="h-5 w-5" />
               </Link>
               <Link
-                href="https://www.linkedin.com/in/ramon-j%C3%A4ger-05661a23a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                href="https://linkedin.com/company/jäger-peak/"
                 className="text-foreground hover:text-primary transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
