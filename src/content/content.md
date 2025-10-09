@@ -6,5 +6,5 @@ title_en: "Launch offer: Only 15 spot available - CHF 150 instead of CHF 180 for
 date: 2025-10-08T08:43:00.000+02:00
 is_start_date: false
 show_date: true
-show_banner: true
+show_banner: false
 ---
