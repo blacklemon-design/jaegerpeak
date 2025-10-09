@@ -4,14 +4,13 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 
-export async function Hero({ lang, bannerDate }: { lang: Locale, bannerDate: string }) {
+export async function Hero({ lang, showBanner }: { lang: Locale, showBanner: boolean }) {
   const t = await getTranslations({ namespace: "Hero", locale: lang });
-  const bannerDateAsDate = new Date(bannerDate);
-
+  console.log(showBanner)
   return (
     <section
       id="home"
-      className={`pt-16 md:min-h-screen mb-16 md:mb-0 flex md:items-center bg-gradient-to-br bg-background mt-14 lg:mt-0 relative ${bannerDateAsDate < new Date(Date.now()) ? "pt-16": "pt-34 lg:pt-16"}`}
+      className={`pt-16 md:min-h-screen mb-16 md:mb-0 flex md:items-center bg-gradient-to-br bg-background mt-14 lg:mt-0 relative ${!showBanner ? "pt-16": "pt-34 lg:pt-16"}`}
     > 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-2 gap-10 md:gap-12">

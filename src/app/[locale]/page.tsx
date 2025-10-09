@@ -1,6 +1,6 @@
 import { About } from "@/components/about";
-import  Contact  from "@/components/contact";
-import {Faq} from "@/components/faq";
+import Contact from "@/components/contact";
+import { Faq } from "@/components/faq";
 import { Footer } from "@/components/footer";
 import Header from "@/components/header";
 import { Hero } from "@/components/hero";
@@ -19,20 +19,36 @@ export default async function Home(props: {
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await props.params;
-
+  const isBannerShown = () => {
+    if (!data.show_banner) return false;
+    const diff = new Date(data.date).getTime() - Date.now();
+    console.log(diff);
+    if (!data.show_date) return true;
+    const showBanner = diff >= 0 && data.show_date;
+    return showBanner;
+  };
+  console.log(isBannerShown());
   return (
     <div className="min-h-screen bg-background text-white">
-      <Header bannerTitleDe={data.title_de} bannerTitleEn={data.title_en} bannerDate={data.date} isBannerStartDate={data.is_start_date}  lang={lang}/>
+      <Header
+        bannerTitleDe={data.title_de}
+        bannerTitleEn={data.title_en}
+        bannerDate={data.date}
+        isBannerStartDate={data.is_start_date}
+        showDate={data.show_date}
+        showBanner={data.show_banner}
+        lang={lang}
+      />
       <main>
-        <Hero lang={lang} bannerDate={data.date}/>
-        <About lang={lang}/>
-        <Services lang={lang}/>
+        <Hero lang={lang} showBanner={isBannerShown()} />
+        <About lang={lang} />
+        <Services lang={lang} />
         {/** <Testimonials />*/}
         <Partners />
-        <Faq lang={lang}/>
-        <Contact lang={lang}/>
+        <Faq lang={lang} />
+        <Contact lang={lang} />
       </main>
-      <Footer lang={lang}/>
+      <Footer lang={lang} />
     </div>
   );
 }

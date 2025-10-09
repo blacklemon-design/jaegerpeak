@@ -15,6 +15,8 @@ collections:
         - { label: "Title_English", name: "title_en", widget: "string", required: false}
         - { label: "Date", name: "date", widget: "datetime", required: false}
         - { label: "isStartDate", name: "is_start_date", widget: "boolean", required: true }
+        - { label: "Show_Date", name: "show_date", widget: "boolean", required: true }
+        - { label: "Show_Banner", name: "show_banner", widget: "boolean", required: true }
     - label: "Testimonials"
       name: "testimonials"
       file: "src/content/testimonials.md"

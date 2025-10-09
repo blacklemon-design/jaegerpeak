@@ -12,7 +12,7 @@ export default async function ImpressumPage(props: {
 
   return (
     <div className="min-h-screen bg-background text-white flex flex-col justify-between">
-      <Header bannerTitleDe={""} bannerTitleEn={""} bannerDate={""} isBannerStartDate={true} lang={lang}/>
+      <Header bannerTitleDe={""} bannerTitleEn={""} bannerDate={""} isBannerStartDate={true} showDate={true} showBanner={false}  lang={lang}/>
       <main>
         <Impressum lang={lang}/>
       </main>

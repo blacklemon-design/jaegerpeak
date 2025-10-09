@@ -9,12 +9,14 @@ interface HeroProps {
   titleEn?: string;
   eventDate?: string;
   isStartDate: boolean;
+  showDate: boolean;
+  showBanner: boolean;
   starts_in: string;
   ends_in: string;
 }
 
 export default function Banner(
-  { titleDe, titleEn, eventDate, isStartDate, starts_in, ends_in }: HeroProps,
+  { titleDe, titleEn, eventDate, isStartDate, showDate, showBanner, starts_in, ends_in }: HeroProps,
 ) {
   const locale = useLocale();
 
@@ -50,14 +52,19 @@ export default function Banner(
     return () => clearInterval(timer);
   }, [eventDate]);
   // Only show if data exists
-  if (!titleDe || !titleEn || !eventDate || timeLeft === "0" || timeLeft === "0s" || timeLeft === "") return null;
+  console.log(showBanner);
+  if (!showBanner) return null;
+  console.log(eventDate);
+  if (!eventDate) return null;
+  if ((eventDate === "" || timeLeft === "0s") && showDate) return null;
+  if ((new Date(eventDate).getTime() < new Date().getTime()) && showDate) return null;
 
   return (
     <section className="bg-primary text-black px-10 py-2 rounded-b-lg flex flex-col md:flex-row md:items-center md:gap-10">
       <h1 className="text-md md:text-xl font-bold">
         {locale == "de" ? titleDe : titleEn}
       </h1>
-      <p className="text-md">{isStartDate ? starts_in: ends_in}: {timeLeft}</p>
+      {showDate ? <p className="text-md">{isStartDate ? starts_in: ends_in}: {timeLeft}</p>: <></>}
     </section>
   );
 }
