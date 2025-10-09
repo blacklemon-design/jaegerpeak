@@ -37,7 +37,7 @@ export function Partners() {
                         className="hover:scale-110 duration-300 ease-in-out"
                     >
                         <img
-                            src="/images/partners/kraftwerk_fitness.png"
+                            src="/images/partners/kraftwerk_fitness.svg"
                             alt="Athletic fitness coach in dynamic jumping pose"
                             className="w-40 md:w-auto max-h-60 obeject-cover mx-auto"
                         />
