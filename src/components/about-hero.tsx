@@ -6,16 +6,13 @@ import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 
 export async function AboutHero(
-  { lang, bannerDate }: { lang: Locale; bannerDate: string },
+  { lang, showBanner }: { lang: Locale, showBanner: boolean },
 ) {
   const t = await getTranslations({ namespace: "About", locale: lang });
-  const bannerDateAsDate = new Date(bannerDate);
 
   return (
     <section
-      className={`lg:pt-16 min-h-screen flex items-center bg-background pb-20  ${
-        bannerDateAsDate < new Date(Date.now()) ? "pt-24" : "pt-52 lg:pt-24"
-      }`}
+      className={`lg:pt-16 min-h-screen flex items-center bg-background pb-20  ${!showBanner ? "pt-16": "pt-34 lg:pt-16"}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile Layout */}

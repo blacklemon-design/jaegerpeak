@@ -5,13 +5,12 @@ import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 export async function ServicesHero(
-  { lang, bannerDate }: { lang: Locale; bannerDate: string },
+  { lang, showBanner }: { lang: Locale, showBanner: boolean },
 ) {
   const t = await getTranslations({ namespace: "Services", locale: lang });
-  const bannerDateAsDate = new Date(bannerDate);
 
   return (
-    <section className={`min-h-[60vh] flex items-center bg-background ${bannerDateAsDate < new Date(Date.now()) ? "pt-16": "pt-52 lg:pt-16"}`}>
+    <section className={`min-h-[60vh] flex items-center bg-background ${!showBanner ? "pt-16": "pt-34 lg:pt-16"}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-8">
           <div className="space-y-4">
