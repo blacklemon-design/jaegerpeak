@@ -10,7 +10,7 @@ export async function ServicesHero(
   const t = await getTranslations({ namespace: "Services", locale: lang });
 
   return (
-    <section className={`min-h-[60vh] flex items-center bg-background ${!showBanner ? "pt-16": "pt-34 lg:pt-16"}`}>
+    <section className={`md:min-h-[40vh] lg:min-h-[60vh] flex items-center bg-background mt-14 lg:mt-0 ${!showBanner ? "pt-16": "pt-34 lg:pt-16"}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-8">
           <div className="space-y-4">

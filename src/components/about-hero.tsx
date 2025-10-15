@@ -12,7 +12,7 @@ export async function AboutHero(
 
   return (
     <section
-      className={`lg:pt-16 min-h-screen flex items-center bg-background pb-20  ${!showBanner ? "pt-16": "pt-34 lg:pt-16"}`}
+          className={`pt-16 md:min-h-screen mb-16 md:mb-0 flex md:items-center bg-gradient-to-br bg-background mt-14 lg:mt-0 relative ${!showBanner ? "pt-16": "pt-34 lg:pt-16"}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile Layout */}
