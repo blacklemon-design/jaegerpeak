@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 import HeaderClient from "./header-client";
 
-export default async function Header({ bannerTitleDe, bannerTitleEn, bannerDate, isBannerStartDate, showDate, showBanner, lang }: { bannerTitleDe: string; bannerTitleEn: string; bannerDate: string; isBannerStartDate: boolean; showDate: boolean; showBanner: boolean; lang: Locale }) {
+export default async function Header({ bannerTitleDe, bannerTitleEn, bannerDescriptionDe, bannerDescriptionEn, bannerDate, isBannerStartDate, showDate, showBanner, lang }: { bannerTitleDe: string; bannerTitleEn: string; bannerDescriptionDe: string; bannerDescriptionEn: string; bannerDate: string; isBannerStartDate: boolean; showDate: boolean; showBanner: boolean; lang: Locale }) {
   const t = await getTranslations({ locale: lang });
   const labels = {
     home: t("Header.home"),
@@ -16,6 +16,8 @@ export default async function Header({ bannerTitleDe, bannerTitleEn, bannerDate,
     <HeaderClient
       bannerTitleDe={bannerTitleDe}
       bannerTitleEn={bannerTitleEn}
+      bannerDescriptionDe={bannerDescriptionDe}
+      bannerDescriptionEn={bannerDescriptionEn}
       bannerDate={bannerDate}
       isBannerStartDate={isBannerStartDate}
       showDate={showDate}

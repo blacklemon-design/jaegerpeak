@@ -33,6 +33,8 @@ export default async function Home(props: {
       <Header
         bannerTitleDe={data.title_de}
         bannerTitleEn={data.title_en}
+        bannerDescriptionDe={data.description_de} 
+        bannerDescriptionEn={data.description_en}
         bannerDate={data.date}
         isBannerStartDate={data.is_start_date}
         showDate={data.show_date}

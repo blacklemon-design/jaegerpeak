@@ -19,7 +19,7 @@ type Labels = {
   ends_in: string;
 };
 
-export default function HeaderClient({ bannerTitleDe, bannerTitleEn, bannerDate, isBannerStartDate, showDate, showBanner, labels }: { bannerTitleDe: string; bannerTitleEn: string; bannerDate: string; isBannerStartDate: boolean; showDate: boolean; showBanner: boolean; labels: Labels }){
+export default function HeaderClient({ bannerTitleDe, bannerTitleEn, bannerDescriptionDe, bannerDescriptionEn, bannerDate, isBannerStartDate, showDate, showBanner, labels }: { bannerTitleDe: string; bannerTitleEn: string; bannerDescriptionDe: string; bannerDescriptionEn: string; bannerDate: string; isBannerStartDate: boolean; showDate: boolean; showBanner: boolean; labels: Labels }){
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname();
   return (
@@ -101,7 +101,7 @@ export default function HeaderClient({ bannerTitleDe, bannerTitleEn, bannerDate,
           </div>
         )}
       </div>
-      <Banner titleEn={bannerTitleEn} titleDe={bannerTitleDe} eventDate={bannerDate} isStartDate={isBannerStartDate} showDate={showDate} showBanner={showBanner} starts_in={labels.starts_in} ends_in={labels.ends_in}/>
+      <Banner titleEn={bannerTitleEn} titleDe={bannerTitleDe} descriptionDe={bannerDescriptionDe} descriptionEn={bannerDescriptionEn} eventDate={bannerDate} isStartDate={isBannerStartDate} showDate={showDate} showBanner={showBanner} starts_in={labels.starts_in} ends_in={labels.ends_in}/>
     </header>
   )
 }
