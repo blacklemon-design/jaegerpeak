@@ -13,8 +13,8 @@ collections:
       fields:
         - { label: "Title_Deutsch", name: "title_de", widget: "string", required: false}
         - { label: "Title_English", name: "title_en", widget: "string", required: false}
-        - { label: "Description_Deutsch", name: "title_de", widget: "string", required: false}
-        - { label: "Description_English", name: "title_en", widget: "string", required: false}
+        - { label: "Description_Deutsch", name: "description_de", widget: "string", required: false}
+        - { label: "Description_English", name: "description_en", widget: "string", required: false}
         - { label: "Date", name: "date", widget: "datetime", required: false}
         - { label: "isStartDate", name: "is_start_date", widget: "boolean", required: true }
         - { label: "Show_Date", name: "show_date", widget: "boolean", required: true }
