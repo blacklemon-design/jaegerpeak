@@ -12,7 +12,7 @@ export async function AboutHero(
 
   return (
     <section
-          className={`pt-16 md:min-h-screen mb-16 md:mb-0 flex md:items-center bg-gradient-to-br bg-background mt-14 lg:mt-0 relative ${!showBanner ? "pt-16": "pt-34 lg:pt-16"}`}
+          className={`pt-16 md:min-h-screen mb-16 md:mb-0 flex md:items-center bg-gradient-to-br bg-background mt-14 lg:mt-15 relative ${!showBanner ? "pt-16": "pt-34 lg:pt-16"}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile Layout */}
@@ -82,7 +82,7 @@ export async function AboutHero(
               <Link href="/#contact" passHref>
                 <Button
                   size="lg"
-                  className="w-full bg-primary hover:bg-primary text-white px-8 py-3 whitespace-normal text-center"
+                  className="w-full bg-primary hover:bg-primary text-white px-8 py-3 whitespace-normal text-center mb-5"
                 >
                   <p className="">
                     {t("hbutton")}
