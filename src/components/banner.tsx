@@ -75,7 +75,7 @@ export default function Banner({
       {/* 🔹 Banner bleibt oben */}
       <section
         onClick={() => setIsPopupOpen(true)}
-        className="bg-primary text-black px-10 py-3 rounded-b-lg flex flex-col md:flex-row md:items-center md:gap-10 cursor-pointer hover:bg-primary/90 transition-colors shadow-md"
+        className="bg-primary text-white px-10 py-3 rounded-b-lg flex flex-col md:flex-row md:items-center md:gap-10 cursor-pointer hover:bg-primary/90 transition-colors shadow-md"
       >
         <h1 className="text-md md:text-xl font-bold">{title}</h1>
         {showDate ? (
@@ -98,7 +98,7 @@ export default function Banner({
             <p className="text-gray-700 mb-6">{description}</p>
             <button
               onClick={() => setIsPopupOpen(false)}
-              className="bg-primary text-black px-4 py-2 rounded-lg font-medium hover:bg-primary/80 transition"
+              className="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-primary/80 transition"
             >
               Schließen
             </button>
