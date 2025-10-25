@@ -58,9 +58,18 @@ export default function Banner({
     updateCountdown();
     const timer = setInterval(updateCountdown, 1000);
 
-    return () =>  clearInterval(timer);
+      if (isPopupOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
+    }
 
-  }, [eventDate]);
+    return () => {
+      document.body.style.overflow = "unset"
+      clearInterval(timer);
+    } 
+
+  }, [eventDate, isPopupOpen]);
 
   if (!showBanner) return null;
   if (!eventDate) return null;
