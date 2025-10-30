@@ -23,7 +23,7 @@ export default async function ServicesPage(props: {
       <Header bannerTitleDe={data.title_de} bannerTitleEn={data.title_en} bannerDescriptionDe={data.description_de} bannerDescriptionEn={data.description_en} bannerDate={data.date} isBannerStartDate={data.is_start_date} showDate={data.show_date} showBanner={data.show_banner} lang={lang}/>
       <main>
         <ServicesHero lang={lang} showBanner={isBannerShown()}/>
-        <ServiceDetails lang={lang}/>
+        <ServiceDetails lang={lang} showBanner={isBannerShown()}/>
         {/*<ServiceComparison />
         <ServicesFAQ />
         <ServicesContact />*/}

@@ -50,7 +50,7 @@ export async function Services({ lang }: { lang: Locale }) {
       ],
     },
     {
-      id: "trainings-einführung",
+      id: "trainings-einfuehrung",
       iconPath: "/images/Icon_Trainingsanpassung.png",
       title: t("straining_title"),
       subtitle: t("straining_sub"),
