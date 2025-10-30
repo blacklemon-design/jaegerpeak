@@ -48,7 +48,7 @@ export default async function Home(props: {
         {/** <Testimonials />*/}
         <Partners />
         <Faq lang={lang} />
-        <Contact lang={lang} />
+        <Contact lang={lang} showBanner={isBannerShown()}/>
       </main>
       <Footer lang={lang} />
     </div>
