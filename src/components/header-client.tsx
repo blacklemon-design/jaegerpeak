@@ -23,7 +23,7 @@ export default function HeaderClient({ bannerTitleDe, bannerTitleEn, bannerDescr
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname();
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border-dark z-50">
+    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           <IntlLink className="flex items-center space-x-2" href="/">
