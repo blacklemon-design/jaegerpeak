@@ -53,7 +53,7 @@ export async function ServiceDetails({ lang, showBanner }: { lang: Locale, showB
       title: t("service4_title"),
       subtitle: t("service4_subtitle"),
       description: t("service4_description"),
-      price: "CHF 180",
+      price: "CHF 160",
       duration: t("service4_duration"),
       idealFor: [t("service4_idealFor1"), t("service4_idealFor2"), t("service4_idealFor3"), t("service4_idealFor4")],
       frequentGoals: [t("service4_frequentGoals1"), t("service4_frequentGoals2"), t("service4_frequentGoals3")],

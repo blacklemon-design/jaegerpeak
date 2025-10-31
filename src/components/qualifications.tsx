@@ -28,7 +28,7 @@ export async function Qualifications({ lang }: { lang: Locale }) {
       title: t("c4_title"),
       organization: "SAFS",
       year: t("c4_year"),
-      status: "running",
+      status: "finished",
     },
   ]
 
