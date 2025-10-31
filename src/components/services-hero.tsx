@@ -31,16 +31,6 @@ export async function ServicesHero(
                 {t("hbutton1")}
               </Button>
             </Link>
-            <Link href="/services#body-shaping" passHref>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-card text-white hover:bg-card-dark px-8 py-3 bg-transparent max-w-full whitespace-normal text-center"
-              >
-                <ArrowDown className="h-5 w-5 mr-2" />
-                {t("hbutton2")}
-              </Button>
-            </Link>
           </div>
         </div>
       </div>
