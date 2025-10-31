@@ -31,7 +31,7 @@ export function ScrollOffsetWrapper({
                         behavior: "instant",
                     })
                 }
-            }, 100)
+            }, 500)
         }
     })
 
