@@ -16,20 +16,22 @@ export function ScrollOffsetWrapper({
 
     useEffect(() => {
         if (showBanner) {
-            
+
             const hash = window.location.hash.slice(1)
             const targetElement = document.getElementById(hash)
 
-            if (targetElement) {
-                const elementRect = targetElement.getBoundingClientRect()
-                const elementTop = elementRect.top + window.scrollY
-                const offsetPosition = elementTop - 85
+            setTimeout(() => {
+                if (targetElement) {
+                    const elementRect = targetElement.getBoundingClientRect()
+                    const elementTop = elementRect.top + window.scrollY
+                    const offsetPosition = elementTop - 85
 
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: "instant",
-                })
-            }
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "instant",
+                    })
+                }
+            }, 100)
         }
     })
 
