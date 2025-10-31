@@ -30,6 +30,18 @@ export async function Qualifications({ lang }: { lang: Locale }) {
       year: t("c4_year"),
       status: "finished",
     },
+    {
+      title: t("c5_title"),
+      organization: "RD®SAS GmbH",
+      year: t("c5_year"),
+      status: "running",
+    },
+    {
+      title: t("c6_title"),
+      organization: "RD®SAS GmbH",
+      year: t("c6_year"),
+      status: "running",
+    },
   ]
 
   const achievements = [
