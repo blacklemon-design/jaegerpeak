@@ -8,6 +8,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Apple, Dumbbell, Users, Video } from "lucide-react";
 import Link from "next/link";
+import {Link as IntlLink} from "../i18n/navigation"
+
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
@@ -110,11 +112,11 @@ export async function Services({ lang }: { lang: Locale }) {
                   ))}
                 </ul>
                 <div className="pt-4 border-t border-card">
-                  <Link href={`/services#${service.id}`} passHref>
+                  <IntlLink href={{ pathname: '/services', hash: service.id }} passHref>
                     <Button className="w-full bg-primary hover:bg-primary-hover text-white">
                       {t("sbutton")}
                     </Button>
-                  </Link>
+                  </IntlLink>
                 </div>
               </CardContent>
             </Card>
