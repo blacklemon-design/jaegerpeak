@@ -80,12 +80,13 @@ export default function Banner({
         onClick={() => setIsPopupOpen(true)}
         className="bg-primary text-white px-10 py-3 rounded-b-lg flex flex-col md:flex-row md:items-center md:gap-10 cursor-pointer hover:bg-primary/90 transition-colors shadow-md"
       >
-        <h1 className="text-md md:text-xl font-bold">{title}</h1> <h1 className="text-md md:text-xl text-[#111827] underline decoration-[#111827] underline-offset-2">{locale === "de" ? "...mehr" : "...more"}</h1> 
+        <h1 className="text-md md:text-xl font-bold">{title}</h1>
         {showDate ? (
           <p className="text-md">
             {isStartDate ? starts_in : ends_in}: {timeLeft}
           </p>
         ) : null}
+         <h1 className="text-md md:text-xl text-[#111827] underline decoration-[#111827] underline-offset-2">{locale === "de" ? "...mehr" : "...more"}</h1> 
       </section>
 
       {isPopupOpen && (
