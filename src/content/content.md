@@ -5,6 +5,6 @@ description_de: Buche jetzt einen Termin für den nächsten Januar über das Kon
 description_en: Book now an appointment for next January using the contact form.
 date: 2025-11-12T00:00:00.000+01:00
 is_start_date: true
-show_date: false
+show_date: true
 show_banner: true
 ---
