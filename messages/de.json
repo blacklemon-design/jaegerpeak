@@ -195,6 +195,7 @@
     "services": "Angebote",
     "contact": "Kontakt",
     "impressum": "Impressum",
+    "datenschutzerklaerung": "Datenschutzerklärung",
     "place": "Diepoldsau - Schweiz",
     "developedby": "Entwickelt mit ",
     "by": " von "
@@ -202,5 +203,25 @@
   "Banner": {
     "starts_in": "Startet in",
     "ends_in": "Endet in"
+  },
+  "Datenschutzerklaerung": {
+    "Header": "Datenschutzerklärung",
+    "1_header" : "1 Datenschutzerklärung",
+    "1_text" : "Die vorliegende Datenschutzerklärung klärt Sie über die Art, den Umfang und den Zweck der Erhebung und Verwendung personenbezogener Daten auf unserer Website jaegerpeak.ch auf und gibt über die Ihnen zustehenden Rechte Auskunft. Diese Rechte richten sich nach den anwendbaren Datenschutzgesetzen.",
+    "2_header" : "2 Verantwortlicher für die Datenbearbeitung",
+    "2_text" : "Verantwortlicher für die Datenbearbeitung auf dieser Website und Ansprechpartner für Datenschutzanliegen ist:",
+    "2-1_text" : "Ramon Jäger",
+    "2-2_text" : "Rheinmühlestrasse 4 - 9444 Dieplodsau",
+    "2-3_text" : "+41 76 386 77 05",
+    "2-4_text" : "ramon@jaegerpeak.ch",
+    "3_header" : "3 Datenerfassung auf dieser Website",
+    "3-1_header" : "3.1 Kontaktformular",
+    "3-1_text" : "Wenn Sie unser Kontaktformular benutzen, werden Ihre Angaben aus dem Anfrageformular zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen von uns bearbeitet. In der Regel benötigen wir folgende Angaben: Name, E-Mail-Adresse und Nachrichteninhalt. Wir verwenden die von Ihnen mitgeteilten Daten, um Ihre Anfrage zu beantworten.",
+    "4_header" : "4 Links",
+    "4_text" : "Auf unserer Website finden Sie Links auf Seiten von Drittanbietern. Wir sind nicht verantwortlich für die Inhalte und Datenschutzvorkehrungen auf externen Websites, welche Sie über die Links erreichen können. Bitte informieren Sie sich über den Datenschutz direkt auf den entsprechenden Websites.",
+    "5_header" : "5 Ihre Rechte",
+    "5_text" : "Soweit von dem auf Sie anwendbaren Datenschutzrecht vorgesehen, können Sie unentgeltlich Auskunft über die auf Sie bezogenen gespeicherten Daten, deren Herkunft und den Zweck der Datenbearbeitung verlangen. Ebenso steht Ihnen unter den gesetzlichen Voraussetzungen ein Recht auf Berichtigung, Löschung, Einschränkung der oder Widerspruch gegen die Bearbeitung sowie, sofern die DSGVO zur Anwendung gelangt, auf Herausgabe dieser Daten zur Übertragung an eine andere Stelle zu. Eine von Ihnen erteilte Einwilligung können Sie mit Wirkung für die Zukunft jederzeit widerrufen. Bitte beachten Sie, dass die vorstehenden Rechte gesetzlichen Einschränkungen unterstehen und ggf. die Erbringung unserer Dienstleistungen beeinträchtigen oder verunmöglichen können. Sie sind berechtigt, Ihre Ansprüche gerichtlich durchzusetzen oder eine Beschwerde bei der zuständigen Datenschutzbehörde einzureichen. Für die Schweiz ist der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte zuständig (http://www.edoeb.admin.ch).",
+    "6_header" : "6 Aktualität und Änderung dieser Datenschutzerklärung",
+    "6_text" : "Wir können diese Datenschutzerklärung jederzeit ändern oder anpassen. Die aktuelle Datenschutzerklärung kann auf https://jaegerpeak.ch/datenschutzerklaerung abgerufen werden."
   }
 }

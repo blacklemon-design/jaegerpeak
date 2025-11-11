@@ -128,6 +128,14 @@ export async function Footer({ lang }: { lang: Locale }) {
                   {t("impressum")}
                 </IntlLink>
               </li>
+              <li>
+                <IntlLink
+                  href="/datenschutzerklaerung"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  {t("datenschutzerklaerung")}
+                </IntlLink>
+              </li>
             </ul>
           </div>
 

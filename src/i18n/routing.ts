@@ -12,6 +12,7 @@ export const routing = defineRouting({
     "/about": "/about",
     "/services": "/services",
     "/impressum": "/impressum",
+    "/datenschutzerklaerung": "/datenschutzerklaerung",
     "/#contact": "/#contact"
   },
 });

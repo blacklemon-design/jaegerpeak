@@ -3,13 +3,13 @@ import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 
 export default async function Impressum({ lang }: { lang: Locale }) {
-    const t = await getTranslations({ namespace: "About", locale: lang });
+    const t = await getTranslations({ namespace: "Footer", locale: lang });
 
     return (
         <section id="impressum" className="pt-24 bg-background min-h-100vh">
             <div>
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight pb-10 pl-5">
-                    Impressum
+                    {t("impressum")}
                 </h1>
                 <p className="text-xl text-foreground pt-3 pl-10">
                     Ramon Jäger
