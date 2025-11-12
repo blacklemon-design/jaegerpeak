@@ -6,7 +6,7 @@ export default async function Impressum({ lang }: { lang: Locale }) {
     const t = await getTranslations({ namespace: "Footer", locale: lang });
 
     return (
-        <section id="impressum" className="pt-24 bg-background min-h-100vh">
+        <section id="impressum" className="pt-24 bg-background min-h-100vh pb-20">
             <div>
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight pb-10 pl-5">
                     {t("impressum")}

@@ -7,8 +7,8 @@ export default async function Datenschutzerklaerung({ lang }: { lang: Locale }) 
 
     return (
         <section id="datenschutzerklaerung" className="pt-24 bg-background min-h-100vh">
-            <div>
-                <h1 className="text-4xl md:text-6xl font-bold leading-tight pb-10 pl-5">
+            <div className="pr-5">
+                <h1 className="text-4xl md:text-6xl font-bold leading-tight pb-10 pl-5 hyphens-auto" lang="de">
                     {t("Header")}
                 </h1>
                 <p className="text-xl text-foreground pt-3 pl-10 font-bold">
@@ -59,7 +59,7 @@ export default async function Datenschutzerklaerung({ lang }: { lang: Locale }) 
                 <p className="text-xl text-foreground pt-3 pl-10 font-bold">
                     {t("6_header")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 pb-20">
+                <p className="text-xl text-foreground pt-3 pl-10 pb-20 hyphens-manual">
                     {t("6_text")}
                 </p>
             </div>
