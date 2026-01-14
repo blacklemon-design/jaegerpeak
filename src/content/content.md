@@ -6,5 +6,5 @@ description_en: Book now an appointment using the contact form.
 date: 2025-11-12T00:00:00.000+01:00
 is_start_date: true
 show_date: false
-show_banner: true
+show_banner: false
 ---
