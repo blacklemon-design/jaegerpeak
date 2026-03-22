@@ -45,7 +45,7 @@ export default async function Home(props: {
         <Hero lang={lang} showBanner={isBannerShown()} />
         <About lang={lang} />
         <Services lang={lang} />
-        {/** <Testimonials />*/}
+        <Testimonials lang={lang} />
         <Partners />
         <Faq lang={lang} />
         <Contact lang={lang} showBanner={isBannerShown()}/>
