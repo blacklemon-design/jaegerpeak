@@ -14,4 +14,8 @@ testimonials:
       engagierten, professionellen und sympathischen Fitnesscoach sucht, ist
       hier genau richtig. Klare 5 Sterne!
     author: Lucas Weder
+  - quote: Ramon ist ein wirklich sehr guter Personal Trainer! Sehr sympathisch und
+      professionell. Er geht auf individuelle Wünsche ein und passt das Programm
+      etc. dementsprechend an. Weiter so 💪
+    author: Ramon Schmid
 ---
