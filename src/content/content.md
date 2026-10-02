@@ -1,10 +1,12 @@
 ---
-title_de: JP Running Club Samstag 09.00 Balgach Leichtathletikbahn. Gratis!
-title_en: JP Running Club Saturday 09:00 Balgach Athletics Track. For Free!
-description_de: Alle Levels willkommen. 09:15 Uhr Start. Warm-Up + Threshold Training
-description_en: All levels are welcome. Start 09.15 h. Warm-Up + Threshold Training
+title_de: HIIT & Performance Gruppenkurse Mo & Mi Outdoor
+title_en: HIIT & Performance groupfitness Mo & Wed Outdoor
+description_de: Alle Levels sind willkommen. Für mehr Fitness, Muskelaufbau oder
+  Fettabbau. Ab 20.-
+description_en: " All fitness levels welcome. Boost your fitness, build muscle,
+  and lose fat. Starting from 20.–"
 date: 2026-05-30T09:00:00.000+02:00
-is_start_date: true
-show_date: true
+is_start_date: false
+show_date: false
 show_banner: true
 ---
