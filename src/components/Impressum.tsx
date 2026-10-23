@@ -18,7 +18,7 @@ export default async function Impressum({ lang }: { lang: Locale }) {
                     ramon@jaegerpeak.ch
                 </p>
                 <p className="text-xl text-foreground pt-3 pl-10">
-                    Rheinmühlestraße 4 - 9444 Diepoldsau
+                    Unterbüntelistrasse 5 - 9443 Widnau
                 </p>
             </div>
         </section>
