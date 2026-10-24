@@ -1,3 +1,4 @@
+import { pageAlternates } from "@/lib/seo"
 import { About } from "@/components/about";
 import Contact from "@/components/contact";
 import { Faq } from "@/components/faq";
@@ -14,6 +15,13 @@ import { getTranslations } from "next-intl/server";
 export const dynamic = "force-static"; // forces static generation
 
 const data = loadHomeBannerContent(); // runs at build time, before component is even called
+
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await props.params;
+  return { alternates: pageAlternates(locale, "/") };
+}
 
 export default async function Home(props: {
   params: Promise<{ lang: Locale }>;

@@ -1,9 +1,17 @@
+import { pageAlternates } from "@/lib/seo"
 import Header from "@/components/header"
 import { Footer } from "@/components/footer"
 import { loadHomeBannerContent } from "@/lib/utils"
 import { Locale } from "next-intl"
 import Datenschutzerklaerung from "@/components/Datenschutzerklaerung"
 const data = loadHomeBannerContent(); // runs at build time, before component is even called
+
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await props.params;
+  return { alternates: pageAlternates(locale, "/datenschutzerklaerung") };
+}
 
 export default async function DatenschutzerklaerungPage(props: {
   params: Promise<{ lang: Locale }>;

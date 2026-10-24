@@ -18,7 +18,7 @@ export function Partners() {
                     >
                         <img
                             src="/images/partners/jpt.webp"
-                            alt="Athletic fitness coach in dynamic jumping pose"
+                            alt="Logo Nico Jäger"
                             className="w-40 md:w-auto max-h-60 obeject-cover mx-auto"
                         />
                     </Link>
@@ -28,7 +28,7 @@ export function Partners() {
                     >
                         <img
                             src="/images/partners/jsp.png"
-                            alt="Athletic fitness coach in dynamic jumping pose"
+                            alt="Logo JSP Photography"
                             className="w-40 md:w-auto max-h-60 obeject-cover mx-auto"
                         />
                     </Link>
@@ -38,7 +38,7 @@ export function Partners() {
                     >
                         <img
                             src="/images/partners/kraftwerk_fitness.svg"
-                            alt="Athletic fitness coach in dynamic jumping pose"
+                            alt="Logo Kraftwerk Fitness Heerbrugg"
                             className="w-40 md:w-auto max-h-60 obeject-cover mx-auto"
                         />
                     </Link>

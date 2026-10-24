@@ -20,6 +20,9 @@ export default async function Impressum({ lang }: { lang: Locale }) {
                 <p className="text-xl text-foreground pt-3 pl-10">
                     Unterbüntelistrasse 5 - 9443 Widnau
                 </p>
+                <p className="text-xl text-foreground pt-3 pl-10">
+                    UID: CHE-274.338.154
+                </p>
             </div>
         </section>
     );

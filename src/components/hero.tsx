@@ -56,7 +56,7 @@ export async function Hero({ lang, showBanner }: { lang: Locale, showBanner: boo
           <div className="relative lg:col-span-1 col-span-2 max-h-160 lg:h-full xl:h-[600px] h-90 sm:h-120 md:h-140 w-full md:w-1/2 lg:w-full mx-auto">
             <Image
               src={"/images/ramon-hero_cut.webp"}
-              alt="Athletic fitness coach in dynamic jumping pose"
+              alt="Ramon Jäger - Athletiktraining"
               fill
               className="object-contain"
               priority

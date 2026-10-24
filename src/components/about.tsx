@@ -37,7 +37,7 @@ export async function About({ lang }: { lang: Locale }) {
             <div className="relative max-w-md mx-auto md:hidden mb-8">
               <img
                 src="/images/über_mich.jpeg"
-                alt="Alex Johnson - Fitness Coach"
+                alt="Ramon Jäger - Personal Trainer und Athletiktrainer"
                 className="rounded-2xl w-full h-auto object-cover mx-auto max-h-160"
               />
               <div className="absolute -bottom-4 -left-4 w-full h-full bg-primary/20 rounded-2xl -z-10"></div>
@@ -81,7 +81,7 @@ export async function About({ lang }: { lang: Locale }) {
           <div className="relative hidden md:block">
             <img
               src="/images/über_mich.jpeg"
-              alt="Alex Johnson - Fitness Coach"
+              alt="Ramon Jäger - Personal Trainer und Athletiktrainer"
               className="rounded-2xl w-full h-auto object-cover mx-auto max-h-160"
             />
             <div className="absolute -bottom-4 -left-4 w-full h-full bg-primary/20 rounded-2xl -z-10"></div>

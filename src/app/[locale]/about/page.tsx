@@ -1,3 +1,4 @@
+import { pageAlternates } from "@/lib/seo"
 import Header from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AboutHero } from "@/components/about-hero"
@@ -6,6 +7,13 @@ import { Qualifications } from "@/components/qualifications"
 import { loadHomeBannerContent } from "@/lib/utils"
 import { Locale } from "next-intl"
 const data = loadHomeBannerContent(); // runs at build time, before component is even called
+
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await props.params;
+  return { alternates: pageAlternates(locale, "/about") };
+}
 
 export default async function AboutPage(props: {
   params: Promise<{ lang: Locale }>;
