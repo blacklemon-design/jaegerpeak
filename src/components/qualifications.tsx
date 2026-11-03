@@ -31,6 +31,18 @@ export async function Qualifications({ lang }: { lang: Locale }) {
       status: "finished",
     },
     {
+      title: t("c7_title"),
+      organization: "SAFS",
+      year: t("c7_year"),
+      status: "running",
+    },
+    {
+      title: t("c8_title"),
+      organization: "SAFS",
+      year: t("c8_year"),
+      status: "running",
+    },
+    {
       title: t("c5_title"),
       organization: "RD®SAS GmbH",
       year: t("c5_year"),
