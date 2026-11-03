@@ -1,7 +1,7 @@
 {
   "Hero": {
     "title": "Jaegerpeak de",
-    "htext": "Individuelles Coaching für deinen Körper, Sport und Alltag. Für alle, die Fortschritt planen - nicht hoffen.",
+    "htext": "Personal Training, Coaching und Athletiktraining im Rheintal. Persönlich, mit Plan und mit Fortschritt, den wir messen.",
     "hbutton": "Starte jetzt deine Transformation!",
     "hpoint1_1": "Stärke",
     "hpoint1_2": "aufbauen",
@@ -20,28 +20,8 @@
     "abutton": "Mehr erfahren!",
     "sheader1": "Meine",
     "sheader2": "Angebote",
-    "stext": "Finde das Coaching, das am besten zu deinem Lifestyle und deinen Zielen passt.",
+    "stext": "Finde das Angebot, das am besten zu deinem Alltag und deinen Zielen passt.",
     "sbutton": "Mehr erfahren!",
-    "sbody-shpaing-title": "Body Shaping",
-    "sbody-shaping_sub": "Muskeln aufbauen. Fett verlieren. Stark & ästhetisch aussehen",
-    "sbody-shaping_idealFor1": "Sichtbare Körperveränderung",
-    "sbody-shaping_idealFor2": "Effizient & zielgerichtet trainieren",
-    "sbody-shaping_idealFor3": "Dranbleiben ohne Jojo-Effekt",
-    "sathletic_title": "Athletic Performance Coaching",
-    "sathletic_sub": "Mehr Leistung im Sport, für dich als Einzelsportler oder auch als Team",
-    "sathletic_idealFor1": "Schnelligkeit, Kraft & Agilität verbessern",
-    "sathletic_idealFor2": "Verletzungen vorbeugen",
-    "sathletic_idealFor3": "Athletisches Potenzial ausschöpfen",
-    "sfunctional_title": "Functional Training",
-    "sfunctional_sub": "Schmerzfrei bewegen und den Alltag meistern",
-    "sfunctional_idealFor1": "Beschwerden durch Sitzen oder Dysbalancen bekämpfen",
-    "sfunctional_idealFor2": "Gelenkschonendes, stärkendes Training",
-    "sfunctional_idealFor3": "Gesunder & beweglicher Lebensstil nach dem Healthy Performance Konzept",
-    "straining_title": "Trainingseinführung/ -anpassung",
-    "straining_sub": "exklusiv für Kraftwerk Fitness Mitglieder",
-    "straining_idealFor1": "Klarer Trainingsplan für selbstständiges Training",
-    "straining_idealFor2": "Struktur statt Überforderung im Gym",
-    "straining_idealFor3": "Kompakter Einstieg mit persönlicher Einführung",
     "fheader1": "Häufig gestellte ",
     "fheader2": " Fragen",
     "f1_q": "Brauche ich Vorkenntnisse oder muss ich schon fit sein?",
@@ -51,17 +31,17 @@
     "f3_q": "Gibt es ein Probetraining? Wie läuft es ab?",
     "f3_a": "Ja. Im Probetraining analysiere ich deine Bewegungsmuster, Mobilität und deinen Ist-Zustand. Wir starten mit einem Gespräch, dann folgt ein Check deiner Basisbewegungen, daraufhin bestimmen wir das weitere Vorgehen.",
     "f4_q": "Was kostet das Training?",
-    "f4_a": "Jeder Mensch startet mit anderen Zielen und Voraussetzungen, darum sind meine Preise individuell. Gemeinsam legen wir fest, welches Programm für dich passt und wie intensiv wir zusammenarbeiten. So zahlst du nur für das, was du wirklich brauchst. Echte und nachhaltige Veränderung entsteht durch regelmässiges Training über mehrere Monate. Deshalb gibt es Personal Coaching nur im Rahmen mehrmonatiger Programme. Für Athletiktraining sind zusätzlich auch Einzellektionen möglich.",
+    "f4_a": "Alle Preise findest du auf der Seite Angebote. Zum Beispiel: Personal Training CHF 120.– pro Stunde (zu zweit CHF 80.– pro Person), Coaching über 6 Monate online CHF 149.– oder mit Personal Training CHF 219.– pro Monat, Trainingsplanung ab CHF 59.– und Kurse ab CHF 20.– pro Person. Das Erstgespräch ist kostenlos. Alle Preise exkl. MWST.",
     "f5_q": "Wo trainieren wir?",
-    "f5_a": "Das hängt von deinem Ziel ab. Je nach Training entweder im Kraftwerk Fitness in Heerbrugg, auf der 400m-Bahn in Balgach oder auf dem Tennisplatz (TC Widnau oder nach Absprache).",
+    "f5_a": "Das hängt von deinem Ziel ab: im Kraftwerk Fitness in Heerbrugg, draussen (zum Beispiel auf der 400m-Bahn in Balgach oder auf dem Tennisplatz beim TC Widnau) oder bei dir zu Hause. Das Online-Coaching geht von überall.",
     "f6_q": "Wie oft muss ich trainieren, damit sich was ändert?",
     "f6_a": "Das hängt von deinem Ziel und deinem Ausgangspunkt ab. In der Regel empfehle ich mindestens 2 Trainingseinheiten pro Woche, um spürbare Fortschritte zu erzielen. Konstanz ist der wichtigste Erfolgsfaktor.",
     "f7_q": "Trainierst du auch Frauen? Wie alt muss ich sein?",
     "f7_a": "Ja klar. Ich trainiere Frauen und Männer, je nach Ziel; ob für gezielten Muskelaufbau, Straffung oder funktionelles Training zur Schmerzprävention. Beim Alter mache ich keine Einschränkungen. Grundsätzlich liegt meine Zielgruppe zwischen 12 und 60 Jahren. Im kostenlosen Beratungsgespräch klären wir gemeinsam ab, ob eine Zusammenarbeit sinnvoll und zielführend ist.",
     "f8_q": "Was ist, wenn ich krank bin?",
-    "f8_a": "Du kannst Einheiten rechtzeitig verschieben – wie genau klären wir beim Coaching-Vertrag. Ziel ist, dass dein Fortschritt planbar bleibt, aber auch flexibel, wenn mal etwas dazwischenkommt.",
+    "f8_a": "Im Coaching kannst du eine verpasste Stunde im selben Monat nachholen. Bei Verletzung oder Krankheit mit Arztzeugnis kann das Coaching bis zu 1 Monat pausiert werden.",
     "f9_q": "Kann ich auch online betreut werden?",
-    "f9_a": "Ja. Je nach Trainingsziel kann ich dich online betreuen – Mit Trainingsplan, Video-Feedback und regelmässiger 1:1-Kommunikation. Ideal wenn du flexibel und ortsunabhängig trainieren willst.",
+    "f9_a": "Ja. Das Coaching gibt es auch online für CHF 149.– pro Monat: Trainingsplan fürs Fitness oder zu Hause, wöchentlicher Check-in mit meiner Rückmeldung (auch zu deinen Technik-Videos) und ein 30-Minuten-Video-Call pro Monat. Ideal, wenn du weiter weg wohnst oder flexibel bleiben willst.",
     "f10_q": "Wie läuft die Zusammenarbeit ab?",
     "f10_a": "Nach dem Erstgespräch erstellen wir deinen Trainingsplan und starten mit dem Coaching – mit 1:1-Betreuung, Trainingsplan, Ernährungstipps und regelmässiger Reflexion.",
     "cheader1": "Bereit für eine ",
@@ -119,67 +99,403 @@
     "c8_title": "Athletik Performance Coach",
     "c8_year": "",
     "test": "Test"
-
   },
   "Services": {
     "htitle1": "Meine ",
-    "htitle2": "Coaching Angebote!",
-    "htext1": "Egal ob du stärker, fitter oder beweglicher werden willst, es ist für jeden etwas dabei.",
-    "hbutton1": "Starten wir mit einer kostenloser Beratung!",
-    "hbutton2": "Finde das Beste für dich",
-    "sidealFor": "Ideal für dich, wenn du ...",
-    "sfrequentGoals": "Häufige Ziele meiner Kunden ...",
-    "sbutton": "Lass uns starten!",
-
-    "service1_title": "Body Shaping",
-    "service1_subtitle": "Muskeln aufbauen. Fett verlieren. Stark & ästhetisch aussehen",
-    "service1_description": "Du willst sichtbare Muskeln, einen definierten Körper oder einfach wieder in Form kommen? Ich helfe dir, nachhaltig Fett zu verlieren und Muskelmasse aufzubauen – mit strukturiertem Krafttraining, gezieltem Ernährungs-Input und individueller Betreuung.",
-    "service1_duration": "",
-    "service1_idealFor1": "Deinen Körper sichtbar verändern willst",
-    "service1_idealFor2": "Effizient trainieren statt planlos schwitzen willst",
-    "service1_idealFor3": "Langfristig dranbleiben willst, ohne Jojo-Effekt",
-    "service1_frequentGoals1": "Sichtbarer Muskelaufbau (trotz stressigem Alltag)",
-    "service1_frequentGoals2": "Bauchfett verlieren, definierter & straffer werden",
-    "service1_frequentGoals3": "Motivation wiederfinden und langfristig behalten",
-    "service1_frequentGoals4": "Endlich konstant & nachhaltig dranbleiben",
-
-    "service2_title": "Athletic Performance Coaching",
-    "service2_subtitle": "Mehr Leistung im Sport, für dich als Einzelsportler oder auch als Team",
-    "service2_description": "Du trainierst für Tennis, Fussball, Leichtathletik oder einen anderen Sport und willst schneller, stärker und explosiver werden? Willst du nochmals alles aus dir rausholen für den nächsten Hyrox? Hindert dich dein Körper daran, in deinem Sport den nächsten Schritt zu machen? Ich analysiere deine Bewegungsmuster, stärke deine Schwächen und entwickle ein sportartspezifisches, nachhaltiges und verletzungsvorbeugendes Athletiktraining, das dich wirklich voranbringt.",
-    "service2_duration": "",
-    "service2_idealFor1": "Deine Schnelligkeit, Kraft oder Agilität gezielt verbessern willst",
-    "service2_idealFor2": "Verletzungsfrei durch die Saison kommen willst",
-    "service2_idealFor3": "Dein volles athletisches Potenzial ausschöpfen willst",
-    "service2_frequentGoals1": "Stabilität, Agilität, Schnelligkeit und Explosivität verbessern für den nächsten Wettkampf",
-    "service2_frequentGoals2": "Schnellkraft & Core-Stabilität und Ausdauer gezielt verbessern",
-    "service2_frequentGoals3": "Motivation wiederfinden und langfristig behalten",
-
-    "service3_title": "Functional Training",
-    "service3_subtitle": "Schmerzfrei bewegen und den Alltag meistern",
-    "service3_description": "Rückenschmerzen, verspannte Schultern oder ein instabiler Rumpf? Ich helfe dir, deine Haltung zu verbessern, Alltagsbewegungen neu zu erlernen und wieder Vertrauen in deinen Körper zu gewinnen – mit funktionellem Training, das auf deine Realität zugeschnitten ist.",
-    "service3_duration": "",
-    "service3_idealFor1": "Viel sitzt oder körperliche Beschwerden hast",
-    "service3_idealFor2": "Ein Training willst, das dich nicht überfordert, sondern stärkt",
-    "service3_idealFor3": "Langfristig gesünder und beweglicher leben willst",
-    "service3_frequentGoals1": "Rückenschmerzen beim Sitzen oder Bücken loswerden",
-    "service3_frequentGoals2": "Treppen steigen, ohne ausser Atem zu kommen",
-    "service3_frequentGoals3": "Bewegung in den sitzenden Berufsalltag bekommen",
-
-    "service4_title": "Trainingseinführung/ -anpassung",
-    "service4_subtitle": "exklusiv für Kraftwerk Fitness Mitglieder",
-    "service4_description": "Du trainierst im Kraftwerk Fitness und willst mehr aus deinem Training herausholen? Ich analysiere deine aktuelle Situation und erstelle dir in 60 Minuten einen individuellen Trainingsplan - inklusive Einführung, aber ohne laufendes Coaching.",
-    "service4_duration": "Einmalig für Analyse, Planerstellung, Einführung und Ernährungsinputs",
-    "service4_idealFor1": "Mitglied vom Kraftwerk Fitness bist",
-    "service4_idealFor2": "Selbstständig trainierst, aber einen strukturierten Plan brauchst",
-    "service4_idealFor3": "Eine gesunde Einstellung zur Ernährung haben willst",
-    "service4_idealFor4": "Mühe mit Zu- oder Abnehmen hast",
-    "service4_frequentGoals1": "Einen Trainingsplan, der genau auf mich und meine Ziele zugeschnitten ist",
-    "service4_frequentGoals2": "Mit der richtigen Technik trainieren, um schnellstmöglich Fortschritte ohne Verletzungen zu erreichen",
-    "service4_frequentGoals3": "Mit einem klaren Einstieg ins Fitness starten, ohne mich überfordert zu fühlen"
+    "htitle2": "Angebote!",
+    "htext1": "Vom Athletiktraining über Personal Training bis zum Coaching: Finde in wenigen Sekunden das Angebot, das zu deinem Ziel passt.",
+    "hbutton1": "Starten wir mit einer kostenlosen Beratung!"
   },
-    "Meta": {
+  "Offers": {
+    "finderTitle1": "Welches Angebot",
+    "finderTitle2": "passt zu dir?",
+    "finderColWant": "Du willst …",
+    "finderColOffer": "Passendes Angebot",
+    "finder": [
+      {
+        "id": "athletic-performance-training",
+        "want": "als Athlet in deiner Sportart besser werden",
+        "offer": "Athletic Performance Training (Spezialgebiet Tennis)"
+      },
+      {
+        "id": "personal-training",
+        "want": "wieder fit werden, stärker werden oder regelmässig mit mir trainieren",
+        "offer": "Personal Training 1:1 oder 1:2"
+      },
+      {
+        "id": "parkinson",
+        "want": "mit Parkinson beweglich und sicher bleiben",
+        "offer": "Gesundheitstraining bei Parkinson"
+      },
+      {
+        "id": "coaching",
+        "want": "ein Ziel in 6 Monaten erreichen und begleitet werden",
+        "offer": "Coaching · 6 Monate"
+      },
+      {
+        "id": "performance-training",
+        "want": "dich auf einen Hyrox oder Wettkampf vorbereiten",
+        "offer": "Performance Training"
+      },
+      {
+        "id": "trainingsplanung",
+        "want": "einen guten Plan und sauber trainieren, danach selbstständig",
+        "offer": "Trainingsplanung"
+      },
+      {
+        "id": "kurse",
+        "want": "in der Gruppe trainieren, draussen und günstig",
+        "offer": "Kurse"
+      }
+    ],
+    "button": "Lass uns starten!",
+    "goodToKnowTitle": "Gut zu wissen",
+    "goodToKnow": [
+      "Im Coaching kannst du eine verpasste Stunde im selben Monat nachholen. Bist du verletzt oder krank, pausieren wir mit Arztzeugnis bis zu einem Monat.",
+      "Bei Junioren sind die Eltern beim Erstgespräch immer dabei.",
+      "Alle Preise in CHF, exkl. MWST."
+    ],
+    "items": [
+      {
+        "id": "athletic-performance-training",
+        "title": "Athletic Performance Training",
+        "subtitle": "Schneller, stärker, belastbarer in deinem Sport.",
+        "description": "Du willst in deinem Sport den nächsten Schritt machen. Ich trainiere dich 1:1, abgestimmt auf deine Sportart, dein Vereinstraining und deine Wettkämpfe. So wirst du schneller, stärker und belastbarer und verletzt dich seltener. Wir trainieren im Kraftwerk Fitness Heerbrugg, draussen oder bei dir zu Hause.",
+        "highlight": {
+          "title": "Spezialgebiet Tennis",
+          "text": "Tennis ist mein Spezialgebiet. Wir trainieren, was auf dem Platz zählt: Beinarbeit, schnelle Richtungswechsel, Rumpfrotation, eine starke Schulter und Ausdauer für lange Matches. Ich plane rund um dein Tennistraining und deine Turniere und spreche mich bei Bedarf mit deinem Tennistrainer ab."
+        },
+        "tables": [
+          {
+            "columns": [
+              "Angebot",
+              "Preis"
+            ],
+            "rows": [
+              [
+                "Athletic Performance Training",
+                "ab CHF 120.– pro Stunde, nach Absprache"
+              ]
+            ]
+          },
+          {
+            "title": "Betreuung (optional, monatlich kündbar)",
+            "stack": true,
+            "columns": [
+              "Paket",
+              "Preis",
+              "Inhalt"
+            ],
+            "rows": [
+              [
+                "Basis",
+                "CHF 100.– / Monat",
+                "Ich bin für dich erreichbar, spreche mich mit deinem Vereinstrainer ab und plane rund um Training und Wettkämpfe."
+              ],
+              [
+                "Plus",
+                "CHF 200.– / Monat",
+                "Alles aus Basis. Dazu plane ich deine Beweglichkeit und Ausdauer und gebe dir Ernährungstipps."
+              ]
+            ]
+          }
+        ],
+        "notes": [
+          "Einen Krafttrainingsplan bekommst du mit der Trainingsplanung A."
+        ]
+      },
+      {
+        "id": "personal-training",
+        "title": "Personal Training",
+        "subtitle": "Regelmässig trainieren, mit mir an deiner Seite.",
+        "description": "Du willst wieder fit werden, stärker werden oder einfach regelmässig trainieren. Ich plane jede Stunde nach deinem Ziel, korrigiere deine Technik und steigere dich Schritt für Schritt. Wir trainieren im Kraftwerk Fitness Heerbrugg, draussen oder bei dir zu Hause. Zu zweit, etwa mit Partner oder Freundin, trainierst du günstiger.",
+        "pointsTitle": "So arbeiten wir",
+        "points": [
+          {
+            "title": "Wieder fit werden",
+            "text": "Bücken, Heben, Tragen und Treppensteigen gehen wieder sicher und mit Kraft, auch nach einer langen Pause."
+          },
+          {
+            "title": "Stärker werden",
+            "text": "Du baust gezielt Kraft und Muskeln auf."
+          },
+          {
+            "title": "Technik lernen",
+            "text": "Du lernst die Übungen sauber und trainierst danach sicher allein."
+          }
+        ],
+        "tables": [
+          {
+            "columns": [
+              "Angebot",
+              "Preis"
+            ],
+            "rows": [
+              [
+                "Personal Training allein",
+                "CHF 120.– pro Stunde"
+              ],
+              [
+                "Personal Training zu zweit",
+                "CHF 160.– pro Stunde (CHF 80.– pro Person)"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "parkinson",
+        "title": "Gesundheitstraining bei Parkinson",
+        "subtitle": "Beweglich und sicher im Alltag.",
+        "description": "Im 1:1-Training arbeiten wir an Beweglichkeit, Gleichgewicht und Kraft. So bleibst du im Alltag sicher und verbesserst dich, wo es möglich ist. Das Training ergänzt deine ärztliche und therapeutische Behandlung, und bei Bedarf spreche ich mich mit Arzt oder Physiotherapie ab.",
+        "pointsTitle": "So arbeiten wir",
+        "points": [
+          {
+            "title": "",
+            "text": "Zweimal pro Woche 45 Minuten, mindestens einmal davon im Fitness."
+          },
+          {
+            "title": "",
+            "text": "Bei Bedarf komme ich zu dir nach Hause, mit Übungen, die du auch allein machen kannst."
+          },
+          {
+            "title": "",
+            "text": "Auf Anfrage bekommst du ein einfaches Heimprogramm für die Tage dazwischen."
+          }
+        ],
+        "tables": [
+          {
+            "columns": [
+              "Angebot",
+              "Preis"
+            ],
+            "rows": [
+              [
+                "Training im Fitness (45 Min.)",
+                "CHF 90.–"
+              ],
+              [
+                "Hausbesuch (45 Min.)",
+                "CHF 90.–"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "coaching",
+        "title": "Coaching · 6 Monate",
+        "subtitle": "In 6 Monaten zu deinem Ziel, Woche für Woche begleitet.",
+        "description": "Du willst abnehmen, straffer oder stärker werden. Du trainierst selbstständig, ich gebe dir den Plan, schaue jede Woche auf deinen Fortschritt und trainiere regelmässig mit dir.",
+        "pointsTitle": "Immer dabei",
+        "points": [
+          {
+            "title": "Start",
+            "text": "Du füllst vorab einen kurzen Fragebogen aus. Dann sprechen wir 60 Minuten, messen und prüfen deine Technik, vor Ort oder per Video."
+          },
+          {
+            "title": "Jede Woche",
+            "text": "Du meldest kurz Bewegung, Ernährung, Schlaf und Gewicht. Ich gebe dir Rückmeldung, auch zu deinen Technik-Videos. Für die Ernährung bekommst du einfache Wochenziele."
+          },
+          {
+            "title": "Jeden Monat",
+            "text": "Wir messen Umfänge, Fotos und Kraftwerte, online misst du selbst nach meiner Anleitung. Danach passe ich deine Ernährungsziele an. Nach 6 Monaten siehst du schwarz auf weiss, was sich verändert hat."
+          }
+        ],
+        "variantsTitle": "Drei Varianten",
+        "variantLabels": {
+          "forWhom": "Für dich, wenn",
+          "training": "Mit mir",
+          "plan": "Dein Plan",
+          "price": "Preis pro Monat"
+        },
+        "variants": [
+          {
+            "name": "Mit Personal Training",
+            "forWhom": "du im Fitness trainierst",
+            "training": "1 Stunde pro Monat",
+            "plan": "Trainingsplan fürs Fitness, alle 8 Wochen neu",
+            "price": "CHF 219.–",
+            "priceNote": "jede weitere Stunde CHF 120.–"
+          },
+          {
+            "name": "Mit Outdoor-Kurs",
+            "forWhom": "du lieber draussen in der Gruppe trainierst",
+            "training": "jede Woche im Outdoor-Kurs",
+            "plan": "Bewegungsplan für den Alltag: Schrittziel und 1 bis 2 Einheiten zu Hause ohne Geräte",
+            "price": "CHF 99.–",
+            "priceNote": "plus Kursbeitrag"
+          },
+          {
+            "name": "Online",
+            "forWhom": "du weiter weg wohnst oder flexibel bleiben willst",
+            "training": "30 Minuten Videocall pro Monat",
+            "plan": "Trainingsplan fürs Fitness oder zu Hause, alle 8 Wochen neu",
+            "price": "CHF 149.–",
+            "priceNote": ""
+          }
+        ],
+        "notes": [
+          "Das Coaching dauert 6 Monate und wird monatlich bezahlt, danach ist es monatlich kündbar. Du kannst die Varianten kombinieren. Wenn du neu einsteigst, empfehle ich dir im ersten Monat zwei Stunden mit mir."
+        ]
+      },
+      {
+        "id": "performance-training",
+        "title": "Performance Training",
+        "subtitle": "Bereit für deinen Wettkampftag.",
+        "description": "Du bereitest dich auf einen Hyrox, einen Lauf oder einen Fitness-Wettkampf vor, oder du hast ein klares Leistungsziel. Ich plane Kraft, Ausdauer und Technik so, dass du am Wettkampftag bereit bist. Wir trainieren im Kraftwerk Fitness Heerbrugg, draussen oder bei dir zu Hause.",
+        "tables": [
+          {
+            "columns": [
+              "Angebot",
+              "Preis"
+            ],
+            "rows": [
+              [
+                "Performance Training allein",
+                "CHF 120.– pro Stunde"
+              ],
+              [
+                "Performance Training zu zweit",
+                "CHF 160.– pro Stunde (CHF 80.– pro Person)"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "trainingsplanung",
+        "title": "Trainingsplanung",
+        "subtitle": "Ein Plan, der passt. Danach trainierst du allein.",
+        "description": "Du trainierst gerne allein, willst aber einen Plan, der wirklich zu dir passt, und die Sicherheit, dass du richtig trainierst. Du wählst, was du brauchst. Jeder Baustein ist ein Termin vor Ort, ohne Abo.",
+        "points": [
+          {
+            "title": "A · Trainingsplan",
+            "text": "Dein persönlicher Plan, passend zu Ziel, Erfahrung und Zeit."
+          },
+          {
+            "title": "B · Technikcheck",
+            "text": "Ich schaue mir deine Übungen im Fitness an und korrigiere sie."
+          },
+          {
+            "title": "C · Ernährung",
+            "text": "Einfache Tipps, die du im Alltag umsetzen kannst."
+          }
+        ],
+        "tables": [
+          {
+            "columns": [
+              "Angebot",
+              "Allein",
+              "Zu zweit"
+            ],
+            "rows": [
+              [
+                "A",
+                "CHF 79.–",
+                "CHF 140.–"
+              ],
+              [
+                "B",
+                "CHF 90.–",
+                "CHF 145.–"
+              ],
+              [
+                "C",
+                "CHF 59.–",
+                "CHF 79.–"
+              ],
+              [
+                "A + B + C",
+                "CHF 160.–",
+                "CHF 260.–"
+              ]
+            ]
+          }
+        ],
+        "notes": [
+          "Weitere Kombinationen (z.B. A + C) sind möglich. Den Preis nenne ich dir gerne im Erstgespräch."
+        ]
+      },
+      {
+        "id": "kurse",
+        "title": "Kurse",
+        "subtitle": "Draussen trainieren, gemeinsam.",
+        "description": "Ein festes Programm unter freiem Himmel, für jedes Fitnesslevel und mit höchstens 8 Personen. Du meldest dich über die WhatsApp-Gruppe an. Je mehr mitkommen, desto günstiger wird es für alle, also bring jemanden mit.",
+        "tables": [
+          {
+            "columns": [
+              "Angebot",
+              "Preis"
+            ],
+            "rows": [
+              [
+                "Kurs, pro Person",
+                "ab CHF 20.–"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "home": {
+      "items": [
+        {
+          "id": "athletic-performance-training",
+          "title": "Athletic Performance Training",
+          "subtitle": "Jede Sportart · Spezialgebiet Tennis",
+          "points": [
+            "Schneller, stärker, belastbarer",
+            "Abgestimmt auf Verein und Wettkämpfe",
+            "Weniger verletzt durch die Saison"
+          ],
+          "price": "ab CHF 120.– pro Stunde"
+        },
+        {
+          "id": "personal-training",
+          "title": "Personal Training",
+          "subtitle": "1:1 oder zu zweit, auf dein Ziel ausgerichtet",
+          "points": [
+            "Wieder fit werden für den Alltag",
+            "Stärker werden",
+            "Technik sauber lernen"
+          ],
+          "price": "CHF 120.– pro Stunde"
+        },
+        {
+          "id": "coaching",
+          "title": "Coaching · 6 Monate",
+          "subtitle": "Für messbaren Fortschritt mit Begleitung",
+          "points": [
+            "Plan, Ernährung und wöchentlicher Check-in",
+            "Monatliche Messung",
+            "Mit Personal Training, Outdoor-Kurs oder online"
+          ],
+          "price": "ab CHF 149.– pro Monat"
+        },
+        {
+          "id": "trainingsplanung",
+          "title": "Trainingsplanung",
+          "subtitle": "Einmalig, danach trainierst du selbstständig",
+          "points": [
+            "Persönlicher Trainingsplan",
+            "Technikcheck im Fitness",
+            "Ernährungstipps zu deinem Ziel"
+          ],
+          "price": "ab CHF 59.–"
+        }
+      ],
+      "more": "Ausserdem:",
+      "moreIds": [
+        "parkinson",
+        "performance-training",
+        "kurse"
+      ]
+    }
+  },
+  "Meta": {
     "title": "JÄGER PEAK Coaching - Fitness, Athletik, Gesundheit",
-    "description": "Dein zertifizierter Partner für Fitness, Athletik und Gesundheit. Personal Training und Coaching in Widnau und Umgebung."
+    "description": "Personal Training, Coaching und Athletiktraining in Widnau und im Rheintal. Spezialgebiet Tennis. Persönlich, mit Plan und messbarem Fortschritt."
   },
   "Header": {
     "home": "Home",
@@ -188,11 +504,6 @@
     "contact": "Kontakt"
   },
   "Footer": {
-    "offers": "Angebote",
-    "body-shaping": "Body Shaping",
-    "athletic-performance-coaching": "Athletic Performance Coaching",
-    "functional-training": "Functional Training",
-    "training-introduction": "Trainingseinführung/ -anpassung",
     "links": "Links",
     "home": "Home",
     "about": "Über mich",
@@ -210,23 +521,23 @@
   },
   "Datenschutzerklaerung": {
     "Header": "Datenschutzerklärung",
-    "1_header" : "1 Datenschutzerklärung",
-    "1_text" : "Die vorliegende Datenschutzerklärung klärt Sie über die Art, den Umfang und den Zweck der Erhebung und Verwendung personenbezogener Daten auf unserer Website jaegerpeak.ch auf und gibt über die Ihnen zustehenden Rechte Auskunft. Diese Rechte richten sich nach den anwendbaren Datenschutzgesetzen.",
-    "2_header" : "2 Verantwortlicher für die Datenbearbeitung",
-    "2_text" : "Verantwortlicher für die Datenbearbeitung auf dieser Website und Ansprechpartner für Datenschutzanliegen ist:",
-    "2-1_text" : "Ramon Jäger",
-    "2-2_text" : "Unterbüntelistrasse 5 - 9443 Widnau",
-    "2-3_text" : "+41 76 386 77 05",
-    "2-4_text" : "ramon@jaegerpeak.ch",
-    "3_header" : "3 Datenerfassung auf dieser Website",
-    "3-1_header" : "3.1 Kontaktformular",
-    "3-1_text" : "Wenn Sie unser Kontaktformular benutzen, werden Ihre Angaben aus dem Anfrageformular zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen von uns bearbeitet. In der Regel benötigen wir folgende Angaben: Name, E-Mail-Adresse und Nachrichteninhalt. Wir verwenden die von Ihnen mitgeteilten Daten, um Ihre Anfrage zu beantworten.",
-    "4_header" : "4 Links",
-    "4_text" : "Auf unserer Website finden Sie Links auf Seiten von Drittanbietern. Wir sind nicht verantwortlich für die Inhalte und Datenschutzvorkehrungen auf externen Websites, welche Sie über die Links erreichen können. Bitte informieren Sie sich über den Datenschutz direkt auf den entsprechenden Websites.",
-    "5_header" : "5 Ihre Rechte",
-    "5_text" : "Soweit von dem auf Sie anwendbaren Datenschutzrecht vorgesehen, können Sie unentgeltlich Auskunft über die auf Sie bezogenen gespeicherten Daten, deren Herkunft und den Zweck der Datenbearbeitung verlangen. Ebenso steht Ihnen unter den gesetzlichen Voraussetzungen ein Recht auf Berichtigung, Löschung, Einschränkung der oder Widerspruch gegen die Bearbeitung sowie, sofern die DSGVO zur Anwendung gelangt, auf Herausgabe dieser Daten zur Übertragung an eine andere Stelle zu. Eine von Ihnen erteilte Einwilligung können Sie mit Wirkung für die Zukunft jederzeit widerrufen. Bitte beachten Sie, dass die vorstehenden Rechte gesetzlichen Einschränkungen unterstehen und ggf. die Erbringung unserer Dienstleistungen beeinträchtigen oder verunmöglichen können. Sie sind berechtigt, Ihre Ansprüche gerichtlich durchzusetzen oder eine Beschwerde bei der zuständigen Datenschutzbehörde einzureichen. Für die Schweiz ist der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte zuständig (http://www.edoeb.admin.ch).",
-    "6_header" : "6 Aktualität und Änderung dieser Datenschutzerklärung",
-    "6_text" : "Wir können diese Datenschutzerklärung jederzeit ändern oder anpassen. Die aktuelle Datenschutzerklärung kann auf https://jaegerpeak.ch/­datenschutzerklaerung abgerufen werden."
+    "1_header": "1 Datenschutzerklärung",
+    "1_text": "Die vorliegende Datenschutzerklärung klärt Sie über die Art, den Umfang und den Zweck der Erhebung und Verwendung personenbezogener Daten auf unserer Website jaegerpeak.ch auf und gibt über die Ihnen zustehenden Rechte Auskunft. Diese Rechte richten sich nach den anwendbaren Datenschutzgesetzen.",
+    "2_header": "2 Verantwortlicher für die Datenbearbeitung",
+    "2_text": "Verantwortlicher für die Datenbearbeitung auf dieser Website und Ansprechpartner für Datenschutzanliegen ist:",
+    "2-1_text": "Ramon Jäger",
+    "2-2_text": "Unterbüntelistrasse 5 - 9443 Widnau",
+    "2-3_text": "+41 76 386 77 05",
+    "2-4_text": "ramon@jaegerpeak.ch",
+    "3_header": "3 Datenerfassung auf dieser Website",
+    "3-1_header": "3.1 Kontaktformular",
+    "3-1_text": "Wenn Sie unser Kontaktformular benutzen, werden Ihre Angaben aus dem Anfrageformular zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen von uns bearbeitet. In der Regel benötigen wir folgende Angaben: Name, E-Mail-Adresse und Nachrichteninhalt. Wir verwenden die von Ihnen mitgeteilten Daten, um Ihre Anfrage zu beantworten.",
+    "4_header": "4 Links",
+    "4_text": "Auf unserer Website finden Sie Links auf Seiten von Drittanbietern. Wir sind nicht verantwortlich für die Inhalte und Datenschutzvorkehrungen auf externen Websites, welche Sie über die Links erreichen können. Bitte informieren Sie sich über den Datenschutz direkt auf den entsprechenden Websites.",
+    "5_header": "5 Ihre Rechte",
+    "5_text": "Soweit von dem auf Sie anwendbaren Datenschutzrecht vorgesehen, können Sie unentgeltlich Auskunft über die auf Sie bezogenen gespeicherten Daten, deren Herkunft und den Zweck der Datenbearbeitung verlangen. Ebenso steht Ihnen unter den gesetzlichen Voraussetzungen ein Recht auf Berichtigung, Löschung, Einschränkung der oder Widerspruch gegen die Bearbeitung sowie, sofern die DSGVO zur Anwendung gelangt, auf Herausgabe dieser Daten zur Übertragung an eine andere Stelle zu. Eine von Ihnen erteilte Einwilligung können Sie mit Wirkung für die Zukunft jederzeit widerrufen. Bitte beachten Sie, dass die vorstehenden Rechte gesetzlichen Einschränkungen unterstehen und ggf. die Erbringung unserer Dienstleistungen beeinträchtigen oder verunmöglichen können. Sie sind berechtigt, Ihre Ansprüche gerichtlich durchzusetzen oder eine Beschwerde bei der zuständigen Datenschutzbehörde einzureichen. Für die Schweiz ist der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte zuständig (http://www.edoeb.admin.ch).",
+    "6_header": "6 Aktualität und Änderung dieser Datenschutzerklärung",
+    "6_text": "Wir können diese Datenschutzerklärung jederzeit ändern oder anpassen. Die aktuelle Datenschutzerklärung kann auf https://jaegerpeak.ch/­datenschutzerklaerung abgerufen werden."
   },
   "Testimonials": {
     "titleBefore": "Was meine",

@@ -15,6 +15,8 @@ import { Locale } from "next-intl";
 
 export async function Footer({ lang }: { lang: Locale }) {
   const t = await getTranslations({ namespace: "Footer", locale: lang });
+  const o = await getTranslations({ namespace: "Offers", locale: lang });
+  const offers = o.raw("items") as { id: string; title: string }[];
   return (
     <footer className="bg-background-secondary border-t border-border-dark">
       <div className="container mx-auto pb-0 px-4 sm:px-6 lg:px-8 py-12">
@@ -49,38 +51,16 @@ export async function Footer({ lang }: { lang: Locale }) {
           <div>
             <h3 className="text-white font-semibold mb-4">{t("services")}</h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/services#body-shaping"
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  {t("body-shaping")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services#athletic-performance-coaching"
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  {t("athletic-performance-coaching")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services#functional-training"
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  {t("functional-training")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services#trainings-einführung"
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  {t("training-introduction")}
-                </Link>
-              </li>
+              {offers.map((offer) => (
+                <li key={offer.id}>
+                  <IntlLink
+                    href={{ pathname: "/services", hash: offer.id }}
+                    className="text-foreground hover:text-primary transition-colors"
+                  >
+                    {offer.title}
+                  </IntlLink>
+                </li>
+              ))}
             </ul>
           </div>
 

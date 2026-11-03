@@ -6,63 +6,24 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Apple, Dumbbell, Users, Video } from "lucide-react";
-import Link from "next/link";
-import {Link as IntlLink} from "../i18n/navigation"
+import { Link as IntlLink } from "../i18n/navigation";
 
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
+import { offerIcons } from "./services-details";
+
+// Texts: messages/de.json and messages/en.json, namespace "Offers" -> "home"
+type HomeOffer = { id: string; title: string; subtitle: string; points: string[]; price: string };
+type OfferTitle = { id: string; title: string };
 
 export async function Services({ lang }: { lang: Locale }) {
   const t = await getTranslations({ namespace: "Hero", locale: lang });
-  const services = [
-    {
-      id: "body-shaping",
-      iconPath: "/images/Icon_Bodyshaping.png",
-      title: t("sbody-shpaing-title"),
-      subtitle: t("sbody-shaping_sub"),
-      idealFor: [
-        t("sbody-shaping_idealFor1"),
-        t("sbody-shaping_idealFor2"),
-        t("sbody-shaping_idealFor3"),
-      ],
-    },
-    {
-      id: "athletic-performance-coaching",
-      iconPath: "/images/Icon_Athletik.png",
-      title: t("sathletic_title"),
-      subtitle:
-        t("sathletic_sub"),
-      idealFor: [
-        t("sathletic_idealFor1"),
-        t("sathletic_idealFor2"),
-        t("sathletic_idealFor3"),
-      ],
-    },
-    {
-      id: "functional-training",
-      iconPath: "/images/Icon_Functional.png",
-      title: t("sfunctional_title"),
-      subtitle: t("sfunctional_sub"),
-      idealFor: [
-        t("sfunctional_idealFor1"),
-        t("sfunctional_idealFor2"),
-        t("sfunctional_idealFor3"),
-      ],
-    },
-    {
-      id: "trainings-einfuehrung",
-      iconPath: "/images/Icon_Trainingsanpassung.png",
-      title: t("straining_title"),
-      subtitle: t("straining_sub"),
-      idealFor: [
-        t("straining_idealFor1"),
-        t("straining_idealFor2"),
-        t("straining_idealFor3"),
-      ],
-    },
-  ];
+  const o = await getTranslations({ namespace: "Offers", locale: lang });
+  const services = o.raw("home.items") as HomeOffer[];
+  const moreIds = o.raw("home.moreIds") as string[];
+  const allOffers = o.raw("items") as OfferTitle[];
+  const more = moreIds.map((id) => allOffers.find((offer) => offer.id === id)!);
 
   return (
     <section id="services" className="py-20 bg-background">
@@ -77,9 +38,9 @@ export async function Services({ lang }: { lang: Locale }) {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <Card
-              key={index}
+              key={service.id}
               className="bg-card-dark border-border hover:border-primary transition-colors"
             >
               <CardHeader className="text-center">
@@ -87,23 +48,24 @@ export async function Services({ lang }: { lang: Locale }) {
                   <Image
                     height={48}
                     width={48}
-                    src={service.iconPath}
-                    alt="athletic icon"
+                    src={offerIcons[service.id]}
+                    alt=""
+                    className="h-12 w-12 object-contain"
                   />
                 </div>
-                <CardTitle className="text-white">{service.title}</CardTitle>
+                <CardTitle className="text-white hyphens-auto" lang={lang}>{service.title}</CardTitle>
                 <CardDescription className="text-foreground">
                   {service.subtitle}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4 flex flex-col justify-between h-full">
                 <ul className="space-y-2">
-                  {service.idealFor.map((feature, featureIndex) => (
+                  {service.points.map((feature, featureIndex) => (
                     <li
                       key={featureIndex}
-                      className="text-foreground text-sm flex items-center"
+                      className="text-foreground text-sm flex items-start"
                     >
-                      <div className="w-2 h-2 bg-primary rounded-full mr-2 flex-none">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-2 mt-1.5 flex-none">
                       </div>
                       <p>
                         {feature}
@@ -111,7 +73,8 @@ export async function Services({ lang }: { lang: Locale }) {
                     </li>
                   ))}
                 </ul>
-                <div className="pt-4 border-t border-card">
+                <div className="pt-4 border-t border-card space-y-4">
+                  <p className="text-primary font-semibold text-center">{service.price}</p>
                   <IntlLink href={{ pathname: '/services', hash: service.id }} passHref>
                     <Button className="w-full bg-primary hover:bg-primary-hover text-white">
                       {t("sbutton")}
@@ -122,6 +85,21 @@ export async function Services({ lang }: { lang: Locale }) {
             </Card>
           ))}
         </div>
+
+        <p className="text-foreground text-center mt-10">
+          <span className="mr-1">{o("home.more")}</span>
+          {more.map((offer, i) => (
+            <span key={offer.id}>
+              {i > 0 && <span className="mx-2 text-gray-500">·</span>}
+              <IntlLink
+                href={{ pathname: '/services', hash: offer.id }}
+                className="text-white underline decoration-primary underline-offset-4 hover:text-primary transition-colors"
+              >
+                {offer.title}
+              </IntlLink>
+            </span>
+          ))}
+        </p>
       </div>
     </section>
   );
