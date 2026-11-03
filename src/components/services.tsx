@@ -41,7 +41,7 @@ export async function Services({ lang }: { lang: Locale }) {
           {services.map((service) => (
             <Card
               key={service.id}
-              className="bg-card-dark border-border hover:border-primary transition-colors"
+              className="card-hover bg-card-dark border-border"
             >
               <CardHeader className="text-center">
                 <div className="mb-4 mx-auto">

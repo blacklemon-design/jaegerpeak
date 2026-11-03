@@ -18,7 +18,7 @@ export async function PersonalStory({ lang }: { lang: Locale }) {
             </h2>
           </div>
           <div className="space-y-8">
-            <Card className="bg-card border-card">
+            <Card className="card-hover bg-card border-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-4">{t("pspoint1_header1")} <span className="text-primary">{t("pspoint1_header2")}</span></h3>
                 <p className="text-foreground leading-relaxed mb-4">
@@ -29,7 +29,7 @@ export async function PersonalStory({ lang }: { lang: Locale }) {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-card border-card">
+            <Card className="card-hover bg-card border-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-4">{t("pspoint2_header1")}<span className="text-primary">{t("pspoint2_header2")}</span></h3>
                 <p className="text-foreground leading-relaxed mb-4">

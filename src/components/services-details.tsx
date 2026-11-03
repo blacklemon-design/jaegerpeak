@@ -145,7 +145,7 @@ export async function ServiceDetails({ lang, showBanner }: { lang: Locale; showB
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Welches Angebot passt zu dir? */}
           <div id="angebot-finden" className="relative pt-22">
-            <Card className="bg-card-dark border-card">
+            <Card className="card-hover card-hover-lg bg-card-dark border-card">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-3xl text-white">
                   {t("finderTitle1")} <span className="text-primary">{t("finderTitle2")}</span>
@@ -181,7 +181,7 @@ export async function ServiceDetails({ lang, showBanner }: { lang: Locale; showB
           {offers.map((offer) => {
             return (
               <div key={offer.id} className="relative pt-22" id={offer.id}>
-                <Card className="bg-card-dark border-card">
+                <Card className="card-hover card-hover-lg bg-card-dark border-card">
                   <CardHeader className="text-center pb-8">
                     <div className="flex justify-center mb-4">
                       <Image height={64} width={64} src={offerIcons[offer.id]} alt="" className="h-16 w-16 object-contain" />
@@ -275,7 +275,7 @@ export async function ServiceDetails({ lang, showBanner }: { lang: Locale; showB
 
           {/* Gut zu wissen */}
           <div id="gut-zu-wissen" className="relative pt-22">
-            <Card className="bg-card-dark border-card">
+            <Card className="card-hover card-hover-lg bg-card-dark border-card">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-3xl text-white">{t("goodToKnowTitle")}</CardTitle>
               </CardHeader>

@@ -55,14 +55,14 @@ export default async function Contact({ lang, showBanner }: { lang: Locale, show
                 <Mail className="h-5 w-5 text-primary" />
                 <Link
                   className="text-white hover:text-primary duration-300"
-                  href="mailto:info@jaegerpeak.ch"
+                  href="mailto:ramon@jaegerpeak.ch"
                 >
-                  info@jaegerpeak.ch
+                  ramon@jaegerpeak.ch
                 </Link>
               </div>
             </div>
 
-            <Card className="bg-card-dark border-card">
+            <Card className="card-hover card-hover-lg bg-card-dark border-card">
               <CardHeader>
                 <CardTitle className="text-white">{t("cform_header")}</CardTitle>
               </CardHeader>

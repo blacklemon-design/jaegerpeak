@@ -24,7 +24,7 @@ export async function Testimonials({ lang }: { lang: Locale }) {
         <div className="w-full flex justify-center">
           <div className={`grid gap-6 sm:grid-cols-1 md:grid-cols-${Math.min(2, testimonials.length)} lg:grid-cols-${Math.min(4, testimonials.length)} w-fit`}>
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-card border-border max-w-100">
+              <Card key={index} className="card-hover bg-card border-border max-w-100">
                 <CardContent className="p-6 space-y-4 flex flex-col justify-between h-full">
                   <p className="text-foreground italic">
                     "{testimonial.quote}"

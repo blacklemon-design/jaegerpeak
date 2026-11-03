@@ -99,3 +99,18 @@
     cursor: pointer;
   }
 }
+
+/* Boxes: green border and slightly bigger on mouse hover (only devices with a mouse, not phones) */
+@media (hover: hover) and (pointer: fine) {
+  .card-hover {
+    transition: border-color 200ms ease, transform 200ms ease;
+  }
+  .card-hover:hover {
+    border-color: var(--primary);
+    transform: scale(1.02);
+  }
+  /* large boxes (offers, contact form) grow a little less */
+  .card-hover-lg:hover {
+    transform: scale(1.01);
+  }
+}

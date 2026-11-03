@@ -124,10 +124,10 @@ export async function Footer({ lang }: { lang: Locale }) {
             <ul className="space-y-2 text-foreground">
               <li>
                 <Link
-                  href={"mailto:info@jaegerpeak.ch"}
+                  href={"mailto:ramon@jaegerpeak.ch"}
                   className="hover:text-primary duration-300"
                 >
-                  info@jaegerpeak.ch
+                  ramon@jaegerpeak.ch
                 </Link>
               </li>
               <li>
