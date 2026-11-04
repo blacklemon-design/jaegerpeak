@@ -64,7 +64,7 @@
     "htitle1": "LERNE ",
     "htitle2": "MICH KENNEN!",
     "hsubtitle": "Experte für Athletik, Leistung & nachhaltige Fitness",
-    "htext": "Mein Name ist Ramon Jäger, ich bin Jahrgang 2000 und seit meiner Kindheit sportlich aktiv. Bereits mit vier Jahren begann ich beim FC Widnau Fussball zu spielen und entdeckte dabei meine Begeisterung für Spielsportarten. Mit zwölf wechselte ich zum Tennis, weil ich merkte: Ich blühe in einer Sportart auf, in der allein meine eigene Leistung über Sieg oder Niederlage entscheidet. Mit 19 Jahren begann ich parallel zu meinem Maschinenbaustudium mit Krafttraining im Fitnessstudio. Die sichtbaren Fortschritte über die folgenden sechs Jahre erfüllten mich mit Stolz und weckten den Wunsch, mein Wissen weiterzugeben. Diesen Weg verfolge ich heute professionell. Im April 2025 schloss ich die Ausbildung zum Fitnesstrainer mit SAFS-Fachausweis ab und bildete mich danach zum Spezialisten Athletik Performance Trainer weiter.",
+    "htext": "Mein Name ist Ramon Jäger, Jahrgang 2000. Sport ist seit meiner Kindheit ein fester Teil meines Lebens, vom Fussballplatz über den Tennisplatz bis ins Krafttraining. Heute gebe ich weiter, was ich auf diesem Weg gelernt habe.",
     "hbutton": "Lass uns gemeinsam den ersten Schritt machen!",
     "psheader": "Wofür ich stehe",
     "pssubtitle1": "Ich glaube an Training, das den Körper stärkt",
@@ -98,7 +98,43 @@
     "c7_year": "",
     "c8_title": "Athletik Performance Coach",
     "c8_year": "",
-    "test": "Test"
+    "test": "Test",
+    "journey": {
+      "title1": "Mein ",
+      "title2": "Weg",
+      "items": [
+        {
+          "when": "Mit 4 Jahren",
+          "title": "Fussball beim FC Widnau",
+          "text": "Hier entdecke ich meine Begeisterung für Spielsportarten."
+        },
+        {
+          "when": "Mit 12 Jahren",
+          "title": "Wechsel zum Tennis",
+          "text": "Ich merke: Ich blühe auf, wenn allein meine eigene Leistung über Sieg oder Niederlage entscheidet."
+        },
+        {
+          "when": "Mit 19 Jahren",
+          "title": "Krafttraining neben dem Maschinenbaustudium",
+          "text": "Sechs Jahre sichtbare Fortschritte wecken den Wunsch, mein Wissen weiterzugeben."
+        },
+        {
+          "when": "April 2025",
+          "title": "Fitnesstrainer mit SAFS-Fachausweis",
+          "text": "Aus der Leidenschaft wird mein Beruf."
+        },
+        {
+          "when": "Oktober 2025",
+          "title": "Athletik Performance Trainer",
+          "text": "Ich spezialisiere mich auf Athletik und Leistung."
+        },
+        {
+          "when": "Heute",
+          "title": "Personal Trainer und Coach im Rheintal",
+          "text": "Mit Spezialgebiet Tennis und laufenden Ausbildungen in Performance und Athletik."
+        }
+      ]
+    }
   },
   "Services": {
     "htitle1": "Meine ",
@@ -323,7 +359,7 @@
             "forWhom": "du lieber draussen in der Gruppe trainierst",
             "training": "jede Woche im Outdoor-Kurs",
             "plan": "Bewegungsplan für den Alltag: Schrittziel und 1 bis 2 Einheiten zu Hause ohne Geräte",
-            "price": "CHF 99.–",
+            "price": "CHF 119.–",
             "priceNote": "plus Kursbeitrag"
           },
           {
@@ -542,6 +578,10 @@
   "Testimonials": {
     "titleBefore": "Was meine",
     "titleHighlight": "Klienten sagen",
-    "description": "Verlasse dich nicht nur auf mein Wort. Hier erfährst du, was meine Klienten mit meinen Coaching-Programmen erreicht haben."
+    "description": "Verlasse dich nicht nur auf mein Wort. Hier erfährst du, was meine Klienten mit meinen Coaching-Programmen erreicht haben.",
+    "source": "Google-Bewertung",
+    "more": "Mehr lesen",
+    "less": "Weniger anzeigen",
+    "stars": "5 von 5 Sternen"
   }
 }

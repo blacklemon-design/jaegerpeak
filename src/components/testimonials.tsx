@@ -1,4 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Quote, Star } from "lucide-react";
+import { TestimonialQuote } from "./testimonial-quote";
 import { loadTestimonialsContent, Testimonial } from "@/lib/utils";
 import { Locale } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -21,21 +23,29 @@ export async function Testimonials({ lang }: { lang: Locale }) {
           </p>
         </div>
 
-        <div className="w-full flex justify-center">
-          <div className={`grid gap-6 sm:grid-cols-1 md:grid-cols-${Math.min(2, testimonials.length)} lg:grid-cols-${Math.min(4, testimonials.length)} w-fit`}>
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="card-hover bg-card border-border max-w-100">
-                <CardContent className="p-6 space-y-4 flex flex-col justify-between h-full">
-                  <p className="text-foreground italic">
-                    "{testimonial.quote}"
-                  </p>
-                  <div className="font-semibold text-white">
-                    {testimonial.author}
+        {/* Google reviews: equal height boxes, 5 stars, text word for word */}
+        <div className={`grid gap-6 md:grid-cols-2 ${testimonials.length > 2 ? "lg:grid-cols-3" : ""} max-w-4xl mx-auto items-stretch`}>
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="card-hover bg-card border-border h-full">
+              <CardContent className="p-6 flex flex-col gap-4 h-full">
+                <div className="flex items-center justify-between">
+                  <div className="flex gap-1 text-primary" aria-label={t("stars")} role="img">
+                    {[0, 1, 2, 3, 4].map((i) => (
+                      <Star key={i} className="h-5 w-5 fill-current" aria-hidden="true" />
+                    ))}
                   </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                  <Quote className="h-6 w-6 text-primary/40" aria-hidden="true" />
+                </div>
+                <div className="flex-1">
+                  <TestimonialQuote quote={testimonial.quote} moreLabel={t("more")} lessLabel={t("less")} />
+                </div>
+                <div className="pt-4 border-t border-card">
+                  <div className="font-semibold text-white">{testimonial.author}</div>
+                  <div className="text-sm text-gray-400">{t("source")}</div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

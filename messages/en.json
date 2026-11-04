@@ -64,7 +64,7 @@
     "htitle1": "GET TO ",
     "htitle2": "KNOW ME!",
     "hsubtitle": "Expert in athletics, performance & sustainable fitness",
-    "htext": "My name is Ramon Jäger, born in 2000, and I have been active in sports since childhood. At the age of four, I started playing football at FC Widnau and discovered my passion for ball sports. At twelve, I switched to tennis because I realized: I thrive in a sport where my own performance alone determines victory or defeat. At 19, alongside my mechanical engineering studies, I started weight training in the gym. The visible progress over the following six years filled me with pride and awakened the desire to share my knowledge. Today, I pursue this path professionally. In April 2025, I completed my SAFS-certified fitness coach education and then specialized as an Athletic Performance coach.",
+    "htext": "My name is Ramon Jäger, born in 2000. Sport has been a solid part of my life since childhood, from the football pitch to the tennis court to strength training. Today I pass on what I have learned along the way.",
     "hbutton": "Let’s take the first step together!",
     "psheader": "What I stand for",
     "pssubtitle1": "I believe in training that strengthens the body",
@@ -98,7 +98,43 @@
     "c7_year": "",
     "c8_title": "Athletic Performance Coach",
     "c8_year": "",
-    "test": "Test"
+    "test": "Test",
+    "journey": {
+      "title1": "My ",
+      "title2": "Journey",
+      "items": [
+        {
+          "when": "Age 4",
+          "title": "Football at FC Widnau",
+          "text": "This is where I discover my passion for ball sports."
+        },
+        {
+          "when": "Age 12",
+          "title": "Switch to tennis",
+          "text": "I realise: I thrive when my own performance alone decides victory or defeat."
+        },
+        {
+          "when": "Age 19",
+          "title": "Strength training alongside my engineering studies",
+          "text": "Six years of visible progress spark the wish to share my knowledge."
+        },
+        {
+          "when": "April 2025",
+          "title": "Fitness Trainer with SAFS Certificate",
+          "text": "My passion becomes my profession."
+        },
+        {
+          "when": "October 2025",
+          "title": "Athletic Performance Trainer",
+          "text": "I specialise in athletics and performance."
+        },
+        {
+          "when": "Today",
+          "title": "Personal trainer and coach in the Rhine Valley",
+          "text": "Specialising in tennis, with ongoing training in performance and athletics."
+        }
+      ]
+    }
   },
   "Services": {
     "htitle1": "My ",
@@ -323,7 +359,7 @@
             "forWhom": "you prefer training outdoors in a group",
             "training": "every week in the outdoor class",
             "plan": "Everyday movement plan: step goal and 1 to 2 home sessions without equipment",
-            "price": "CHF 99.–",
+            "price": "CHF 119.–",
             "priceNote": "plus class fee"
           },
           {
@@ -542,6 +578,10 @@
   "Testimonials": {
     "titleBefore": "What My",
     "titleHighlight": "Clients Say",
-    "description": "Don't just take my word for it. Here's what real clients have achieved with my coaching programs."
+    "description": "Don't just take my word for it. Here's what real clients have achieved with my coaching programs.",
+    "source": "Google review",
+    "more": "Read more",
+    "less": "Show less",
+    "stars": "5 out of 5 stars"
   }
 }

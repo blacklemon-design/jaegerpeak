@@ -2,6 +2,7 @@ import { pageAlternates } from "@/lib/seo"
 import Header from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AboutHero } from "@/components/about-hero"
+import { AboutJourney } from "@/components/about-journey"
 import { PersonalStory } from "@/components/personal-story"
 import { Qualifications } from "@/components/qualifications"
 import { loadHomeBannerContent } from "@/lib/utils"
@@ -33,6 +34,7 @@ export default async function AboutPage(props: {
       <Header bannerTitleDe={data.title_de} bannerTitleEn={data.title_en} bannerDescriptionDe={data.description_de} bannerDescriptionEn={data.description_en} bannerDate={data.date} isBannerStartDate={data.is_start_date} showDate={data.show_date} showBanner={data.show_banner} lang={lang}/>
       <main>
         <AboutHero lang={lang} showBanner={isBannerShown()}/>
+        <AboutJourney lang={lang}/>
         <PersonalStory lang={lang}/>
         <Qualifications lang={lang}/>
       </main>
