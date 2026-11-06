@@ -27,8 +27,8 @@ export function Partners({ title }: { title: string }) {
                         className="hover:scale-110 duration-300 ease-in-out"
                     >
                         <img
-                            src="/images/partners/jsp.png"
-                            alt="Logo JSP Photography"
+                            src="/images/partners/jsp.svg"
+                            alt="Logo Jimmy’s Sports Photography"
                             className="w-40 md:w-auto max-h-60 obeject-cover mx-auto"
                         />
                     </Link>
