@@ -8,5 +8,5 @@ description_en: " All fitness levels welcome. Boost your fitness, build muscle,
 date: 2026-05-30T09:00:00.000+02:00
 is_start_date: false
 show_date: false
-show_banner: true
+show_banner: false
 ---
