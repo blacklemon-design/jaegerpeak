@@ -1,7 +1,7 @@
 import { Award, Users, Target, Zap } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "./ui/button"
-import Link from "next/link";
+import { Link as IntlLink } from "../i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
 
@@ -47,34 +47,34 @@ export async function About({ lang }: { lang: Locale }) {
               <Card className="card-hover bg-card border-border m-2">
                 <CardContent className="p-2 text-center">
                   <Award className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <div className="text-md text-foreground">{t("afield1")}</div>
+                  <div className="text-md text-foreground break-words">{t("afield1")}</div>
                 </CardContent>
               </Card>
               <Card className="card-hover bg-card border-border m-2">
                 <CardContent className="p-2 text-center">
                   <Users className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <div className="text-md text-foreground">{t("afield2")}</div>
+                  <div className="text-md text-foreground break-words">{t("afield2")}</div>
                 </CardContent>
               </Card>
               <Card className="card-hover bg-card border-border m-2">
                 <CardContent className="p-2 text-center">
                   <Target className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <div className="text-md text-foreground">{t("afield3")}</div>
+                  <div className="text-md text-foreground break-words">{t("afield3")}</div>
                 </CardContent>
               </Card>
               <Card className="card-hover bg-card border-border m-2 hyphens-auto" lang={"de"}>
                 <CardContent className="p-2 text-center">
                   <Zap className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <div className="text-md text-foreground ">{t("afield4")}</div>
+                  <div className="text-md text-foreground break-words">{t("afield4")}</div>
                 </CardContent>
               </Card>
             </div>
             <div className="flex flex-col sm:flex-col gap-4">
-              <Link href="/about" passHref>
+              <IntlLink href="/about">
                 <Button className="w-full h-10 bg-primary hover:bg-primary-hover text-white">
                   {t("abutton")}
                 </Button>
-              </Link>
+              </IntlLink>
             </div>
           </div>
           {/* Desktop Bild */}

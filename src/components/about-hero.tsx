@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Award, Calendar, MapPin } from "lucide-react";
-import Link from "next/link";
+import { Link as IntlLink } from "../i18n/navigation";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Locale } from "next-intl";
@@ -49,7 +49,7 @@ export async function AboutHero(
 
           {/* Button */}
           <div className="w-full">
-            <Link href="/#contact" passHref>
+            <IntlLink href={{ pathname: "/", hash: "contact" }}>
               <Button
                 size="lg"
                 className="w-full bg-primary hover:bg-primary text-white px-8 py-3 whitespace-normal text-center"
@@ -58,7 +58,7 @@ export async function AboutHero(
                   {t("hbutton")}
                 </p>
               </Button>
-            </Link>
+            </IntlLink>
           </div>
         </div>
 
@@ -79,7 +79,7 @@ export async function AboutHero(
             </div>
 
             <div className="w-full">
-              <Link href="/#contact" passHref>
+              <IntlLink href={{ pathname: "/", hash: "contact" }}>
                 <Button
                   size="lg"
                   className="w-full bg-primary hover:bg-primary text-white px-8 py-3 whitespace-normal text-center mb-5"
@@ -88,7 +88,7 @@ export async function AboutHero(
                     {t("hbutton")}
                   </p>
                 </Button>
-              </Link>
+              </IntlLink>
             </div>
           </div>
           <div className="relative w-full">

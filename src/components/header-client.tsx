@@ -8,7 +8,6 @@ import Banner from "./banner"
 import { usePathname } from "next/navigation"
 import { getTranslations } from "next-intl/server"
 import { Locale } from "next-intl"
-import Link from "next/link"
 
 type Labels = {
   home: string;
@@ -46,7 +45,7 @@ export default function HeaderClient({ bannerTitleDe, bannerTitleEn, bannerDescr
           </nav>
 
           <div className="hidden md:flex ml-2">
-            <Link className="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-md" href={"/#contact"}>{labels.contact}</Link>
+            <IntlLink className="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-md" href={{ pathname: "/", hash: "contact" }}>{labels.contact}</IntlLink>
           </div>
           </div>
           <div className="md:hidden">
@@ -87,13 +86,13 @@ export default function HeaderClient({ bannerTitleDe, bannerTitleEn, bannerDescr
               >
                 Testimonials
               </IntlLink> **/}
-              <Link
-                href="/#contact"
+              <IntlLink
+                href={{ pathname: "/", hash: "contact" }}
                 className="block w-full bg-primary hover:bg-primary-hover text-white rounded-md text-center py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {labels.contact}
-              </Link>
+              </IntlLink>
               {/**<div className="px-3 py-2">
                 <Button className="w-full bg-primary hover:bg-primary-hover text-white">Book Session</Button>
               </div> **/}

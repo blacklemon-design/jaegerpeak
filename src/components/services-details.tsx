@@ -24,7 +24,7 @@ type Offer = {
   variants?: Variant[]
   notes?: string[]
 }
-type FinderRow = { id: string; want: string; offer: string }
+type FinderRow = { id: string; want: string; offer: string; price: string }
 
 // Icon per offer (same order as in the texts)
 export const offerIcons: Record<string, string> = {
@@ -87,7 +87,7 @@ function PriceTableView({ table }: { table: PriceTable }) {
           <thead className="bg-background">
             <tr>
               {table.columns.map((col, i) => (
-                <th key={i} className="px-3 sm:px-4 py-2 text-sm font-medium text-gray-400">
+                <th key={i} className="px-2 sm:px-4 py-2 text-sm font-medium text-gray-400">
                   {col}
                 </th>
               ))}
@@ -99,7 +99,7 @@ function PriceTableView({ table }: { table: PriceTable }) {
                 {row.map((cell, c) => (
                   <td
                     key={c}
-                    className={`px-3 sm:px-4 py-3 ${
+                    className={`px-2 sm:px-4 py-3 ${
                       c === 0 ? "text-gray-300" : table.stack && c === 2 ? "text-gray-300" : "text-white font-semibold"
                     } ${c === 1 || (!table.stack && c > 0) ? "whitespace-nowrap" : ""}`}
                   >
@@ -143,39 +143,27 @@ export async function ServiceDetails({ lang, showBanner }: { lang: Locale; showB
     <ScrollOffsetWrapper showBanner={showBanner}>
       <section className="pb-40 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Welches Angebot passt zu dir? */}
-          <div id="angebot-finden" className="relative pt-22">
-            <Card className="card-hover card-hover-lg bg-card-dark border-card">
-              <CardHeader className="text-center pb-4">
-                <CardTitle className="text-3xl text-white">
-                  {t("finderTitle1")} <span className="text-primary">{t("finderTitle2")}</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="max-w-3xl mx-auto">
-                  <div className="grid sm:grid-cols-2 gap-6 px-1 sm:px-4 pb-2 text-sm font-medium text-gray-400">
-                    <span>{t("finderColWant")}</span>
-                    <span className="hidden sm:block">{t("finderColOffer")}</span>
-                  </div>
-                  <ul className="border-t border-card">
-                    {finder.map((row) => (
-                      <li key={row.id} className="border-b border-card">
-                        <a
-                          href={`#${row.id}`}
-                          className="group grid sm:grid-cols-2 gap-1 sm:gap-6 px-1 sm:px-4 py-3 rounded-md hover:bg-background transition-colors"
-                        >
-                          <span className="text-gray-300">{row.want}</span>
-                          <span className="text-primary font-semibold flex items-start">
-                            <span aria-hidden="true" className="mr-2">→</span>
-                            <span className="group-hover:underline">{row.offer}</span>
-                          </span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
+          {/* Overview: one tile per offer (icon, name, for whom, price), jumps to the offer */}
+          <div id="angebot-finden" className="relative pt-10 md:pt-12 scroll-mt-12 md:scroll-mt-10">
+            <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-4 md:gap-4">
+              {finder.map((row, i) => (
+                <li key={row.id} className={i === 0 ? "md:col-span-2" : ""}>
+                  <a
+                    href={`#${row.id}`}
+                    className="card-hover group flex md:flex-col gap-4 md:gap-3 h-full rounded-xl border border-card bg-card-dark p-4 md:p-5"
+                  >
+                    <Image height={40} width={40} src={offerIcons[row.id]} alt="" className="h-10 w-10 object-contain flex-none" />
+                    <span className="flex flex-col gap-1 min-w-0 md:flex-1">
+                      <span className="text-white font-semibold group-hover:text-primary transition-colors hyphens-auto" lang={lang}>
+                        {row.offer}
+                      </span>
+                      <span className="text-gray-300 text-sm md:flex-1">{row.want}</span>
+                      <span className="text-primary font-semibold text-sm mt-1">{row.price}</span>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {offers.map((offer) => {
@@ -186,7 +174,7 @@ export async function ServiceDetails({ lang, showBanner }: { lang: Locale; showB
                     <div className="flex justify-center mb-4">
                       <Image height={64} width={64} src={offerIcons[offer.id]} alt="" className="h-16 w-16 object-contain" />
                     </div>
-                    <CardTitle className="text-3xl text-white mb-2 hyphens-auto" lang={lang}>
+                    <CardTitle className="text-3xl text-white mb-2 hyphens-auto [overflow-wrap:anywhere]" lang={lang}>
                       {offer.title}
                     </CardTitle>
                     <CardDescription className="text-primary text-lg font-semibold">{offer.subtitle}</CardDescription>
@@ -266,6 +254,15 @@ export async function ServiceDetails({ lang, showBanner }: { lang: Locale; showB
                       <IntlLink href={{ pathname: "/", hash: "contact" }} className="w-full">
                         <Button className="flex-1 bg-primary w-full hover:bg-primary text-white">{t("button")}</Button>
                       </IntlLink>
+                    </div>
+                    <div className="text-center">
+                      <a
+                        href="#angebot-finden"
+                        className="text-sm text-gray-300 hover:text-primary underline decoration-primary underline-offset-4 transition-colors"
+                      >
+                        <span aria-hidden="true">↑ </span>
+                        {t("backToOverview")}
+                      </a>
                     </div>
                   </CardContent>
                 </Card>

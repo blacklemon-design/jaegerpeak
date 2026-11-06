@@ -27,6 +27,7 @@ export default async function Home(props: {
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await props.params;
+  const t = await getTranslations({ namespace: "Hero", locale: lang });
   const isBannerShown = () => {
     if (!data.show_banner) return false;
     const diff = new Date(data.date).getTime() - Date.now();
@@ -54,7 +55,7 @@ export default async function Home(props: {
         <About lang={lang} />
         <Services lang={lang} />
         <Testimonials lang={lang} />
-        <Partners />
+        <Partners title={t("partners")} />
         <Faq lang={lang} />
         <Contact lang={lang} showBanner={isBannerShown()}/>
       </main>

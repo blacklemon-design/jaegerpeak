@@ -70,7 +70,7 @@ export default async function RootLayout({
   const messages = await getMessages({ locale });
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
 
       <body

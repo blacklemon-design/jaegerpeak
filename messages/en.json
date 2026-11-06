@@ -1,14 +1,17 @@
 {
   "Hero": {
+    "htitle1": "Athletics, ",
+    "htitle2": "Performance",
+    "htitle3": " and Fitness",
     "title": "Jaegerpeak en",
-    "htext": "Personal training, coaching and athletic training in the Rhine Valley. Personal, with a plan and with progress we measure.",
-    "hbutton": "Start your transformation now",
-    "hpoint1_1": "Build",
-    "hpoint1_2": "strength",
-    "hpoint2_1": "Increase",
-    "hpoint2_2": "performance",
-    "hpoint3_1": "Stay",
-    "hpoint3_2": "healthy",
+    "htext": "Personal training, coaching and athletic training in the Rhine Valley, specialising in tennis. Personal, with a plan and with progress we measure.",
+    "hbutton": "Book your free consultation",
+    "hpoint1_1": "SAFS",
+    "hpoint1_2": "certified",
+    "hpoint2_1": "Tennis",
+    "hpoint2_2": "specialty",
+    "hpoint3_1": "Measured",
+    "hpoint3_2": "progress",
     "aheader1": "This is ",
     "aheader2": "ME",
     "atext1": "My name is Ramon Jäger – sport has been a solid part of my life since childhood. Today I work as a certified fitness coach (SAFS) and specialist in athletic performance.",
@@ -22,33 +25,34 @@
     "sheader2": "Services",
     "stext": "Find the service that best fits your everyday life and goals.",
     "sbutton": "Learn more!",
+    "partners": "Partners",
     "fheader1": "Frequently Asked ",
     "fheader2": "Questions",
-    "f1_q": "Do I need prior knowledge or already be fit?",
+    "f1_q": "Do I need any experience, or do I have to be fit already?",
     "f1_a": "You don’t need any prior knowledge. All training is individually adapted to your current level – whether you are starting out, coming back, or aiming to improve your performance.",
-    "f2_q": "What if I don’t master the technique?",
-    "f2_a": "No problem. I’ll teach you the technique step by step and place great importance on clean execution. This way we maximize your training and prevent injuries.",
+    "f2_q": "What if I don’t know the technique yet?",
+    "f2_a": "No problem. I’ll teach you the technique step by step and place great importance on clean execution. This way we get the most out of your training and prevent injuries.",
     "f3_q": "Is there a trial session? How does it work?",
-    "f3_a": "Yes. In the trial session, I analyze your movement patterns, mobility, and current condition. We start with a conversation, followed by a check of your basic movements, then we define the next steps.",
+    "f3_a": "Yes. In the trial session, I analyse your movement patterns, mobility, and current condition. We start with a conversation, followed by a check of your basic movements, then we define the next steps.",
     "f4_q": "How much does the training cost?",
     "f4_a": "You can find all prices on the Services page. For example: personal training CHF 120.– per hour (as a pair CHF 80.– per person), 6-month coaching online CHF 149.– or with personal training CHF 219.– per month, training planning from CHF 59.– and classes from CHF 20.– per person. The initial consultation is free of charge. All prices excl. VAT.",
     "f5_q": "Where do we train?",
-    "f5_a": "That depends on your goal: at Kraftwerk Fitness in Heerbrugg, outdoors (for example on the 400m track in Balgach or on the tennis court at TC Widnau) or at your home. Online coaching works from anywhere.",
+    "f5_a": "That depends on your goal: at Kraftwerk Fitness in Heerbrugg, outdoors (for example on the 400 m track in Balgach or on the tennis court at TC Widnau) or at your home. Online coaching works from anywhere.",
     "f6_q": "How often do I need to train to see changes?",
     "f6_a": "That depends on your goal and starting point. As a rule, I recommend at least 2 sessions per week to achieve noticeable progress. Consistency is the most important success factor.",
     "f7_q": "Do you also train women? How old do I need to be?",
-    "f7_a": "Of course. I train both women and men, depending on the goal – whether muscle building, toning, or functional training for pain prevention. I don’t set strict age limits. Generally, my target group is between 12 and 60 years old. In the free consultation, we will clarify together whether cooperation makes sense.",
+    "f7_a": "Of course. I train both women and men, depending on the goal – whether muscle building, toning, or functional training for pain prevention. I don’t set strict age limits. In the free consultation, we will clarify together whether working together makes sense.",
     "f8_q": "What if I get sick?",
     "f8_a": "In coaching, you can make up a missed session within the same month. In case of injury or illness with a doctor’s certificate, coaching can be paused for up to 1 month.",
     "f9_q": "Can I also be coached online?",
     "f9_a": "Yes. Coaching is also available online for CHF 149.– per month: a training plan for the gym or at home, a weekly check-in with my feedback (including on your technique videos) and a 30-minute video call per month. Ideal if you live further away or want to stay flexible.",
-    "f10_q": "How does working together look like?",
-    "f10_a": "After the initial consultation, we create your training plan and start with the coaching – including 1:1 support, training plan, nutrition tips, and regular reflection.",
+    "f10_q": "What does working together look like?",
+    "f10_a": "After the initial consultation, we create your plan and start with the service that suits you – depending on the service, with 1:1 support, a training plan, nutrition tips and regular reflection.",
     "cheader1": "Ready for a ",
     "cheader2": "change?",
     "csubheader": "Take the first step!",
     "ctext": "Contact me today for a free initial consultation!",
-    "cplace": "Widnau - Switzerland",
+    "cplace": "Widnau – Switzerland",
     "cform_header": "Contact me",
     "cname": "Name",
     "cnameplaceholder": "Your name",
@@ -71,7 +75,7 @@
     "pssubtitle2": " – and the person behind it.",
     "pspoint1_header1": "My",
     "pspoint1_header2": " Vision",
-    "pspoint1_text1": "I don’t just want to offer training, but make real change possible. More strength. Maximum performance. A better body feeling.",
+    "pspoint1_text1": "I don’t just want to offer training, but make real change possible. More strength. Maximum performance. A better sense of your own body.",
     "pspoint1_text2": "My goal is to reconnect people with their bodies: more capable, resilient, and confident. Whether pro athlete, hobby athlete, or someone training preventively – I guide you individually and lead you purposefully to your goal.",
     "pspoint2_header1": "My",
     "pspoint2_header2": " Philosophy",
@@ -138,53 +142,56 @@
   },
   "Services": {
     "htitle1": "My ",
-    "htitle2": "Services!",
-    "htext1": "From athletic training to personal training and coaching: find the service that fits your goal in a few seconds.",
-    "hbutton1": "Let’s start with a free consultation!"
+    "htitle2": "Services",
+    "htext1": "From athletic training to personal training and coaching: find the service that fits your goal in a few seconds."
   },
   "Offers": {
-    "finderTitle1": "Which service",
-    "finderTitle2": "suits you?",
-    "finderColWant": "You want to …",
-    "finderColOffer": "Matching service",
     "finder": [
       {
         "id": "athletic-performance-training",
         "want": "get better in your sport as an athlete",
-        "offer": "Athletic Performance Training (specialty: tennis)"
+        "offer": "Athletic Performance Training (specialty: tennis)",
+        "price": "from CHF 120.– per hour"
       },
       {
         "id": "personal-training",
         "want": "get fit again, get stronger or train with me regularly",
-        "offer": "Personal Training 1:1 or 1:2"
+        "offer": "Personal Training 1:1 or 1:2",
+        "price": "CHF 120.– per hour"
       },
       {
         "id": "parkinson",
         "want": "stay mobile and safe with Parkinson’s",
-        "offer": "Health training for Parkinson’s"
+        "offer": "Health training for Parkinson’s",
+        "price": "CHF 90.– per 45 minutes"
       },
       {
         "id": "coaching",
         "want": "reach a goal in 6 months with guidance",
-        "offer": "Coaching · 6 months"
+        "offer": "Coaching · 6 months",
+        "price": "from CHF 149.– per month"
       },
       {
         "id": "performance-training",
         "want": "prepare for a Hyrox or a competition",
-        "offer": "Performance Training"
+        "offer": "Performance Training",
+        "price": "CHF 120.– per hour"
       },
       {
         "id": "trainingsplanung",
         "want": "get a good plan and train properly, then on your own",
-        "offer": "Training planning"
+        "offer": "Training planning",
+        "price": "from CHF 59.–"
       },
       {
         "id": "kurse",
         "want": "train in a group, outdoors and affordably",
-        "offer": "Classes"
+        "offer": "Classes",
+        "price": "from CHF 20.– per person"
       }
     ],
     "button": "Let’s get started!",
+    "backToOverview": "Back to overview",
     "goodToKnowTitle": "Good to know",
     "goodToKnow": [
       "In coaching, you can make up a missed session within the same month. If you are injured or ill, we pause for up to one month with a doctor’s certificate.",
@@ -288,7 +295,7 @@
         "points": [
           {
             "title": "",
-            "text": "Twice a week for 45 minutes, at least once of which at the gym."
+            "text": "Twice a week for 45 minutes, at least one of them at the gym."
           },
           {
             "title": "",
@@ -335,7 +342,7 @@
           },
           {
             "title": "Every month",
-            "text": "We measure circumferences, photos and strength values, online you measure yourself following my instructions. Then I adjust your nutrition goals. After 6 months, you see in black and white what has changed."
+            "text": "We record circumferences, photos and strength values. Online, you measure yourself following my instructions. Then I adjust your nutrition goals. After 6 months, you see in black and white what has changed."
           }
         ],
         "variantsTitle": "Three options",
@@ -457,7 +464,7 @@
         "id": "kurse",
         "title": "Classes",
         "subtitle": "Train outdoors, together.",
-        "description": "A fixed programme in the open air, for every fitness level and with max. 8 people. You sign up via the WhatsApp group. The more people join, the cheaper it gets for everyone, so bring someone along.",
+        "description": "A fixed programme in the open air, for every fitness level and with max. 8 people. Send me a message and I’ll add you to the WhatsApp group, where you sign up for the classes. The more people join, the cheaper it gets for everyone, so bring someone along.",
         "tables": [
           {
             "columns": [
@@ -547,7 +554,7 @@
     "contact": "Contact",
     "impressum": "Imprint",
     "datenschutzerklaerung": "Privacy Policy",
-    "place": "Widnau - Switzerland",
+    "place": "Widnau – Switzerland",
     "developedby": "Developed with ",
     "by": " by "
   },
@@ -562,7 +569,7 @@
     "2_header": "2 Responsible Party for Data Processing",
     "2_text": "The responsible party for data processing on this website and the contact person for data protection concerns is:",
     "2-1_text": "Ramon Jäger",
-    "2-2_text": "Unterbüntelistrasse 5 - 9443 Widnau",
+    "2-2_text": "Unterbüntelistrasse 5, 9443 Widnau",
     "2-3_text": "+41 76 386 77 05",
     "2-4_text": "ramon@jaegerpeak.ch",
     "3_header": "3 Data Collection on this Website",
@@ -572,13 +579,13 @@
     "4_text": "Our website contains links to third-party websites. We are not responsible for the content or data protection measures on external websites accessible through these links. Please refer to the privacy policies directly on the respective websites.",
     "5_header": "5 Your Rights",
     "5_text": "As far as applicable data protection law allows, you can request information free of charge about the personal data stored about you, its origin, and the purpose of data processing. You also have, under legal conditions, the right to rectification, deletion, restriction of processing, or objection to processing, as well as, if the GDPR applies, the right to receive this data for transfer to another entity. Any consent you have given can be revoked at any time with effect for the future. Please note that the above rights are subject to legal limitations and may affect or prevent the provision of our services. You are entitled to enforce your rights through legal action or to file a complaint with the competent data protection authority. In Switzerland, this is the Federal Data Protection and Information Commissioner (http://www.edoeb.admin.ch).",
-    "6_header": "6 Currency and Changes to this Privacy Policy",
+    "6_header": "6 Updates and Changes to this Privacy Policy",
     "6_text": "We may change or adjust this privacy policy at any time. The current privacy policy can be accessed at https://jaegerpeak.ch/­datenschutzerklaerung."
   },
   "Testimonials": {
     "titleBefore": "What My",
     "titleHighlight": "Clients Say",
-    "description": "Don't just take my word for it. Here's what real clients have achieved with my coaching programs.",
+    "description": "Don’t just take my word for it. Here’s what real clients have achieved with my coaching programmes.",
     "source": "Google review",
     "more": "Read more",
     "less": "Show less",

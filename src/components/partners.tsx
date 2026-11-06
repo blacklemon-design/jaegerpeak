@@ -2,13 +2,13 @@ import { Award, Target, Users, Zap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 
-export function Partners() {
+export function Partners({ title }: { title: string }) {
     return (
-        <section id="about" className="py-20 bg-background">
+        <section id="partner" className="py-20 bg-background">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-8">
                 <div className="text-center space-y-4 mb-16">
-                    <h2 className="text-7xl md:text-4xl font-bold">
-                        Partner
+                    <h2 className="text-3xl md:text-4xl font-bold">
+                        {title}
                     </h2>
                 </div>
                 <div className="grid md:grid-cols-3 gap-12 items-center">

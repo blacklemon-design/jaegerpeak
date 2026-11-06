@@ -1,6 +1,6 @@
 ---
 title_de: HIIT & Performance Gruppenkurse Mo & Mi Outdoor
-title_en: HIIT & Performance groupfitness Mo & Wed Outdoor
+title_en: HIIT & Performance group fitness Mon & Wed Outdoor
 description_de: Alle Levels sind willkommen. Für mehr Fitness, Muskelaufbau oder
   Fettabbau. Ab 20.-
 description_en: " All fitness levels welcome. Boost your fitness, build muscle,

@@ -7,59 +7,59 @@ export default async function Datenschutzerklaerung({ lang }: { lang: Locale }) 
 
     return (
         <section id="datenschutzerklaerung" className="pt-24 bg-background min-h-100vh">
-            <div className="pr-5">
-                <h1 className="text-4xl md:text-6xl font-bold leading-tight pb-10 pl-5 hyphens-auto" lang="de">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight pb-10 hyphens-auto break-words" lang={lang}>
                     {t("Header")}
                 </h1>
-                <p className="text-xl text-foreground pt-3 pl-10 font-bold">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words font-bold">
                     {t("1_header")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 pb-10">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words pb-10">
                     {t("1_text")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 font-bold">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words font-bold">
                     {t("2_header")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words">
                     {t("2_text")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words">
                     {t("2-1_text")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words">
                     {t("2-2_text")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words">
                     {t("2-3_text")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 pb-10">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words pb-10">
                     {t("2-4_text")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 font-bold">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words font-bold">
                     {t("3_header")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words">
                     {t("3-1_header")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 pb-10">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words pb-10">
                     {t("3-1_text")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 font-bold">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words font-bold">
                     {t("4_header")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 pb-10">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words pb-10">
                     {t("4_text")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 font-bold">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words font-bold">
                     {t("5_header")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 pb-10">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words pb-10">
                     {t("5_text")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 font-bold">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words font-bold">
                     {t("6_header")}
                 </p>
-                <p className="text-xl text-foreground pt-3 pl-10 pb-20 hyphens-manual">
+                <p className="text-lg md:text-xl text-foreground pt-3 max-w-3xl break-words pb-20 hyphens-manual">
                     {t("6_text")}
                 </p>
             </div>
