@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote, Star } from "lucide-react";
 import { TestimonialQuote } from "./testimonial-quote";
+import { TestimonialGrid } from "./testimonial-grid";
 import { loadTestimonialsContent, Testimonial } from "@/lib/utils";
 import { Locale } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -23,11 +24,11 @@ export async function Testimonials({ lang }: { lang: Locale }) {
           </p>
         </div>
 
-        {/* Google reviews: equal height boxes, 5 stars, text word for word */}
-        <div className={`grid gap-6 md:grid-cols-2 ${testimonials.length > 2 ? "lg:grid-cols-3" : ""} max-w-4xl mx-auto items-stretch`}>
+        {/* Google reviews: equal height boxes, 5 stars, text word for word. Only the opened box grows. */}
+        <TestimonialGrid className={`grid gap-6 md:grid-cols-2 ${testimonials.length > 2 ? "lg:grid-cols-3 max-w-6xl" : "max-w-4xl"} mx-auto items-start`}>
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="card-hover bg-card border-border h-full">
-              <CardContent className="p-6 flex flex-col gap-4 h-full">
+            <Card key={index} className="card-hover bg-card border-border">
+              <CardContent className="p-6 flex flex-col gap-4 flex-1">
                 <div className="flex items-center justify-between">
                   <div className="flex gap-1 text-primary" aria-label={t("stars")} role="img">
                     {[0, 1, 2, 3, 4].map((i) => (
@@ -46,7 +47,7 @@ export async function Testimonials({ lang }: { lang: Locale }) {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </TestimonialGrid>
       </div>
     </section>
   );
